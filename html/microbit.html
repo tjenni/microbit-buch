@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+    <meta charset="utf-8"/>
+    <title>Der BBC micro:bit</title>
+</head>
+
+<body>
+
+<div style="max-width:75ch;margin-left:10%;margin-right:5%;text-align:justify;">
+
+    <h2 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
+        Der BBC micro:bit
+    </h2>
+
+    <p>
+        Unser Leben wird heute zu einem beträchtlichen Teil von Automaten gesteuert. Sie regeln die Ampel an der Kreuzung, waschen für uns die Wäsche oder versenden Nachrichten an unsere Kollegen und Kolleginnen. Manche dieser Automaten können sich selber bewegen,
+        zum Beispiel Bleche aufheben, präzise positionieren und zusammenschweissen, oder sie fliegen herum, filmen oder führen Krieg. Solche Bewegungsautomaten nennt man Roboter. Dre Begriff stammt vom Tschechischen Wort
+        <emph>robota</emph> ab, was so viel wie "Frondienst" oder "Zwangsarbeit" bedeutet.<br> Daneben gibt es Computerprogramme, die ganz ähnlich wie Roboter bestimmte Aufgaben erfüllen, wie z.B. Emails versenden, die sich aber nicht selber bewegen können.
+        Sie werden Bots genannt, eine Kurzform für Roboter. Tatsächlich haben sich die Aufgabenfelder, in denen Roboter und Bots eingesetzt werden, in den letzten Jahren rasant entwickelt, und so wird sich auch die Bedeutung dieser Begriffe sicher mit
+        der Zeit erweitern.
+    </p>
+    
+
+    <table align="center" style="max-width:75ch;" width="90%" cellpadding="0" cellspacing="20">
+        <tr>
+            <td><img src="microbit/kotaro.jpg" alt="" width="90%" /></td>
+            <td><img src="microbit/welding_robot.jpg" alt="" width="90%" /></td>
+        </tr>
+    </table>
+
+    <p style="text-align: center;"><i>
+        Abb. 1 – Ein humanoider Roboter und ein Industrieroboter. (Bild links: Manfred Werner / Wikimedia Commons, Bild rechts: Ptmetindoerasakti / Wikimedia Commons)
+    </i></p>
+
+    <p>
+        Trotz ihrer immensen Bedeutung wissen nur wenige Menschen, wie diese digitalen Automaten funktionieren. Das Ziel von diesem Kursteil ist es, hinter die Kulissen von Ampeln, Waschmaschinen, Handys und Co. zu blicken, um etwas über deren Funktionsweise
+        zu lernen. Dazu verwenden wir einen kleinen Computer, der micro:bit heisst. Er wurde 2015 von der BBC (British Broadcasting Corporation) entwickelt. Vom Aufbau her gleicht er einem Mobiltelefon. Im Folgenden werden die einzelnen Teile des micro:bit
+        genauer erklärt.
+    </p>
+    <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
+        Vorderseite
+    </h4>
+    <p>
+        Auf der Vorderseite hat der micro:bit einen kleinen Bildschirm mit 5x5 roten Leuchtdioden (<b style="color:seagreen;">Light Emitting Diode</b>, kurz <b style="color:seagreen;">LED</b>), siehe Abb. 1. Die LED's sind einfarbig und leuchten entweder
+        rot oder gar nicht. Moderne Handys haben Bildschirme mit mehr als einer Million LED's und können in verschiedenen Farben leuchten. Bei den meisten Handys kann der Bildschirm Berührungen (touch) erkennen. Der micro:bit hat nur zwei Tasten A und
+        B, die gedrückt werden können, die 25 LED's sind nicht empfindlich auf Berührungen.
+    </p>
+    <p style="text-align: center;">
+        <img src="microbit/microbit_vorderseite.jpg" alt="" width="100%" />
+    </p>
+    <p style="text-align: center;"><i>
+        Abb. 2 – micro:bit Vorderseite
+    </i></p>
+    <p>
+        Unten befinden sich 5 goldene Anschlüsse mit Loch (Pins) an welche man Sensoren und auch Motoren anschliessen kann. Die Pins 0, 1 und 2 können vom micro:bit direkt angesteuert werden. Der Pin <b style="color:seagreen;">3V</b> ist liegt auf einer
+        Spannung von 3.3 V und kann als Stromversorgung für weitere Sensoren und Motoren genutzt werden. Der Pin <b style="color:seagreen;">GND</b>&nbsp;nennt man <b style="color:seagreen;">Ground</b> (Boden) er wird als Rückleiter verwendet. Ein Stromkreis
+        braucht immer einen Hin- und einen Rückleiter. Alle angeschlossenen Bauelemente müssen ein gemeinsames <b style="color:seagreen;">Ground</b> (Boden) haben, sonst gehts nicht.
+    </p>
+    <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
+        Rückseite
+    </h4>
+    <p>
+        Auf der Rückseite, Abb. 2, befindet sich das Gehirn (Prozessor) des micro:bit. Von aussen sieht man nur ein schwarzes flaches Kästchen. Im Innern ist dieser Prozessor jedoch sehr komplex und enthält viele tausende Schaltelemente, die kompliziert zusammengeschaltet
+        sind. Der Prozessor arbeitet Programme ab, die auf den micro:bit geladen wurden.
+    </p>
+    <p>
+        Weiter hat es auf der Rückseite einen RESET-Taster um den micro:bit neu zu starten, einen USB-Anschluss um Programme auf den micro:bit zu laden und einen Anschluss für die Batterie. Hat man das Programm auf den micro:bit geladen, kann man ihn vom Computer
+        trennen und anschliessend mit zwei Batterien betreiben, siehe Abb. 3.
+    </p>
+    <p style="text-align: center;">
+        <img src="microbit/microbit_rueckseite.jpg" alt="" width="100%" />
+    </p>
+    <p style="text-align: center;"><i>
+        Abb. 3 – Rückseite des micro:bit.
+    </i></p>
+    <p>
+        Genau so wie die meisten Handys, kann der micro:bit feststellen, ob er bewegt wird und wo unten ist. Er benutzt dazu einen Beschleunigungssensor (Accelerometer). Wird der micro:bit auf einen Tisch gelegt, kann der Beschleunigungssensor messen mit welcher
+        Seite er auf dem Tisch liegt.
+    </p>
+    <p>
+        Wie aus dem Geografieunterricht bekannt ist, hat die Erde ein Magnetfeld. Der micro:bit kann mit dem Magnetfeldsensor (Kompass) messen in welche Richtung das Erdmagnetfeld zeigt und so ermitteln wo Norden ist. Das ist praktisch, wenn man den micro:bit
+        zur Navigation verwenden möchte.
+    </p>
+    <p>
+        Oben links befindet sich eine Bluetooth Antenne (BLE Antenna). Mit dieser Antenne kann der micro:bit Daten an andere Geräte (micro:bit, Handy, Computer) senden. BLE steht für <b style="color:seagreen;">Bluetooth Low Energy</b>. <b style="color:seagreen;">Bluetooth</b> ist ein spezieller Funkstandard für Geräte wie externe Lautsprecher, Kopfhörere, usw. und <b style="color:seagreen;">Low Energy</b> bedeutet, dass die Funkübertragung nicht viel Batterie (Energie) benötigt.
+    </p>
+    <p style="text-align: center;">
+        <img src="microbit/microbit_an_batterie.jpg" alt="" width="80%" />
+    </p>
+    <p style="text-align: center;"><i>
+        Abb. 4 – Stromversorgung des micro:bit Computers mit Hilfe von Batterien.
+    </i></p>
+    <p>
+        Auf der nächsten Seite wird erklärt, wie du den micro:bit programmieren kannst.
+    </p>
+
+
+
+    <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
+        Links
+    </h4>
+    <ul style="margin-left:2em;">
+        <li>
+            <a href="https://microbit.org/de/" target="_blank">Micro:bit Educational Foundation</a>
+        </li>
+    </ul>
+
+    <hr style="margin-top:12ex;">
+
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            <img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />
+
+       <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title" style="font-style: italic;">Einsteigerkurs für den BBC micro:bit</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/tjenni/microbit-buch" property="cc:attributionName" rel="cc:attributionURL">T. Jenni, et al.</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.
+
+</div>
+
+
+
+
+</body>
+
+</html>
