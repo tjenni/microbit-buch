@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <title>Wie spät ist es?</title>
+</head>
+
+<body>
+
+<div style="max-width:75ch;margin-left:10%;margin-right:5%;text-align:justify;line-height:150%;">
+
+  <h2 style="padding:0pt;margin-top:1em;margin-bottom:1em;color:seagreen;font-weight:bold;">Wie spät ist es?</h2>
+
+  <p>
+    Beim Bahnhof St. Gallen steht eine merkwürdige Uhr, welche die Zeit im Zweiersystem (Binärsystem) anzeigt, siehe Video 1. Im Zweiersystem gibt es nur zwei Zahlen, die null und die eins. Für den Computer, der mit elektrischen Signalen arbeitet, ist dieses
+    System besonders praktisch. So kann die Zahl null durch eine Spannung von null und die Zahl eins durch eine Spannung drei Volt codiert werden. In diesem Kapitel lernst du das Binärsystem kennen und zwischen dem Dezimal- und dem Binärsystem umrechnen.
+  </p>
+
+
+  <!--
+  Quelle: https://www.flickr.com/photos/kecko/41606615071
+  Lizenz: CC by 2.0, Kecko / flickr.com
+  -->
+  <p style="text-align:center;">
+    <video width="800" controls="true" loop="true" muted="true" autoplay="true"><source src="wie_spaet_ist_es/Binaeruhr720p.mp4">wie_spaet_ist_es/Binaeruhr720p.mp4</video>
+  </p>
+
+  <p style="text-align: center;"><i>
+    Video 1 – Binäruhr, Bahnhof St. Gallen (Kecko / flickr.com)
+  </i></p>
+
+
+
+  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
+    Zählen im Binärsystem
+  </h4>
+
+  <p>
+    Wenn du im Binärsystem von null aus in Einerschritten hochzählst, erhältst du Tab. 1.
+  </p>
+
+  <table align="center" cellpadding="10">
+    <tbody>
+        <tr style="border-bottom:1px solid black;">
+            <td style="border-right:1px solid black;">Binärsystem</td>
+            <td>0</td>
+            <td>1</td>
+            <td>10</td>
+            <td>11</td>
+            <td>100</td>
+            <td>101</td>
+            <td>110</td>
+            <td>111</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td style="border-right:1px solid black;">Dezimalsystem</td>
+            <td style="text-align:center;">0</td>
+            <td style="text-align:center;">1</td>
+            <td style="text-align:center;">2</td>
+            <td style="text-align:center;">3</td>
+            <td style="text-align:center;">4</td>
+            <td style="text-align:center;">5</td>
+            <td style="text-align:center;">6</td>
+            <td style="text-align:center;">7</td>
+            <td style="text-align:center;">8</td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p style="text-align: center;"><i>
+    Tab. 1 – Die natürlichen Zahlen von null bis sieben im Binärsystem
+  </i></p>
+
+
+  <p>
+    Im Binärsystem hat, von rechts nach links betrachtet, die erste Ziffer die Wertigkeit eins, die zweite die Wertigkeit zwei, die dritte vier und die vierte Ziffer die Wertigkeit acht. In Tab. 2 sind die Wertigkeiten der ersten acht Stellen aufgelistet.
+    Wenn du die Wertigkeiten mit Zweierpotenzen angibts, wird es klarer, wie diese zustandekommen.
+  </p>
+
+  <p style="text-align:center;">
+  </p>
+  <table align="center" cellpadding="10">
+
+    <tbody>
+        <tr style="border-bottom:1px solid black;">
+            <td style="border-right:1px solid black;">Wertigkeiten</td>
+            <td style="text-align:center;">128</td>
+            <td style="text-align:center;">64</td>
+            <td style="text-align:center;">32</td>
+            <td style="text-align:center;">16</td>
+            <td style="text-align:center;">8</td>
+            <td style="text-align:center;">4</td>
+            <td style="text-align:center;">2</td>
+            <td style="text-align:center;">1</td>
+        </tr>
+        <tr>
+            <td style="border-right:1px solid black;">Potenzschreibweise</td>
+            <td style="text-align:center;">2<sup>7</sup></td>
+            <td style="text-align:center;">2<sup>6</sup></td>
+            <td style="text-align:center;">2<sup>5</sup></td>
+            <td style="text-align:center;">2<sup>4</sup></td>
+            <td style="text-align:center;">2<sup>3</sup></td>
+            <td style="text-align:center;">2<sup>2</sup></td>
+            <td style="text-align:center;">2<sup>1</sup></td>
+            <td style="text-align:center;">2<sup>0</sup></td>
+        </tr>
+    </tbody>
+  </table>
+  <p></p>
+
+  <p style="text-align: center;"><i>
+    Tab. 2 – Wertigkeiten der ersten acht Binärstellen
+  </i></p>
+
+  <p style="text-align:center;border-left:4px solid black;">
+    <br> Die Wertigkeit der <i>n</i>-ten Stelle im Binärsystem beträgt 2<sup><i>n</i>-1</sup>.<br>
+    <br>
+  </p>
+
+
+  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
+    Umrechnen
+  </h4>
+
+
+  <p>
+    Möchtest du vom Binärsystem ins Dezimalsystem umrechnen, mussst du dir die Wertigkeiten der einzelnen Ziffern klar machen. Zum Beispiel die Binärzahl <b style="color:seagreen;">1101</b> ist im Dezimalsystem die Zahl <b style="color:seagreen;">13</b>,
+    siebe Tab. 3.
+  </p>
+
+  <p style="text-align:center;">
+  </p>
+  <table align="center" cellpadding="10">
+
+    <tbody>
+        <tr style="border-bottom:1px solid black;">
+            <td style="border-right:1px solid black;">Binärzahl</td>
+            <td style="text-align:center;color:seagreen;"><b>1</b></td>
+            <td style="text-align:center;color:seagreen;"><b>1</b></td>
+            <td style="text-align:center;color:seagreen;"><b>0</b></td>
+            <td style="text-align:center;color:seagreen;"><b>1</b></td>
+        </tr>
+        <tr>
+            <td style="border-right:1px solid black;">Wertigkeiten</td>
+            <td style="text-align:center;">8</td>
+            <td style="text-align:center;">4</td>
+            <td style="text-align:center;">2</td>
+            <td style="text-align:center;">1</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align:center;margin-top:0.5em;">
+                8·<b style="color:seagreen;">1</b> + 4·<b style="color:seagreen;">1</b> + 2·<b style="color:seagreen;">0</b> + 1·<b style="color:seagreen;">1</b> = <b style="color:seagreen;border-bottom:double;">13</b>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <span></span>
+
+  <p></p>
+
+  <p style="text-align: center;"><i>
+    Tab. 3 – Umrechnung der Binärzahl 1101 ins Dezimalsystem
+  </i></p>
+
+
+
+  <p>
+    Möchtest du umgekehrt vom Dezimalsystem ins Binärsystem umrechnen, führst du eine Reihe von Ganzzahldivisionen durch. Lies am Schluss die Reste der Divisionen von unten nach oben, um die Binärzahl zu erhalten.
+  </p>
+
+  <p style="text-align:center;">
+  </p>
+  <table align="center" cellpadding="5">
+    <tbody>
+        <tr>
+            <td style="text-align:right;">13 / 2</td>
+            <td>=</td>
+            <td style="text-align:center;">6</td>
+            <td>Rest</td>
+            <td style="text-align:center;"><b style="color:seagreen;">1</b></td>
+            <td rowspan="4"><img src="wie_spaet_ist_es/arrowup.jpg" alt="" role="presentation" style="height:8em;" /></td>
+        </tr>
+        <tr>
+            <td style="text-align:right;">6 / 2</td>
+            <td>=</td>
+            <td style="text-align:center;">3</td>
+            <td>Rest</td>
+            <td style="text-align:center;"><b style="color:seagreen;">0</b></td>
+        </tr>
+        <tr>
+            <td style="text-align:right;">3 / 2</td>
+            <td>=</td>
+            <td style="text-align:center;">1</td>
+            <td>Rest</td>
+            <td style="text-align:center;"><b style="color:seagreen;">1</b></td>
+        </tr>
+        <tr>
+            <td style="text-align:right;">1 / 2</td>
+            <td>=</td>
+            <td style="text-align:center;">0</td>
+            <td>Rest</td>
+            <td style="text-align:center;"><b style="color:seagreen;">1</b></td>
+        </tr>
+    </tbody>
+  </table>
+  <p></p>
+
+
+
+  <p>
+    Warum dieses Schema zur Umrechnug funktioniert erkennst du, wenn du die Ganzzahldivisonen anders aufschreibst.
+  </p>
+
+  <p style="text-align:center">
+  </p>
+  <table align="center" cellpadding="5">
+    <tbody>
+        <tr>
+            <td style="text-align:center;">13/2 = 6 Rest 1  ⇔  13 = <b style="color:#2E8B57;">6 · 2 + 1</b></td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">6/2 = 3 Rest 0  ⇔  6 = <b style="color:#33658A;">3 · 2 + 0</b></td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">3/2 = 1 Rest 1  ⇔  3 = <b style="color:#E9D758;">1 · 2 + 1</b></td>
+        </tr>
+        <tr>
+            <td style="text-align:center;">1/2 = 0 Rest 1  ⇔  1 = <b style="color:#FF8552;">0 · 2 + 1</b></td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p></p>
+
+
+  <p>
+    Mit diesem Wissen, kannst du nun die Zahl 13 wie folgt umschreiben
+  </p>
+
+  <p style="text-align:center">
+
+  </p>
+  <table align="center" cellpadding="5">
+    <tbody>
+        <tr>
+            <td>13 </td>
+            <td>= <b style="color:#2E8B57;">6 · 2 + 1</b></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>= (<b style="color:#33658A;">3 · 2 + 0</b>) · 2 + 1 · <b style="color:#2E8B57;">1</b></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>= 3 · 4 + 2 · <b style="color:#33658A;">0</b> + 1 · <b style="color:#2E8B57;">1</b></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>= (<b style="color:#E9D758;">1 · 2 + 1</b>) · 4 + 2 · <b style="color:#33658A;">0</b> + 1 · <b style="color:#2E8B57;">1</b></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>= 1 · 8 + 4 · <b style="color:#E9D758;">1</b> + 2 · <b style="color:#33658A;">0</b> + 1 · <b style="color:#2E8B57;">1</b></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>= (<b style="color:#FF8552;">0 · 2 + 1</b>) · 8 + 4 · <b style="color:#E9D758;">1</b> + 2 · <b style="color:#33658A;">0</b> + 1 · <b style="color:#2E8B57;">1</b></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>= 8 · <b style="color:#FF8552;">1</b> + 4 · <b style="color:#E9D758;">1</b> + 2 · <b style="color:#33658A;">0</b> + 1 · <b style="color:#2E8B57;">1</b></td>
+        </tr>
+    </tbody>
+  </table>
+
+
+  <p></p>
+
+
+  <p>
+    Durch die Farben der Ziffern erkennst du, dass die erste Ziffer der Binärzahl durch die erste Division zustande gekommen ist und die zweite Binärziffer durch die zweite Division, usw.
+  </p>
+
+
+
+
+  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
+    Einheiten
+  </h4>
+
+  <p>
+    Eine einzelne Stelle von einer Binärzahl nennt man <b style="color:seagreen;">Bit</b>. Die Zahl 13 benötigt in der Binärdarstellung 4 Bits. Hat man 8 Bits zur Verfügung, so nennt man das ein <b style="color:seagreen;">Byte</b>. Computer haben
+    heutzutage Speichermengen von milliarden von Bytes. Daher ist es sinnvoll, Bezeichnungen für grosse Speichermengen zu definieren.
+  </p>
+
+  <p>
+  </p>
+  <table align="center">
+    <tbody>
+        <tr>
+            <td>1 KB (Kilobyte)</td>
+            <td>= 10<sup>3</sup> Bytes</td>
+        </tr>
+        <tr>
+            <td>1 MB(Megabyte)</td>
+            <td>= 10<sup>6</sup> Bytes</td>
+        </tr>
+        <tr>
+            <td>1 GB (Gigabyte)</td>
+            <td>= 10<sup>9</sup> Bytes</td>
+        </tr>
+        <tr>
+            <td>1 TB (Terabyte)</td>
+            <td>= 10<sup>12</sup> Bytes</td>
+        </tr>
+    </tbody>
+  </table>
+  <p></p>
+
+  <p style="text-align: center;"><i>
+  Tabelle: Abkürzungen für grosse Informationsmengen.
+  </i></p>
+
+  <p>
+    Der Prozessor im micro:bit (ARM Cotex-M0) hat eine 32-Bit-Architektur, d.h. er kann vier Bytes auf einmal verarbeiten. Somit kann von sich aus mit Zahlen von 0 bis 4'294'967'295 umgehen. Leider hat Prozessor keine Recheneinheit für Dezimalzahlen (floating
+    point unit <b>FPU</b>), daher muss man das Rechnen mit Dezimalzahlen durch Binäroperationen nachbilden, was viel Rechenzeit benötigt.
+  </p>
+
+
+  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
+    Binäruhr mit dem micro:bit
+  </h4>
+
+  <p>
+    Das folgende Programm ist Binäruhr, welche die Sekunden anzeigt, siehe Abb. 1. In dem Zangenblock dauerhaft, wird jede Sekunde die Zeit um eins erhöht und die Funktion <b style="color:seagreen;">update</b> aufgerufen. Alle Befehle, welche den
+    Bildschirm verändern, werden in eine Funktion <b style="color:seagreen;">update</b> ausgelagert. Um die Zeit in eine Binärzahl umzuwandeln, wird diese in die Variable Wert kopiert. Dann werden fünf Ganzzahldivisionen durchgeführt und jeweils deren
+    Rest bestimmt. Mit dem Befehl <b style="color:#55328C;">Zeichne x y</b> wird die LED an der Position x und y eingeschaltet. Der Befehl <b style="color:#8725CD;">floor x</b> rundet die Zahl ab.
+  </p>
+
+  <p style="text-align:center;">
+    <img src="wie_spaet_ist_es/microbit-Binaeruhr.png" alt="" width="100%" />
+  </p>
+  <p style="text-align:center;"><i>
+    Abb. 1 – Programm für eine Binäruhr, welche die Sekunden anzeigt
+  </i></p>
+
+
+  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
+    Aufgaben
+  </h4>
+
+  <ol>
+    <li style="margin-bottom:1em;">
+        Zähle im Binärsystem auf 32.
+    </li>
+
+    <li style="margin-bottom:1em;">
+        Wandle die Zahlen 2, 4, 8, 16, 32, 64, 128, 256 ins Binärsystem um.
+    </li>
+
+    <li style="margin-bottom:1em;">
+        Welche natürlichen Zahlen kann man mit einem Byte darstellen?
+    </li>
+
+    <li style="margin-bottom:1em;">
+        Programmiere eine Binäruhr, welche die Sekunden und Minuten anzeigt.
+    </li>
+
+  </ol>
+
+  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
+    Links
+  </h4>
+
+  <ul style="margin-left:2em;">
+    <li>
+        <!-- https://www.youtube.com/watch?v=6WsI95N0QKU -->
+        <a href="http://bit.ly/2s9rPKQ" target="_blank" style="font-size: 0.9375rem;">YouTube - The SimpleClub - Das Binärsystem</a>
+    </li>
+  </ul>
+
+  </div>
+
+
+  <hr style="margin-top:12ex;">
+  <p>
+    Autor:  T. Jenni<br />
+    Letzte Änderung: 14. Mai 2021
+  </p>
+
+  <p style="text-align:center;">
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+  </p>
+
+  <p>
+    <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title" style="font-style: italic;">Einsteigerkurs für den BBC micro:bit</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/tjenni/microbit" property="cc:attributionName" rel="cc:attributionURL">T. Jenni, et al.</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.
+  </p>
+
+  </div>
+
+  </body>
+  </html>
