@@ -1,4 +1,4 @@
-# Einsteigerkurs für den BBC micro:bit
+# BBC micro:bit für Einsteiger
 
 
 ## Mitmachen
