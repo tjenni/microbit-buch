@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+    <meta charset="utf-8"/>
+    <title>Microsoft Makecode</title>
+</head>
+
+<body>
+
+<div style="max-width:75ch;margin-left:10%;margin-right:5%;text-align:justify;line-height:150%;">
+
+  <h2 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
+    Microsoft Makecode
+  </h2>
+
+  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
+    Anschliessen
+  </h4>
+
+  <p>
+    Um Programme auf den micro:bit zu laden, schliesse ihn mit dem USB-Kabel an den PC an, siehe Abb 1. Der micro:bit wird über das USB-Kabel mit Strom versorgt und neben dem USB-Stecker beginnt eine LED zu blinken. Für den PC ist der micro:bit wie ein USB-Stick,
+    d.h. es erscheint im Dateimanager ein zusätzliches Laufwerk mit dem Namen <span style="color:seagreen;">MICROBIT</span>.
+  </p>
+
+  <p style="text-align: center;">
+    <img src="makecode/microbit_am_computer.jpg" alt="" width="80%" />
+  </p>
+
+  <p style="text-align: center;"><i>
+	   Abb. 1 – micro:bit der an den PC angeschlossen ist. (Bild: T. Jenni)
+  </i></p>
+
+  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
+    Programmieren
+  </h4>
+
+  <p>
+    Öffne das Programm <span style="color:seagreen;">Google Chrome</span> und surfe auf die Website
+  </p>
+
+  <p style="text-align: center;">
+      <a href="https://makecode.microbit.org" target="_blank">https://makecode.microbit.org</a>
+  </p>
+
+  <p>
+      und erstelle ein neues Projekt. Die Webseite ist ähnlich wie die Programmiersprache Scratch aufgebaut, siehe Video 1. Links oben gibt es eine Ansicht des micro:bit Computers. In der Mitte die Befehlsblöcke und rechts der Programmierbereich. Am Anfang
+      sind zwei Blöcke vorhanden. Der Block <span style="color:#1e90ff;">beim Start</span> wird nur einmal ausgeführt wenn der micro:bit eingeschaltet wird. Der Block <span style="color:#1e90ff;">dauerhaft</span> wird wie eine Endlosschleife immerzu wiederholt.
+  </p>
+
+  <p>
+      Nun erstelle ein Programm, welches auf der LED-Matrix ein blinkendes Herz anzeigt. Der Block <span style="color:#1e90ff;">beim Start</span> kann gelöscht werden. Die Befehle <span style="color:#1e90ff;">zeige Symbol</span> und <span style="color:#1e90ff;">pausiere (ms)</span>        befinden sich im Bereich <span style="color:#1e90ff;">Grundlagen</span> und der Befehl <span style="color:#1e90ff;">Bildschirminhalt löschen</span> ist unterhalb von Grundlagen im Bereich <span style="color:#1e90ff;">...more</span> zu finden.
+  </p>
+
+  <p style="text-align: center;">
+      <video width="800" controls="true"><source src="makecode/Herzklopfen_erstellen720.mov">makecode/Herzklopfen_erstellen720.mov</video>
+  </p>
+  <p style="text-align: center;"><i>
+      Video 1 – Programm erstellen  (Video: T. Jenni)
+  </i></p>
+
+  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
+      Laden
+  </h4>
+
+  <p>
+      Neben dem Knopf <span style="color:seagreen;">Herunterladen</span> hat es ein Eingabefeld, in welchem man den Namen des Programms eingeben kann, siehe Video 2. Nennen dein Programm <span style="color:seagreen;">Herzklopfen</span>. Anschliessend klicke auf
+      die kleine Diskette neben dem Eingabefeld und das Programm wird heruntergeladen. Es befindet sich nun auf dem Computer im Ordner <span style="color:seagreen;">Downloads</span> und heisst <span style="color:seagreen;">microbit-Herklopfen.hex</span>. Nun kannst
+      du die Datei mit der Maus auf das Laufwerk <span style="color:seagreen;">MICROBIT (E:)</span> ziehen.
+  </p>
+
+  <p style="text-align: center;">
+      <video width="800" controls="true"><source src="makecode/manuell_hochladen720.mov">makecode/manuell_hochladen720.mov</video>
+  </p>
+  <p style="text-align: center;"><i>
+      Video 2 – Programm manuell auf den micro:bit laden (Video: T. Jenni)
+  </i></p>
+
+  <p>
+      Das Programm wird nun auf den micro:bit geladen und ausgeführt. Es erscheint ein Herz auf der LED-Matrix ein Herz das blinkt, siehe Abb. 2. Gratuliere! Du hast soeben dein erstes Programm auf dem micro:bit erstellt.
+  </p>
+
+  <p style="text-align: center;">
+      <img src="makecode/microbit_herz.jpg" alt="" width="80%" role="presentation" class="img-responsive atto_image_button_text-bottom">
+  </p>
+
+  <p style="text-align: center;"><i>
+	Abb. 2 – Herz auf dem micro:bit (Bild: T. Jenni)
+</i></p>
+
+  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
+      Laden mit WebUSB
+  </h4>
+
+  <p>
+      Der Chrome-Browser verfügt die Funktion WebUSB, mit welcher man Programme direkt übertragen kann. Schliesse den micro:bit an den Computer an und klicke oben rechts auf das Zahnrad, siehe Video 3. Im Menu klicke auf den Eintrag <span style="color:seagreen;">Gerät koppeln</span>.
+      Es geht ein Fenster auf. Wähle erneut <span style="color:seagreen;">Gerät koppeln</span>. Nun erscheint eine Liste, wo man du Gerät <span style="color:seagreen;">BBC micro:bit</span> auswählst. Von nun an, kannst du das Programm direkt auf den micro:bit runterladen.
+      Der Vorteil von WebUSB ist auch, dass man Daten vom micro:bit auch direkt auf den Computer senden kann.
+  </p>
+
+  <p style="text-align: center;">
+      &nbsp;<video width="800" controls="true"><source src="makecode/WebUSB720.mov">makecode/WebUSB720.mov</video>&nbsp;
+  </p>
+  <p style="text-align: center;"><i>
+      Video 3 – Programme mit WebUSB auf den micro:bit laden. (Video: T. Jenni)
+  </i></p>
+
+  <p>
+      Falls es Probleme mit WebUSB gibt, muss man im Chrome-Browser zuerst die folgende Zeile eingeben: <a href="chrome://flags" target="blank">chrome://flags</a>. Es werden sehr viel Einstellungsmöglichkeiten angezeigt. Der
+      Eintrag <span style="color:seagreen;">Enable new USB backend</span> muss auf <span style="color:seagreen;">Default</span> gesetzt sein, siehe Video 4.
+  </p>
+
+  <p style="text-align: center;">
+      &nbsp;<video width="800" controls="true"><source src="makecode/WebUSB_Thin-Client720.mov">makecode/WebUSB_Thin-Client720.mov</video>&nbsp;
+  </p>
+  <p style="text-align: center;"><i>
+      Video 4 – WebUSB einschalten. (Video: T. Jenni)
+  </i></p>
+
+
+  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
+      Aufgaben
+  </h4>
+
+  <ol>
+    <li style="margin-bottom:1em;">
+        Schau dir die gesamte Befehlsbibliothek durch. Was gibt es für Möglichkeiten, die LED-Matrix anzusteuern? Wie kann man Text ausgeben?
+    </li>
+    <li>
+      Schreibe ein Programm, das deinen Namen auf dem Bildschirm anzeigt.
+    </li>
+  </ol>
+
+
+
+  <hr style="margin-top:12ex;">
+
+  <p>
+    Autoren:  T. Jenni<br />
+    Letzte Änderung: 14. Mai 2021
+  </p>
+
+  <p style="text-align:center;">
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+            <img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+  </p>
+
+  <p>
+     <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title" style="font-style: italic;">Einsteigerkurs für den BBC micro:bit</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/tjenni/microbit" property="cc:attributionName" rel="cc:attributionURL">T. Jenni, et al.</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.
+  </p>
+
+</div>
+
+
+
+
+</body>
+
+</html>
