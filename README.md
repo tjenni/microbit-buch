@@ -5,6 +5,16 @@
 
 Ich bin froh, wenn viele Leute an diesem Projekt mitarbeiten. Wenn du einen Fehler siehst kannst du diesen auf github.com unter *Issues* melden. Falls du eine gute Idee für ein weiteres Kapitel hast, oder auf einer Seite ganz viele Fehler findest, lade das Buch mit *git* runter und füge ein weiteres Kapitel ein oder korrigiere die Seite. Am einfachsten geht das mit Hilfe des Atom-Editors (https://atom.io). Anschliessend kannst du mir deine Änderungen wieder auf github pushen. Ich werde dann alles überprüfen und deine Korrektur und deine Seite in das Buch einfügen.
 
+## To Do
+[ ] Das Kapitel "Wie spät ist es?" mit der Erklärung des Binärsystems sollte man überarbeiten.  Es ist zu technisch. Vielleicht sollte man es mit dem Inhalt vom OFI etwas besser abstimmen.
+
+[ ] Es bräuchte noch ein oder mehrere Kapitel zum Roboter MacQueen.
+
+[ ]  Ein Kapitel zum Ultraschall-Sensor wäre toll.
+
+[ ]   Ein oder mehrere Kapitel zu Elektronik (LED, Lichtwiderstände, Servos) könnte nicht schaden.
+
+
 ##  Als Moodlebuch verwenden
 
 Das micro:bit Buch kann man in Moodle einfügen. Erstelle dazu in Moodle ein neues Buch und gehe dann auf *Einstellungen > Kapitel importieren*. Du musst alle Dateien im Verzeichnis html zippen und dann diese Zipdatei auf Moodle hochladen.
