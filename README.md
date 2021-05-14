@@ -14,6 +14,7 @@ Das micro:bit Buch kann man in Moodle einfügen. Erstelle dazu in Moodle ein neu
 Wenn du das Buch als HTML-Seite verwenden möchtest, musst du noch eine Navigationsseite erstellen.
 
 
+## Lizenz
 Autoren: T. Jenni, et al.
 
 Alle Unterlagen für diesen Kurs stehen unter der folgenden Creative Commons Lizenz:
