@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <title>Kompass</title>
+</head>
+
+<body>
+
+<div style="max-width:75ch;margin-left:10%;margin-right:5%;text-align:justify;line-height:150%;">
+
+  <h2 style="padding:0pt;margin-top:1em;margin-bottom:1em;color:seagreen;font-weight:bold;">Kompass</h2>
+
+
+
+  <p>
+    Das sich eine magnetische Nadel in Richtung Norden ausrichtet, ist schon seit der Antike bekannt. Der Grund, dass ein Kompass nach Norden zeigt, liegt im Magnetfeld der Erde. Die Kompassnadel richtet sich parallel zu den Magnetfeldlinien aus. Diese zeigen
+  ungefähr in Richtung des geografischen Nordpols.
+  </p>
+
+
+  <p style="text-align: center;">
+  <img src="kompass/kompass.jpg" alt="" width="80%" />
+  </p>
+  <p style="text-align: center;"><i>
+    Abb. 1 – Kompass (Bild: pexels.com)
+  </i></p>
+
+  <p>
+    Im Gegensatz zu anderen Planeten, hat die Erde hat ein schönes Magnetfeld mit einem magnetischen Nordpol in der Antarktis (geografisch Süden) und einem magnetischen Südpol in der Arktis (geografisch Norden). Das Magnetfeld ist jedoch nicht sehr stabil.
+    Ungefähr alle 250'000 Jahre polt es sich um. Für eine grob Einschätzung der Himmelsrichtung reicht ein Kompass. Da das Erdmagnetfeld etwas verzerrt ist, zeigen Kompasse nicht überall auf der Erde in Richtung des geografischen Nordpols sondern etwas daneben. Hier in der Schweiz beträgt diese Missweisung ungefährt 2 Grad. Beachte, dass Eisenteile in der Nähe des Kompass diesen stören können.
+  </p>
+
+
+  <!--
+  https://commons.wikimedia.org/wiki/File:Africa_on_the_globe_(red).svg
+  https://commons.wikimedia.org/wiki/File:VFPt_sphere-magnet-Sup.svg
+  -->
+  <p style="text-align: center;">
+    <img src="kompass/erdmagnetfeld.jpg" alt="" width="80%" /><br>
+  </p>
+  <p style="text-align: center;"><i>
+  Abb. 2 – Erdmagnetfeld (Bild: TUBS, Geek3 / Wikimedia Commons)
+  </i></p>
+
+
+  <p>
+  Der micro:bit verfügt über einen Sensor, der die Stärke und Richtung des Magnetfeldes messen kann. Dieser Sensor arbeitet mit dem sogenannten Hall-Effekt. Wenn du mehr darüber wissen möchtest, schau dir das Video im Unterkapitel Links dazu an. Übernimm
+  nun das Programm aus Abb. 3. Es zeigt einen Pfeil an, welcher in Richtung Norden zeigt. Der Befehl Kompassausrichtung findest du im Bereich <b style="color:#d400d4;">Eingabe</b>.
+  </p>
+
+  <p style="text-align: center;">
+  <img src="kompass/microbit-Kompass.png" alt="" width="100%" />
+  </p>
+  <p style="text-align: center;"><i>
+    Abb. 3 – Programm für einen Kompass
+  </i></p>
+
+
+  <p>
+  Gehe nun nach draussen und überprüfe, dass der Kompass funktioniert und immer nach Norden zeigt.
+  </p>
+
+
+  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
+    Aufgaben
+  </h4>
+
+  <ol>
+  <li style="margin-bottom:1em;">
+    Erweitere das Programm so, dass auch die Richtungen NW, NO, SW und SO angezeigt werden.
+  </li>
+
+  <li style="margin-bottom:1em;">
+    Richte den micro:bit in Richtung Norden aus und miss das Magnetfeld in alle drei Raumrichtungen. Verwende dazu den Befehl <b style="color:#d400d4;">Magnetkraft (μT)</b> unter <b style="color:#d400d4;">... more</b>. Die Bezeichnung Magnetkraft
+    ist falsch. Was hier gemessen wird ist die sogenannte magnetische Flussdichte. Sie wird in der Einheit Tesla (T) angegeben.
+  </li>
+
+  <li style="margin-bottom:1em;">
+    Sende die Messwerte von <b style="color:#d400d4;">Magnetkraft (μT) Stärke</b> an den PC und lass dir diese im Diagramm anzeigen. Lege dann den micro:bit auf den Tisch und bringe Eisen in die Nähe des micro:bits. Wie reagiert der Sensor? Kannst
+    du einen Eisendetektor erstellen?
+  </li>
+  </ol>
+
+
+
+  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
+  Links
+  </h4>
+
+  <ul style="margin-left:2em;">
+  <li>
+    <!-- https://www.youtube.com/watch?v=onAIMe38g1s -->
+    <a href="http://bit.ly/2J8JfR6" target="_blank">Youtube, Hall-Effekt</a>
+  </li>
+  </ul>
+
+
+  <hr style="margin-top:12ex;">
+  <p>
+    Autor:  T. Jenni<br />
+    Letzte Änderung: 14. Mai 2021
+  </p>
+
+  <p style="text-align:center;">
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+  </p>
+
+  <p>
+    <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title" style="font-style: italic;">Einsteigerkurs für den BBC micro:bit</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/tjenni/microbit" property="cc:attributionName" rel="cc:attributionURL">T. Jenni, et al.</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.
+  </p>
+
+  </div>
+
+  </body>
+  </html>

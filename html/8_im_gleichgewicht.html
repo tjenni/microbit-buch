@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <title>Im Gleichgewicht</title>
+</head>
+
+<body>
+
+<div style="max-width:75ch;margin-left:10%;margin-right:5%;text-align:justify;line-height:150%;">
+
+  <h2 style="padding:0pt;margin-top:1em;margin-bottom:1em;color:seagreen;font-weight:bold;">Im Gleichgewicht</h2>
+
+  <p>
+    Du hast den Beschleunigungssensor schon in dem Kapitel <b style="color:seagreen;">Wo ist unten?</b> kennengelernt. Er wurde dazu verwendet zu bestimmen, wie der micro:bit bezüglich der Erde geneigt ist. In diesem Kapitel geht es darum, die Richtung
+    genauer zu bestimmen. Du kannst dir den Beschleunigungssensor wie ein Federpendel vorstellen. Ein Federpendel ist eine Spiralfeder, an der ein Gewicht befestigt ist, siehe Video 1.
+  </p>
+
+  <p style="text-align: center;">
+    <video width="800" controls="true"><source src="im_gleichgewicht/Federpendel_drehbar720.mov">im_gleichgewicht/Federpendel_drehbar720.mov</video>
+  </p>
+  <p style="text-align: center;"><i>
+    Video 1 – Federpendel als Neigungssensor
+  </i></p>
+
+
+  <p>
+    Wird das Pendel geneigt, rutscht die Masse nach unten und die Feder wird je nach Drehrichtung gedehnt oder gestaucht. Bring man an dem Pendel eine Skala an, kann man so die Neigung des Pendels bestimmen. Das Federpendel kann auch benutzt werden um Geschwindigkeisänderungen,
+    d.h. Beschleunigungen zu messen, siehe Video 2.
+  </p>
+
+
+  <p style="text-align: center;">
+    <video width="800" controls="true"><source src="im_gleichgewicht/Federpendel_beschleunigt720.mov">im_gleichgewicht/Federpendel_beschleunigt720.mov</video>
+  </p>
+  <p style="text-align: center;"><i>
+    Video 2 – Federpendel als Beschleunigungssensor
+  </i></p>
+
+
+  <p>
+    Der Beschleunigungssensor des micro:bit hat ist so ähnlich wie dieses Federpendel aufgebaut. Er besteht auch aus einer Masse, die an einer federnden Struktur angemacht ist. Das ganze ist jedoch so klein, dass es in das kleine schwarze Kästchen auf der
+    Rückseite passt, siehe Video 3.
+  </p>
+
+  <p style="text-align:center;">
+    <video width="800" controls="true"><source src="im_gleichgewicht/bosch.mp4">im_gleichgewicht/bosch.mp4</video>
+  </p>
+  <p style="text-align: center;"><i>
+    Video 3 – Aufbau eines Beschleunigungssensors (Bosch Mobility Solutions)
+  </i></p>
+
+
+
+  <p>
+    Im Beschleunigungssensor hat es drei Federpendel drin, welche die Beschleunigung in alle drei Raumachsen messen, siehe Abb. 1. Im Folgenden wirst du die Messwerte des Beschleunigungssensors in Richtung <i>x</i>-Achse auslesen und in der Konsole
+    darstellen lassen.
+  </p>
+
+  <p style="text-align: center;">
+    <img src="im_gleichgewicht/Accelerometer_Achsen.jpg" alt="" width="60%" role="presentation" class="img-responsive atto_image_button_text-bottom"><br>
+  </p>
+  <p style="text-align: center;"><i>
+    Abb. 1 – Achsen des Beschleunigungssensors relativ zum micro:bit.
+  </i></p>
+
+
+  <p>
+    Wenn der micro:bit per USB-Kabel mit dem PC verbunden ist, kann er Daten an diesen senden. Verwende dazu die Befehle unter dem Bereich <b>Fortgeschritten</b> und dem Unterbereich <b style="color:#07204D;">Serielle</b>. Der Befehl <b style="color:#07204D;">seriell Wert ausgeben x = y</b>        sendet einen Name-Wert-Paar an den PC. Im Video 3 ist gezeigt, wie in der Konsole angezeigt werden. Wichtig ist, dass man das Programm über WebUSB an den micro:bit sendet. Nur dann erscheint erscheint nachher die Schaltfläche <b>Konsole anzeigen Gerät</b>.
+  </p>
+
+
+  <p style="text-align:center;">
+    <video width="800" controls="true"><source src="im_gleichgewicht/ax_senden720.mov">im_gleichgewicht/ax_senden720.mov</video>
+  </p>
+  <p style="text-align: center;"><i>
+    Video 3 – Werte das Beschleunigungssensors an den PC senden.
+  </i></p>
+
+
+  <p>
+    In dem Diagramm können die, vom Beschleunigungssensor ausgegebenen Daten, betrachtet werden. Wenn du den micro:bit neigst, siehst du dass die Beschleunigungswerte zwischen ca. -1000 mg und +1000 mg liegen. Die Einheit mg steht für milli-g. Der Buchstabe
+    g steht für die Stärke der Erdbeschleunigung in Bodennähe.
+  </p>
+
+
+
+
+  <p>
+    Mit diesem Wissen ausgestattet, kannst du nun eine Wasserwaage programmieren. Mit einer Wasserwaage kann man zum Beispiel kontrollieren, ob ein Bild waagerecht aufgehängt wurde. Meistens besteht sie aus einem Aluminiumprofil, welches eine oder mehrere
+    Libellen hat. Eine Libelle ist ein, nicht vollständig mit Wasser gefülltes Glasröhrchen, siehe Abb. 2. Das Luftbläschen ist genau dann in der Mitte, wenn die Libelle und damit auch die Wasserwaage horizontal ausgerichtet ist. Je nach Neigung bewegt
+    sich das Luftbläschen auf die eine oder andere Seite.
+  </p>
+
+  <p style="text-align: center;">
+    <img src="im_gleichgewicht/wasserwaage_libelle.jpg" alt="" width="60%" />
+  </p>
+  <p style="text-align: center;"><i>
+    Abb. 2 – Libelle einer Wasserwaage (Igge / Wikimedia Commons)
+  </i></p>
+
+
+
+
+  <p>
+    Übernimm nun das Programm aus der Abb 3. Der Befehl <b style="color:#55328C;">Zeichne x y</b>, nimmt zwei Zahlen zwischen null und vier und schaltet die LED an der ensprechenden Position ein. Um die Werte des Beschleunigungssensors -1000 , ...
+    , +1000 auf den Bereich 4,3,2,1,0 abzubilden, benötigst du folgende Formel.
+  </p>
+
+  <p style="text-align:center;">
+    <i>x</i> = 2 - round(<i>ax</i>/400)
+  </p>
+
+  <p>
+    In der Abb. 3 ist das Programm gezeigt. Schreibe das Programm ab und teste es. Der Befehl <b style="color:#8725CD;">begrenze x zwischen y und z</b>, das die Variable x im Bereich zwischen y und z bleibt.
+  </p>
+
+  <p style="text-align: center;">
+    <img src="im_gleichgewicht/microbit-Wasserwaage.png" alt="" width="100%" />
+  </p>
+  <p style="text-align: center;"><i>
+    Abb. 3 – Programm für eine Wasserwaage
+  </i></p>
+
+
+
+
+  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
+    Aufgaben
+  </h4>
+
+  <ol>
+    <li style="margin-bottom:1em;">
+      Erweitere die Wasserwaage so, dass auch die Neigung entlang der y Achse berücksichtigt wird. Der LED-Punkt soll sich auch nach oben und unten bewegen.
+    </li>
+
+    <li style="margin-bottom:1em;">
+      Schliesse den Lautsprecher an den micro:bit an und programmiere eine Diebstahlsicherung. Diese sollte man durch Drücken auf A ein- bzw. ausschalten können. Wenn der micro:bit bewegt wird, soll ein Alarmsignal ertönen.
+    </li>
+
+  </ol>
+
+  <hr style="margin-top:12ex;">
+  <p>
+    Autor:  T. Jenni<br />
+    Letzte Änderung: 14. Mai 2021
+  </p>
+
+  <p style="text-align:center;">
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+  </p>
+
+  <p>
+    <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title" style="font-style: italic;">Einsteigerkurs für den BBC micro:bit</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/tjenni/microbit" property="cc:attributionName" rel="cc:attributionURL">T. Jenni, et al.</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.
+  </p>
+
+  </div>
+
+  </body>
+  </html>

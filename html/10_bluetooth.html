@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <title>Bluetooth</title>
+</head>
+
+<body>
+
+<div style="max-width:75ch;margin-left:10%;margin-right:5%;text-align:justify;line-height:150%;">
+  <h2 style="padding:0pt;margin-top:1em;margin-bottom:1em;color:seagreen;font-weight:bold;">Bluetooth LE</h2>
+
+  <p>
+    Der micro:bit kann, wie ein Mobiltelefon auch, Daten per Funk übertragen. Dabei werden elektrische Signale in elektromagnetisch Wellen umgewandelt. Diese Wellen breiten sich mit Lichtgeschwindigkeit, ca 300'000 km/s aus. Funkwellen, Radiowellen, Mikrowellen,
+    Infrarotstrahlung, sichtbares Licht, Röntgenstrahlung, usw. sind alles elektromagnetische Wellen. Der Unterschied liegt in der Frequenz bzw. der Wellenlänge, siehe Abb. 1.
+  </p>
+
+  <p style="text-align:center;">
+    <img src="bluetooth/EM-Spektrum.jpg" alt="" width="80%" />
+  </p>
+  <p style="text-align:center;"><i>
+    Abb. 1 –  Das Spektrum der elektromagnetischen Strahlung (Matt / Wikimedia Commons)
+  </i></p>
+
+
+  <p>
+    Der micro:bit verfügt über ein <b style="color:seagreen;">Bluetooth Low Energy</b>-Modul (BLE), welches im 2.4-GHz-Bereich sendet. Die Wellenlänge dieser Funkwellen beträgt ca. 13 cm. Wegen des geringen Stromverbrauchs ist Sendestärke nur schwach.
+    Bluetooth LE kann daher nur über kurze Distanzen bis zu zehn Metern übertragen. Der Datendurchsatz beträgt ungefähr 1 Mbit/s.
+  </p>
+
+
+  <p style="text-align:center;">
+    <img src="bluetooth/Bluetooth.png" alt="" width="40%" />
+  </p>
+  <p style="text-align:center;"><i>
+    Abb. 2 –  Bluetooth-Logo
+  </i></p>
+
+
+  <p style="text-align: left;">
+    Der Name <i>Bluetooth</i> ist von <i>Harald Blauzahn</i> abgeleitet, ein dänischer König des 10. Jh., der verfeindete Gruppen von Dänen und Norwegern vereinte. Es gibt viele Geräte, die miteinander über Bluetooth kommunizieren. Tastaturen, Computermäuse,
+    Kopfhörer, usw.
+  </p>
+
+
+  <p>
+    In dem Programm von Abb. 3, wird beim Tastendruck A ein Text über Bluetooth versandt. Alle micro:bit, welche in der Gruppe 1 sind, können diese Nachricht empfangen und auf dem Bildschirm anzeigen. Die Befehle <b style="color:#C230CD;">setze Gruppe x über Funk</b>,
+    <b style="color:#C230CD;">sende Zeichenfolge x über Funk</b> und <b style="color:#C230CD;">wenn Datenpaket empfangen x</b> findest du im Bereich <b style="color:#C230CD;">Funk</b>.
+  </p>
+
+  <p style="text-align:center;">
+    <img src="bluetooth/microbit-Bluetooth.png" alt="" width="100%" />
+  </p>
+  <p style="text-align:center;"><i>
+    Abb. 3 –  Programm zur Funkübertragung eines Strings.
+  </i></p>
+
+
+
+
+  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
+    Aufgaben
+  </h4>
+
+  <ol>
+    <li style="margin-bottom:1em;">
+        Schreibe ein Programm, welches den Bildschirm des Nachbarn zum Leuchten bringt, wenn man die Taste A drückt.
+    </li>
+
+    <li style="margin-bottom:1em;">
+        Schreibe ein Programm, welches Daten nur an bestimmte micro:bit überträgt. Führe dazu eine Variable ID ein. Jeder micro:bit in einer Gruppe soll eine andere ID haben.
+    </li>
+  </ol>
+
+
+  <hr style="margin-top:12ex;">
+  <p>
+    Autor:  T. Jenni<br />
+    Letzte Änderung: 14. Mai 2021
+  </p>
+
+  <p style="text-align:center;">
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+  </p>
+
+  <p>
+    <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title" style="font-style: italic;">Einsteigerkurs für den BBC micro:bit</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/tjenni/microbit" property="cc:attributionName" rel="cc:attributionURL">T. Jenni, et al.</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.
+  </p>
+
+  </div>
+
+  </body>
+  </html>
