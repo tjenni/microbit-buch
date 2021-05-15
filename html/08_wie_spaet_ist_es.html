@@ -14,7 +14,7 @@
 
   <p>
     Beim Bahnhof St. Gallen steht eine merkwürdige Uhr, welche die Zeit im Zweiersystem (Binärsystem) anzeigt, siehe Video 1. Im Zweiersystem gibt es nur zwei Zahlen, die null und die eins. Für den Computer, der mit elektrischen Signalen arbeitet, ist dieses
-    System besonders praktisch. So kann die Zahl null durch eine Spannung von null und die Zahl eins durch eine Spannung drei Volt codiert werden. In diesem Kapitel lernst du das Binärsystem kennen und zwischen dem Dezimal- und dem Binärsystem umrechnen.
+    System besonders praktisch. So kann die Zahl null durch eine Spannung von null Volt und die Zahl eins durch eine Spannung drei Volt codiert werden. In diesem Kapitel lernst du das Binärsystem kennen und zwischen dem Dezimal- und dem Binärsystem umrechnen.
   </p>
 
 
@@ -40,250 +40,240 @@
     Wenn du im Binärsystem von null aus in Einerschritten hochzählst, erhältst du Tab. 1.
   </p>
 
-  <table align="center" cellpadding="10">
-    <tbody>
-        <tr style="border-bottom:1px solid black;">
-            <td style="border-right:1px solid black;">Binärsystem</td>
-            <td>0</td>
-            <td>1</td>
-            <td>10</td>
-            <td>11</td>
-            <td>100</td>
-            <td>101</td>
-            <td>110</td>
-            <td>111</td>
-            <td>1000</td>
-        </tr>
-        <tr>
-            <td style="border-right:1px solid black;">Dezimalsystem</td>
-            <td style="text-align:center;">0</td>
-            <td style="text-align:center;">1</td>
-            <td style="text-align:center;">2</td>
-            <td style="text-align:center;">3</td>
-            <td style="text-align:center;">4</td>
-            <td style="text-align:center;">5</td>
-            <td style="text-align:center;">6</td>
-            <td style="text-align:center;">7</td>
-            <td style="text-align:center;">8</td>
-        </tr>
-    </tbody>
+
+
+  <table align="center" cellpadding="10" cellspacing="0" style="font-family:monospace;font-size:12pt;">
+  <tr>
+    <td style="border-bottom:1px solid black;">
+      Dezimalsystem
+    </td>
+    <td style="border-bottom:1px solid black;">
+      Binärsystem
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align:right;">0</td>
+    <td style="text-align:right;">0</td>
+  </tr>
+  <tr>
+    <td style="text-align:right;">1</td>
+    <td style="text-align:right;">1</td>
+  </tr>
+  <tr>
+    <td style="text-align:right;">2</td>
+    <td style="text-align:right;">10</td>
+  </tr>
+  <tr>
+    <td style="text-align:right;">3</td>
+    <td style="text-align:right;">11</td>
+  </tr>
+  <tr>
+    <td style="text-align:right;">4</td>
+    <td style="text-align:right;">100</td>
+  </tr>
+  <tr>
+    <td style="text-align:right;">5</td>
+    <td style="text-align:right;">101</td>
+  </tr>
+  <tr>
+    <td style="text-align:right;">6</td>
+    <td style="text-align:right;">110</td>
+  </tr>
+  <tr>
+    <td style="text-align:right;">7</td>
+    <td style="text-align:right;">111</td>
+  </tr>
+  <tr>
+    <td style="text-align:right;">8</td>
+    <td style="text-align:right;">1000</td>
+  </tr>
+  <tr>
+    <td style="text-align:right;">9</td>
+    <td style="text-align:right;">1001</td>
+  </tr>
+  <tr>
+    <td style="text-align:right;">10</td>
+    <td style="text-align:right;">1010</td>
+  </tr>
+  <tr>
+    <td style="text-align:right;">11</td>
+    <td style="text-align:right;">1011</td>
+  </tr>
+  <tr>
+    <td style="text-align:right;">12</td>
+    <td style="text-align:right;">1100</td>
+  </tr>
+  <tr>
+    <td style="text-align:right;">13</td>
+    <td style="text-align:right;">1011</td>
+  </tr>
+  <tr>
+    <td style="text-align:right;">14</td>
+    <td style="text-align:right;">1110</td>
+  </tr>
+  <tr>
+    <td style="text-align:right;">15</td>
+    <td style="text-align:right;">1111</td>
+  </tr>
   </table>
 
   <p style="text-align: center;"><i>
-    Tab. 1 – Die natürlichen Zahlen von null bis sieben im Binärsystem
+    Tab. 1 – Die natürlichen Zahlen von 0 bis 15 im Binärsystem.
   </i></p>
 
 
   <p>
-    Im Binärsystem hat, von rechts nach links betrachtet, die erste Ziffer die Wertigkeit eins, die zweite die Wertigkeit zwei, die dritte vier und die vierte Ziffer die Wertigkeit acht. In Tab. 2 sind die Wertigkeiten der ersten acht Stellen aufgelistet.
+    Im Dezimalsystem hat (von rechts nach links) die erste Stelle die Wertigkeit 1, die zweite Stelle die Wertigkeit 10 und die dritte Stelle die Wertigkeit 100. Die Zahl $132$ lässt sich wie folgt schreiben.
+      132  = 1 &middot; 100 + 3 &middot; 10 + 2 &middot; 1
+  </p>
+
+  <p style="text-align:center;">
+    132  = 1 &middot; 100 + 3 &middot; 10 + 2 &middot; 1
+  </p>
+
+  <p>
+    Im Binärsystem sind die Wertigkeiten anders. Die erste Ziffer (von rechts nach links) hat die Wertigkeit 1, die zweite die Wertigkeit 2, die dritte 4 und die vierte Ziffer die Wertigkeit 8. In Tab. 2 sind die Wertigkeiten der ersten acht Stellen aufgelistet.
     Wenn du die Wertigkeiten mit Zweierpotenzen angibts, wird es klarer, wie diese zustandekommen.
   </p>
 
   <p style="text-align:center;">
   </p>
-  <table align="center" cellpadding="10">
+  <table align="center" cellpadding="10" cellspacing="0" style="font-family:monospace;font-size:12pt;">
 
-    <tbody>
-        <tr style="border-bottom:1px solid black;">
-            <td style="border-right:1px solid black;">Wertigkeiten</td>
-            <td style="text-align:center;">128</td>
-            <td style="text-align:center;">64</td>
-            <td style="text-align:center;">32</td>
-            <td style="text-align:center;">16</td>
-            <td style="text-align:center;">8</td>
-            <td style="text-align:center;">4</td>
-            <td style="text-align:center;">2</td>
-            <td style="text-align:center;">1</td>
-        </tr>
-        <tr>
-            <td style="border-right:1px solid black;">Potenzschreibweise</td>
-            <td style="text-align:center;">2<sup>7</sup></td>
-            <td style="text-align:center;">2<sup>6</sup></td>
-            <td style="text-align:center;">2<sup>5</sup></td>
-            <td style="text-align:center;">2<sup>4</sup></td>
-            <td style="text-align:center;">2<sup>3</sup></td>
-            <td style="text-align:center;">2<sup>2</sup></td>
-            <td style="text-align:center;">2<sup>1</sup></td>
-            <td style="text-align:center;">2<sup>0</sup></td>
-        </tr>
-    </tbody>
+    <tr style="border-bottom:1px solid black;">
+    <td style="border-right:1px solid black;">Stelle</td>
+      <td style="text-align:center;">8.</td>
+      <td style="text-align:center;">7.</td>
+      <td style="text-align:center;">6.</td>
+      <td style="text-align:center;">5.</td>
+      <td style="text-align:center;">4.</td>
+      <td style="text-align:center;">3.</td>
+      <td style="text-align:center;">2.</td>
+      <td style="text-align:center;">1.</td>
+    </tr>
+    <tr style="border-bottom:1px solid black;">
+    <td style="border-right:1px solid black;">Wertigkeiten</td>
+      <td style="text-align:center;">128</td>
+      <td style="text-align:center;">64</td>
+      <td style="text-align:center;">32</td>
+      <td style="text-align:center;">16</td>
+      <td style="text-align:center;">8</td>
+      <td style="text-align:center;">4</td>
+      <td style="text-align:center;">2</td>
+      <td style="text-align:center;">1</td>
+    </tr>
+    <tr>
+    <td style="border-right:1px solid black;">Potenzschreibweise</td>
+      <td style="text-align:center;">2<sup>7</sup></td>
+      <td style="text-align:center;">2<sup>6</sup></td>
+      <td style="text-align:center;">2<sup>5</sup></td>
+      <td style="text-align:center;">2<sup>4</sup></td>
+      <td style="text-align:center;">2<sup>3</sup></td>
+      <td style="text-align:center;">2<sup>2</sup></td>
+      <td style="text-align:center;">2<sup>1</sup></td>
+      <td style="text-align:center;">2<sup>0</sup></td>
+    </tr>
   </table>
-  <p></p>
 
   <p style="text-align: center;"><i>
-    Tab. 2 – Wertigkeiten der ersten acht Binärstellen
+    Tab. 2 – Wertigkeiten der ersten acht Binärstellen von rechts 1. Stelle nach links 8. Stelle.
   </i></p>
 
   <p style="text-align:center;border-left:4px solid black;">
-    <br> Die Wertigkeit der <i>n</i>-ten Stelle im Binärsystem beträgt 2<sup><i>n</i>-1</sup>.<br>
+    <br> Die Wertigkeit der <i>n</i>-ten Stelle (von rechts nach links) einer Binärzahl beträgt 2<sup><i>n</i>-1</sup>.<br>
     <br>
   </p>
 
 
   <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
-    Umrechnen
+    Umrechnen vom Binär- ins Dezimalsystem
   </h4>
 
 
   <p>
-    Möchtest du vom Binärsystem ins Dezimalsystem umrechnen, mussst du dir die Wertigkeiten der einzelnen Ziffern klar machen. Zum Beispiel die Binärzahl <b style="color:seagreen;">1101</b> ist im Dezimalsystem die Zahl <b style="color:seagreen;">13</b>,
+    Möchtest du vom Binär- ins Dezimalsystem umrechnen, musst du dir die Wertigkeiten der einzelnen Ziffern klar machen. Zum Beispiel entspricht Binärzahl <b style="color:seagreen;">1101</b> im Dezimalsystem der Zahl <b style="color:seagreen;">13</b>,
     siebe Tab. 3.
   </p>
 
-  <p style="text-align:center;">
-  </p>
-  <table align="center" cellpadding="10">
-
-    <tbody>
-        <tr style="border-bottom:1px solid black;">
-            <td style="border-right:1px solid black;">Binärzahl</td>
-            <td style="text-align:center;color:seagreen;"><b>1</b></td>
-            <td style="text-align:center;color:seagreen;"><b>1</b></td>
-            <td style="text-align:center;color:seagreen;"><b>0</b></td>
-            <td style="text-align:center;color:seagreen;"><b>1</b></td>
-        </tr>
-        <tr>
-            <td style="border-right:1px solid black;">Wertigkeiten</td>
-            <td style="text-align:center;">8</td>
-            <td style="text-align:center;">4</td>
-            <td style="text-align:center;">2</td>
-            <td style="text-align:center;">1</td>
-        </tr>
-        <tr>
-            <td colspan="5" style="text-align:center;margin-top:0.5em;">
-                8·<b style="color:seagreen;">1</b> + 4·<b style="color:seagreen;">1</b> + 2·<b style="color:seagreen;">0</b> + 1·<b style="color:seagreen;">1</b> = <b style="color:seagreen;border-bottom:double;">13</b>
-            </td>
-        </tr>
-    </tbody>
+  <table align="center" cellpadding="10" style="font-family:monospace;font-size:12pt;">
+  <tr style="border-bottom:1px solid black;">
+      <td style="border-right:1px solid black;text-align:right;">Binärzahl</td>
+      <td style="text-align:center;"><b>1</b></td>
+      <td style="text-align:center;"><b>1</b></td>
+      <td style="text-align:center;"><b>0</b></td>
+      <td style="text-align:center;"><b>1</b></td>
+  </tr>
+  <tr>
+      <td style="border-right:1px solid black;text-align:right;">Wertigkeiten</td>
+      <td style="text-align:center;">8</td>
+      <td style="text-align:center;">4</td>
+      <td style="text-align:center;">2</td>
+      <td style="text-align:center;">1</td>
+  </tr>
+  <tr>
+      <td colspan="5" style="text-align:center;padding-top:1em;">
+        (1101)<sub>2</sub> = ( 8·<b>1</b> + 4·<b>1</b> + 2·<b>0</b> + 1·<b>1</b> )<sub>10</sub> = <span style="padding-bottom:0.5em;border-bottom:double;">(13)<sub>10</sub></span>
+      </td>
+  </tr>
   </table>
-
-  <span></span>
-
-  <p></p>
 
   <p style="text-align: center;"><i>
     Tab. 3 – Umrechnung der Binärzahl 1101 ins Dezimalsystem
   </i></p>
 
-
-
-  <p>
-    Möchtest du umgekehrt vom Dezimalsystem ins Binärsystem umrechnen, führst du eine Reihe von Ganzzahldivisionen durch. Lies am Schluss die Reste der Divisionen von unten nach oben, um die Binärzahl zu erhalten.
-  </p>
-
-  <p style="text-align:center;">
-  </p>
-  <table align="center" cellpadding="5">
-    <tbody>
-        <tr>
-            <td style="text-align:right;">13 / 2</td>
-            <td>=</td>
-            <td style="text-align:center;">6</td>
-            <td>Rest</td>
-            <td style="text-align:center;"><b style="color:seagreen;">1</b></td>
-            <td rowspan="4"><img src="wie_spaet_ist_es/arrowup.jpg" alt="" role="presentation" style="height:8em;" /></td>
-        </tr>
-        <tr>
-            <td style="text-align:right;">6 / 2</td>
-            <td>=</td>
-            <td style="text-align:center;">3</td>
-            <td>Rest</td>
-            <td style="text-align:center;"><b style="color:seagreen;">0</b></td>
-        </tr>
-        <tr>
-            <td style="text-align:right;">3 / 2</td>
-            <td>=</td>
-            <td style="text-align:center;">1</td>
-            <td>Rest</td>
-            <td style="text-align:center;"><b style="color:seagreen;">1</b></td>
-        </tr>
-        <tr>
-            <td style="text-align:right;">1 / 2</td>
-            <td>=</td>
-            <td style="text-align:center;">0</td>
-            <td>Rest</td>
-            <td style="text-align:center;"><b style="color:seagreen;">1</b></td>
-        </tr>
-    </tbody>
-  </table>
-  <p></p>
-
-
+  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
+    Umrechnen vom Dezimal- ins Binärsystem
+  </h4>
 
   <p>
-    Warum dieses Schema zur Umrechnug funktioniert erkennst du, wenn du die Ganzzahldivisonen anders aufschreibst.
+    Möchtest du umgekehrt eine Zahl vom Dezimalsystem ins Binärsystem umrechnen probierst du Schrittweise aus, ob die Summen der Wertigkeiten der Binärstellen kleiner oder gleich der gesuchten Zahl sind, siehe Tab. 4.
   </p>
 
-  <p style="text-align:center">
+  <p>
+    Es soll die Zahl 53 ins Binärsystem umgerechnet werden.
+    Die Wertigkeit der 7. Binärstelle ist 64. Das ist grösser als 53 und daher ist diese Binärstelle 0. Die 6. Binärstelle hat die Wertigkeit 32. Das ist kleiner als 53 und daher ist diese Stelle eine 1. Die 5. Binärstelle hat die Wertigkeit 16. Wir prüfen nach: 32 + 16 = 48 < 53. Somit ist die 5. Binärstelle ebenfalls eine 1. Die Rechnung für die 4. Binärstelle lautet 32 + 16 + 8 = 56 > 53. Somit muss die 4. Binärstelle eine 0 sein. Die dritte Binärstelle ergibt: 32 + 16 + 4 = 52. Das ist ok. Es fehlt nur noch eine 1. Somit lautet das Resultat 110101.
   </p>
-  <table align="center" cellpadding="5">
-    <tbody>
-        <tr>
-            <td style="text-align:center;">13/2 = 6 Rest 1  ⇔  13 = <b style="color:#2E8B57;">6 · 2 + 1</b></td>
-        </tr>
-        <tr>
-            <td style="text-align:center;">6/2 = 3 Rest 0  ⇔  6 = <b style="color:#33658A;">3 · 2 + 0</b></td>
-        </tr>
-        <tr>
-            <td style="text-align:center;">3/2 = 1 Rest 1  ⇔  3 = <b style="color:#E9D758;">1 · 2 + 1</b></td>
-        </tr>
-        <tr>
-            <td style="text-align:center;">1/2 = 0 Rest 1  ⇔  1 = <b style="color:#FF8552;">0 · 2 + 1</b></td>
-        </tr>
-    </tbody>
+
+  <table align="center" cellpadding="10" cellspacing="0" style="font-family:monospace;font-size:12pt;">
+  <td style="border-right:1px solid black;text-align:right;">Stelle</td>
+    <td style="text-align:center;">7.</td>
+    <td style="text-align:center;">6.</td>
+    <td style="text-align:center;">5.</td>
+    <td style="text-align:center;">4.</td>
+    <td style="text-align:center;">3.</td>
+    <td style="text-align:center;">2.</td>
+    <td style="text-align:center;">1.</td>
+  </tr>
+  <tr>
+      <td style="border-right:1px solid black;text-align:right;">Wertigkeiten</td>
+      <td style="text-align:center;">64</td>
+      <td style="text-align:center;">32</td>
+      <td style="text-align:center;">16</td>
+      <td style="text-align:center;">8</td>
+      <td style="text-align:center;">4</td>
+      <td style="text-align:center;">2</td>
+      <td style="text-align:center;">1</td>
+  </tr>
+  <tr>
+      <td style="border-right:1px solid black;text-align:right;">53 = </td>
+      <td style="text-align:center;">0</td>
+      <td style="text-align:center;">1</td>
+      <td style="text-align:center;">1</td>
+      <td style="text-align:center;">0</td>
+      <td style="text-align:center;">1</td>
+      <td style="text-align:center;">0</td>
+      <td style="text-align:center;">1</td>
+  </tr>
+  <tr>
+    <td colspan="6" style="text-align:center;">
+        (53)<sub>10</sub> =  <span style="padding-bottom:4pt;border-bottom:double;">( 110101 )<sub>2</sub></span>
+    </td>
+  </tr>
   </table>
 
-  <p></p>
-
-
-  <p>
-    Mit diesem Wissen, kannst du nun die Zahl 13 wie folgt umschreiben
-  </p>
-
-  <p style="text-align:center">
-
-  </p>
-  <table align="center" cellpadding="5">
-    <tbody>
-        <tr>
-            <td>13 </td>
-            <td>= <b style="color:#2E8B57;">6 · 2 + 1</b></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>= (<b style="color:#33658A;">3 · 2 + 0</b>) · 2 + 1 · <b style="color:#2E8B57;">1</b></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>= 3 · 4 + 2 · <b style="color:#33658A;">0</b> + 1 · <b style="color:#2E8B57;">1</b></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>= (<b style="color:#E9D758;">1 · 2 + 1</b>) · 4 + 2 · <b style="color:#33658A;">0</b> + 1 · <b style="color:#2E8B57;">1</b></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>= 1 · 8 + 4 · <b style="color:#E9D758;">1</b> + 2 · <b style="color:#33658A;">0</b> + 1 · <b style="color:#2E8B57;">1</b></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>= (<b style="color:#FF8552;">0 · 2 + 1</b>) · 8 + 4 · <b style="color:#E9D758;">1</b> + 2 · <b style="color:#33658A;">0</b> + 1 · <b style="color:#2E8B57;">1</b></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td>= 8 · <b style="color:#FF8552;">1</b> + 4 · <b style="color:#E9D758;">1</b> + 2 · <b style="color:#33658A;">0</b> + 1 · <b style="color:#2E8B57;">1</b></td>
-        </tr>
-    </tbody>
-  </table>
-
-
-  <p></p>
-
-
-  <p>
-    Durch die Farben der Ziffern erkennst du, dass die erste Ziffer der Binärzahl durch die erste Division zustande gekommen ist und die zweite Binärziffer durch die zweite Division, usw.
-  </p>
-
+  <p style="text-align: center;"><i>
+    Tab. 4 – Umrechnung der Dezimalzahl 53 ins Binärsystem.
+  </i></p>
 
 
 
@@ -348,6 +338,123 @@
   </i></p>
 
 
+  <p>
+    Das Programm verwendet eine andere Möglichkeit um eine Zahl vom Dezimal- ins Binärsystem umzuwandeln. Es werden eine Reihe von Ganzzahldivisionen durch 2 ausgeführt. Der Rest entspricht dann jeweils den Stellen der Binärzahl.
+  </p>
+
+  <p>
+    Möchte man die Zahl 13 ins Binärsystem umwandeln, teilt man sie durch 2. Das ergibt 6 Rest 1. Der Rest 1 besagt, dass es sich bei 13 um eine ungerade Zahl handelt. Daher wird die 1. Stelle der Binärzahl eine 1 sein.
+  </p>
+
+  <p style="text-align:center;">
+  </p>
+  <table align="center" cellpadding="5" cellspacing="0" style="font-family:monospace;font-size:12pt;">
+  <tr>
+      <td style="text-align:right;padding-right:2em;">1. Stelle</td>
+      <td style="text-align:right;">13 : 2</td>
+      <td>=</td>
+      <td style="text-align:center;">6</td>
+      <td>Rest</td>
+      <td style="text-align:center;"><b>1</b></td>
+  </tr>
+  <tr>
+    <td style="text-align:right;padding-right:2em;">2. Stelle</td>
+    <td style="text-align:right;">6 : 2</td>
+      <td>=</td>
+      <td style="text-align:center;">3</td>
+      <td>Rest</td>
+      <td style="text-align:center;"><b>0</b></td>
+  </tr>
+  <tr>
+    <td style="text-align:right;padding-right:2em;">3. Stelle</td>
+    <td style="text-align:right;">3 : 2</td>
+      <td>=</td>
+      <td style="text-align:center;">1</td>
+      <td>Rest</td>
+      <td style="text-align:center;"><b>1</b></td>
+  </tr>
+  <tr>
+    <td style="text-align:right;padding-right:2em;">4. Stelle</td>
+    <td style="text-align:right;">1 : 2</td>
+      <td>=</td>
+      <td style="text-align:center;">0</td>
+      <td>Rest</td>
+      <td style="text-align:center;"><b>1</b></td>
+  </tr>
+  <tr>
+    <td colspan="6" style="text-align:center;">
+        (13)<sub>10</sub> =  <span style="padding-bottom:0.5em;border-bottom:double;">(1101)<sub>2</sub></span>
+    </td>
+  </tr>
+  </table>
+  <p></p>
+
+
+
+  <p>
+    Weshalb dieses Schema zur Umrechnug funktioniert erkennst du, wenn du die Ganzzahldivisonen anders aufschreibst.
+  </p>
+
+  <table align="center" cellpadding="5" cellspacing="0" style="font-family:monospace;font-size:12pt;">
+  <tr>
+      <td style="text-align:center;">13 = <b style="color:#2E8B57;">6 · 2 + 1</b></td>
+  </tr>
+  <tr>
+      <td style="text-align:center;">6 = <b style="color:#33658A;">3 · 2 + 0</b></td>
+  </tr>
+  <tr>
+      <td style="text-align:center;">3 = <b style="color:#E9D758;">1 · 2 + 1</b></td>
+  </tr>
+  <tr>
+      <td style="text-align:center;">1 = <b style="color:#FF8552;">0 · 2 + 1</b></td>
+  </tr>
+  </table>
+
+  <p></p>
+
+
+  <p>
+    Mit diesem Wissen, kannst du nun die Zahl 13 wie folgt umschreiben
+  </p>
+
+  <p style="text-align:center">
+
+  </p>
+  <table align="center" cellpadding="5" cellspacing="0" style="font-family:monospace;font-size:12pt;">
+    <tbody>
+        <tr>
+            <td>(13)<sub>10</sub> </td>
+            <td>= <b style="color:#2E8B57;">6 · 2 + 1</b></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>= <b style="color:#2E8B57;"><b style="color:#33658A;">(3 · 2 + 0)</b> · 2 + 1</b></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>= <b style="color:#2E8B57;"><b style="color:#33658A;">(<b style="color:#E9D758;">(1 · 2 + 1)</b> · 2 + 0)</b> · 2 + 1</b></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>= <b style="color:#2E8B57;"><b style="color:#33658A;">(<b style="color:#E9D758;">(<b style="color:#FF8552;">(0 · 2 + 1)</b> · 2 + 1)</b> · 2 + 0)</b> · 2 + 1</b></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>= 8 · <b style="color:#FF8552;">1</b> + 4 · <b style="color:#E9D758;">1</b> + 2 · <b style="color:#33658A;">0</b> + 1 · <b style="color:#2E8B57;">1</b></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>= (<b style="color:#FF8552;">1</b> <b style="color:#E9D758;">1</b> <b style="color:#33658A;">0</b>  <b style="color:#2E8B57;">1</b>)<sub>2</sub>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p>
+    Durch die Farben der Ziffern erkennst du, dass die 1. Binärstelle durch die erste Division und die 2. Binärstelle durch die zweite Division, usw. entstanden sind.
+  </p>
+
+
   <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
     Aufgaben
   </h4>
@@ -382,7 +489,8 @@
     </li>
   </ul>
 
-  </div>
+
+
 
 
   <hr style="margin-top:12ex;">
