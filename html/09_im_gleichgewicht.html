@@ -14,20 +14,37 @@
 
   <p>
     Du hast den Beschleunigungssensor schon in dem Kapitel <b style="color:seagreen;">Wo ist unten?</b> kennengelernt. Er wurde dazu verwendet zu bestimmen, wie der micro:bit bezüglich der Erde geneigt ist. In diesem Kapitel geht es darum, die Richtung
-    genauer zu bestimmen. Du kannst dir den Beschleunigungssensor wie ein Federpendel vorstellen. Ein Federpendel ist eine Spiralfeder, an der ein Gewicht befestigt ist, siehe Video 1.
+    genauer zu bestimmen.
   </p>
+
+
+  <p>
+    Ein verständliches Modell für einen Beschleunigungssensor ist eine Masse, welche an eine Spiralfeder gehängt wurde. In Abb. 1 siehst du eine rote Kugel, welche in dem Glas an einer Feder aufgehängt wurde. Steht das Glas aufrecht (links), so wird die Masse von der Schwerkraft nach unten gezogen und die Feder dehnt sich aus. Liegt das Glas (rechts), so entspannt sich die Feder und nimmt in ihre neutrale Länge an. Anhand der Ausdehnung der Feder lässt sich so die Beschleunigung ermitteln.
+  </p>
+
+
+  <p style="text-align: center;">
+    <img src="im_gleichgewicht/accelerometer_aufbau.jpg" alt="" width="80%" ><br>
+  </p>
+  <p style="text-align: center;"><i>
+    Abb. 1 – Prinzip eines Beschleunigungssensors. (Bild: T. Jenni)
+  </i></p>
+
+  <p>
+    Wie sich dieser Beschleunigungssensor verhält wenn man ihn kippt, siehst du im folgenden Video 1. Wird das Pendel geneigt, rutscht die Masse nach unten und die Feder wird je nach Drehrichtung gedehnt oder gestaucht. Bring man an dem Pendel eine Skala an, kann man so die Neigung des Pendels bestimmen.
+  </p>
+
 
   <p style="text-align: center;">
     <video width="800" controls="true"><source src="im_gleichgewicht/Federpendel_drehbar720.mov">im_gleichgewicht/Federpendel_drehbar720.mov</video>
   </p>
   <p style="text-align: center;"><i>
-    Video 1 – Federpendel als Neigungssensor
+    Video 1 – Federpendel als Neigungssensor (Video: T. Jenni)
   </i></p>
 
 
   <p>
-    Wird das Pendel geneigt, rutscht die Masse nach unten und die Feder wird je nach Drehrichtung gedehnt oder gestaucht. Bring man an dem Pendel eine Skala an, kann man so die Neigung des Pendels bestimmen. Das Federpendel kann auch benutzt werden um Geschwindigkeisänderungen,
-    d.h. Beschleunigungen zu messen, siehe Video 2.
+   Das Federpendel kann auch benutzt werden um Geschwindigkeitsänderungen, d.h. Beschleunigungen zu messen, siehe Video 2. Insbesondere lässt sich so feststellen ob der Sensor geschüttelt (oder gerührt) wird.
   </p>
 
 
@@ -35,13 +52,24 @@
     <video width="800" controls="true"><source src="im_gleichgewicht/Federpendel_beschleunigt720.mov">im_gleichgewicht/Federpendel_beschleunigt720.mov</video>
   </p>
   <p style="text-align: center;"><i>
-    Video 2 – Federpendel als Beschleunigungssensor
+    Video 2 – Federpendel als Beschleunigungssensor (Video: T. Jenni)
   </i></p>
 
 
   <p>
-    Der Beschleunigungssensor des micro:bit hat ist so ähnlich wie dieses Federpendel aufgebaut. Er besteht auch aus einer Masse, die an einer federnden Struktur angemacht ist. Das ganze ist jedoch so klein, dass es in das kleine schwarze Kästchen auf der
-    Rückseite passt, siehe Video 3.
+    Der Beschleunigungssensor kann nur die Beschleunigung in einer Richtung messen: senkrecht nach oben oder nach unten. Wenn das Gehäuse nach links oder nach hinten bewegt wird, ändert sich die Position der Masse nicht. Will man also die Beschleunigung in jeder Raumrichtung messen, so muss man drei solcher Sensoren kombinieren, wobei die einzelnen Messgeräte senkrecht zueinander stehen sollen, siehe Abb. 2.
+  </p>
+
+  <p style="text-align: center;">
+    <img src="im_gleichgewicht/accelerometer_aufbau2.jpg" alt="" width="80%" ><br>
+  </p>
+  <p style="text-align: center;"><i>
+    Abb. 2 – Aufbau eines 3-Achsen-Beschleunigungssensors. (Bild: T. Jenni)
+  </i></p>
+
+
+  <p>
+    Der Beschleunigungssensor des micro:bit ist so ähnlich aufgebaut. Er besteht auch aus einer Masse, die an einer federnden Struktur angemacht ist. Das ganze ist jedoch so klein, dass es in das kleine schwarze Kästchen auf der Rückseite passt, siehe Video 3.
   </p>
 
   <p style="text-align:center;">
@@ -54,20 +82,19 @@
 
 
   <p>
-    Im Beschleunigungssensor hat es drei Federpendel drin, welche die Beschleunigung in alle drei Raumachsen messen, siehe Abb. 1. Im Folgenden wirst du die Messwerte des Beschleunigungssensors in Richtung <i>x</i>-Achse auslesen und in der Konsole
-    darstellen lassen.
+    Die Orientierung der drei Sensorenachsen x, y und z beim micro:bit ist in  Abb. 3 gezeigt. Im Folgenden wirst du die Messwerte des Beschleunigungssensors in Richtung <i>x</i>-Achse auslesen und in der Konsole darstellen lassen.
   </p>
 
   <p style="text-align: center;">
     <img src="im_gleichgewicht/Accelerometer_Achsen.jpg" alt="" width="60%" role="presentation" class="img-responsive atto_image_button_text-bottom"><br>
   </p>
   <p style="text-align: center;"><i>
-    Abb. 1 – Achsen des Beschleunigungssensors relativ zum micro:bit.
+    Abb. 3 – Achsen des Beschleunigungssensors relativ zum micro:bit.
   </i></p>
 
 
   <p>
-    Wenn der micro:bit per USB-Kabel mit dem PC verbunden ist, kann er Daten an diesen senden. Verwende dazu die Befehle unter dem Bereich <b>Fortgeschritten</b> und dem Unterbereich <b style="color:#07204D;">Serielle</b>. Der Befehl <b style="color:#07204D;">seriell Wert ausgeben x = y</b>        sendet einen Name-Wert-Paar an den PC. Im Video 3 ist gezeigt, wie in der Konsole angezeigt werden. Wichtig ist, dass man das Programm über WebUSB an den micro:bit sendet. Nur dann erscheint erscheint nachher die Schaltfläche <b>Konsole anzeigen Gerät</b>.
+    Wenn der micro:bit per USB-Kabel mit dem PC verbunden ist, kann er Daten an diesen senden. Verwende dazu die Befehle unter dem Bereich <b>Fortgeschritten</b> und dem Unterbereich <b style="color:#07204D;">Serielle</b>. Der Befehl <b style="color:#07204D;">seriell Wert ausgeben x = y</b> sendet einen Name-Wert-Paar an den PC. Im Video 3 ist gezeigt, wie in der Konsole angezeigt werden. Wichtig ist, dass man das Programm über WebUSB an den micro:bit sendet. Nur dann erscheint erscheint nachher die Schaltfläche <b>Konsole anzeigen Gerät</b>.
   </p>
 
 
@@ -75,7 +102,7 @@
     <video width="800" controls="true"><source src="im_gleichgewicht/ax_senden720.mov">im_gleichgewicht/ax_senden720.mov</video>
   </p>
   <p style="text-align: center;"><i>
-    Video 3 – Werte das Beschleunigungssensors an den PC senden.
+    Video 4 – Werte das Beschleunigungssensors an den PC senden.
   </i></p>
 
 
@@ -83,8 +110,6 @@
     In dem Diagramm können die, vom Beschleunigungssensor ausgegebenen Daten, betrachtet werden. Wenn du den micro:bit neigst, siehst du dass die Beschleunigungswerte zwischen ca. -1000 mg und +1000 mg liegen. Die Einheit mg steht für milli-g. Der Buchstabe
     g steht für die Stärke der Erdbeschleunigung in Bodennähe.
   </p>
-
-
 
 
   <p>
@@ -97,14 +122,14 @@
     <img src="im_gleichgewicht/wasserwaage_libelle.jpg" alt="" width="60%" />
   </p>
   <p style="text-align: center;"><i>
-    Abb. 2 – Libelle einer Wasserwaage (Igge / Wikimedia Commons)
+    Abb. 4 – Libelle einer Wasserwaage (Igge / Wikimedia Commons)
   </i></p>
 
 
 
 
   <p>
-    Übernimm nun das Programm aus der Abb 3. Der Befehl <b style="color:#55328C;">Zeichne x y</b>, nimmt zwei Zahlen zwischen null und vier und schaltet die LED an der ensprechenden Position ein. Um die Werte des Beschleunigungssensors -1000 , ...
+    Übernimm nun das Programm aus der Abb 5. Der Befehl <b style="color:#55328C;">Zeichne x y</b>, nimmt zwei Zahlen zwischen null und vier und schaltet die LED an der ensprechenden Position ein. Um die Werte des Beschleunigungssensors -1000 , ...
     , +1000 auf den Bereich 4,3,2,1,0 abzubilden, benötigst du folgende Formel.
   </p>
 
@@ -113,14 +138,14 @@
   </p>
 
   <p>
-    In der Abb. 3 ist das Programm gezeigt. Schreibe das Programm ab und teste es. Der Befehl <b style="color:#8725CD;">begrenze x zwischen y und z</b>, das die Variable x im Bereich zwischen y und z bleibt.
+    In der Abb. 5 ist das Programm gezeigt. Schreibe das Programm ab und teste es. Der Befehl <b style="color:#8725CD;">begrenze x zwischen y und z</b>, das die Variable x im Bereich zwischen y und z bleibt.
   </p>
 
   <p style="text-align: center;">
     <img src="im_gleichgewicht/microbit-Wasserwaage.png" alt="" width="100%" />
   </p>
   <p style="text-align: center;"><i>
-    Abb. 3 – Programm für eine Wasserwaage
+    Abb. 5 – Programm für eine Wasserwaage
   </i></p>
 
 
