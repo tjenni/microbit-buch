@@ -84,3 +84,23 @@ div.pt-book em.grundlagen{
   font-style: normal;
   color:#1e90ff;
 }
+div.pt-book em.variablen{
+  font-weight:bold;
+  font-style: normal;
+  color:#dc143c;
+}
+div.pt-book em.eingabe{
+  font-weight:bold;
+  font-style: normal;
+  color:#d400d4;
+}
+div.pt-book em.logik{
+  font-weight:bold;
+  font-style: normal;
+  color:#00a4a6;
+}
+div.pt-book em.LED{
+  font-weight:bold;
+  font-style: normal;
+  color:#522784;
+}

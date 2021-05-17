@@ -8,100 +8,112 @@
 
 <body>
 
-<div style="max-width:75ch;margin-left:10%;margin-right:5%;text-align:justify;line-height:150%;">
+<div class="pt-book">
 
-  <h2 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
-    Licht an, Licht aus
-  </h2>
-
-  <p>
-    In diesem Kapitel wirst du aus dem micro:bit eine kleine Lampe basteln. Die Taste A soll der Lichtschalter sein. Die Lampe hat zwei Zustände, nämlich <span style="color:seagreen;">Licht an</span> und <span style="color:seagreen;">Licht aus</span>, siehe Abb. 1. Zu Beginn ist man im Zustand <span style="color:seagreen;">Licht aus</span>. Drückt man dann die Taste A, wechselt die Lampe in den Zustand <span style="color:seagreen;">Licht an</span>. Drückt man wieder auf die Taste A, wechselt die Lampe wieder in den Zustand <span style="color:seagreen;">Licht aus</span>.
-  </p>
-
-  <p style="text-align: center;">
-    <img src="licht_an_licht_aus/Zustandsdiagramm_Licht.jpg" alt="" width="100%">
-  </p>
-
-  <p style="text-align: center;"><i>
-    Abb. 1 – Zustandsgraf für die Lampe (Bild: T. Jenni)
-  </i></p>
-
-  <p>
-    Da der Computer gut mit Zahlen umgehen kann, versehen wir die Zustände mit Zahlen. Zustand <span style="color:seagreen;">Licht aus</span> soll mit der Zahl 1 und Zustand <span style="color:seagreen;">Licht an</span> mit der Zahl 2 bezeichnet werden.
-  </p>
-
-  <p>
-    Damit die Lampe weiss, in welchem Zustand sie ist, braucht es eine Variable. Erstelle eine Variable mit dem Namen <b style="color:#dc143c;">Zustand</b>. Gehe dazu in den Bereich <b style="color:#dc143c;">Variablen</b> und klicke auf <b style="color:#dc143c;">Erstelle eine Variable ...</b>, siehe Video 1. Es erscheint eine Dialogbox, in welcher man den Namen der Variablen angeben kann. Nenne die Variable <b style="color:#dc143c;">Zustand</b>. Sobald die Variable erstellt ist, erscheinen zwei neue Befehle. Der eine heisst <b style="color:#dc143c;">setze Zustand auf 0</b> und der andere <b style="color:#dc143c;">ändere Zustand um 1</b>. Mit dem ersten Befehl kann man den Wert der Variable setzen. Der zweite Befehl erhöht oder erniedrigt den Variablenwert um die entsprechende Zahl. Zwischen diesen beiden Befehlen besteht scheinbar nur ein kleiner Unterschied. Es ist aber trotzdem wichtig, dass du sie auseinanderhalten kannst.
-  </p>
-
-  <p style="text-align: center;">
-    <video width="800" controls="true"><source src="licht_an_licht_aus/Variable_erstellen720.mov">licht_an_licht_aus/Variable_erstellen720.mov</video>
-  </p>
-  <p style="text-align: center;"><i>
-    Video 1 – Variable erstellen (Video: T. Jenni)
-  </i></p>
+<!-- load css file -->
+<script type="text/javascript">
+var fileref = document.createElement("link");
+fileref.rel = "stylesheet";
+fileref.type = "text/css";
+fileref.href = "_css/pt-book.css";
+document.getElementsByTagName("head")[0].appendChild(fileref)
+</script>
 
 
-  <p>
-    Nun geht es ans Programmieren. Erstelle zuerst das Startprogramm, siehe Abb. 1. Zu Beginn leuchtet die Lampe nicht, d.h. sie befindet sich im Zustand 1. Ziehe aus dem Bereich <b style="color:#1e90ff;">Grundlagen</b> den Befehl <b style="color:#1e90ff;">Bildschirm löschen</b>        und hänge ihn <b style="color:#1e90ff;">beim Start</b> an. Aus dem Bereich <b style="color:#dc143c;">Variablen</b> ziehe den Befehl <b style="color:#dc143c;">setze Zustand auf 1</b> und füge in ebenfalls <b style="color:#1e90ff;">beim Start</b>        an. Auf diese Weise ist die Lampe bereit gemacht oder <b style="color:seagreen;">initialisiert</b>, wie der/die Fachmann/-frau sagt.
-  </p>
+<h2>
+  Licht an, Licht aus
+</h2>
 
-  <p>
-    Nun musst du noch auf den Tastendruck reagieren. Im Bereich <b style="color:#d400d4;">Eingabe</b> findest du den Befehl <b style="color:#d400d4;">wenn Knopf A gedrückt</b>. Wenn die Taste gedrückt wird, werden alle Befehle in diesem Zangenblock
-  ausgeführt.
-  </p>
+<p>
+  In diesem Kapitel wirst du aus dem micro:bit eine kleine Lampe basteln. Die Taste A soll der Lichtschalter sein. Die Lampe hat zwei Zustände, nämlich <em>Licht an</em> und <em>Licht aus</em>, siehe Abb. 1. Zu Beginn ist man im Zustand <em>Licht aus</em>. Drückt man dann die Taste A, wechselt die Lampe in den Zustand <em>Licht an</em>. Drückt man wieder auf die Taste A, wechselt die Lampe wieder in den Zustand <em>Licht aus</em>.
+</p>
 
-  <p>
-    Zuerst musst du überprüfen, in welchem Zustand die Lampe ist. Ziehe aus dem Bereich Logik einen <b style="color:#00a4a6;">wenn-dann-Block</b> und hänge ihn in den Zangenblock. Ebenfalls im Logikbereich findest du die den <b style="color:#00a4a6;">ist-gleich-Vergleichsblock</b>.
-    Mit dem überprüfe, ob die Variable <b style="color:#dc143c;">Zustand</b> den Wert 1 hat. Falls dies der Fall ist, wechsle in den Zustand 2. Schalte dazu alle LED's ein und setzen die Variable <b style="color:#dc143c;">Zustand</b> auf den Wert
-    1. Falls das nicht der Fall ist, d.h. wenn Lampe im <b style="color:#dc143c;">Zustand</b> 2 ist, werden alle Lichter abgestellt und die Variable <b style="color:#dc143c;">Zustand</b> auf 1 gesetzt.
-  </p>
+<p class="image">
+  <img src="licht_an_licht_aus/Zustandsdiagramm_Licht.jpg" alt="" width="100%" />
+</p>
 
-  <p style="text-align:center;">
-    <img src="licht_an_licht_aus/microbit-Lampe.png" alt="" width="100%" />
-  </p>
+<p class="caption"><i>
+  Abb. 1 – Zustandsgraf für die Lampe (Bild: T. Jenni)
+</i></p>
 
-  <p style="text-align:center;"><i>
-    Abb 2. - Programm für die Lampe (Bild: T. Jenni)
-  </i></p>
+<p>
+  Da der Computer gut mit Zahlen umgehen kann, versehen wir die Zustände mit Zahlen. Zustand <em>Licht aus</em> soll mit der Zahl 1 und Zustand <em>Licht an</em> mit der Zahl 2 bezeichnet werden.
+</p>
 
-  <p>
-    Das Programm ist nun fertig. Teste es doch gleich im Webbrowser. Klicke dazu auf die Taste A. Falls es funktioniert, kannst du das Programm auf deinen micro:bit laden und dann an die Batterie anschliessen. Fertig ist die kleine Taschenlampe. Super :-)
-  </p>
+<p>
+  Damit die Lampe weiss, in welchem Zustand sie ist, braucht es eine Variable. Erstelle eine Variable mit dem Namen <em class="variablen">Zustand</em>. Gehe dazu in den Bereich <em class="variablen">Variablen</em> und klicke auf <em class="variablen">Erstelle eine Variable ...</em>, siehe Video 1. Es erscheint eine Dialogbox, in welcher man den Namen der Variablen angeben kann. Nenne die Variable <em class="variablen">Zustand</em>. Sobald die Variable erstellt ist, erscheinen zwei neue Befehle. Der eine heisst <em class="variablen">setze Zustand auf 0</em> und der andere <em class="variablen">ändere Zustand um 1</em>. Mit dem ersten Befehl kann man den Wert der Variable setzen. Der zweite Befehl erhöht oder erniedrigt den Variablenwert um die entsprechende Zahl. Zwischen diesen beiden Befehlen besteht scheinbar nur ein kleiner Unterschied. Es ist aber trotzdem wichtig, dass du sie auseinanderhalten kannst.
+</p>
 
-  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
-    Aufgaben
-  </h4>
 
-  <ol>
-    <li style="margin-bottom:1em;">
-      Schreibe ein Programm, welches die Lampe nur dann leuchten lässt, wenn man die Taste A gedrückt hält.
-    </li>
-    <li style="margin-bottom:1em;">
-      Erweitere das ursprüngliche Programm so, dass wenn man auf die Taste B drückt, die Lampe blinkt. Zeichne zuerst den Zustandsgrafen auf.
-    </li>
-    <li style="margin-bottom:1em;">
-      Ändere das Programm so ab, dass sich unterschiedliche Helligkeiten einstellen lassen, indem man die Taste A mehrfach hintereinander drückt. Verwende dazu den Befehl <b style="color:#562F8C;">Setze Helligkeit auf x</b>, den du unter <b style="color:#562F8C;">LED / ... mehr</b> findest.
-    </li>
-  </ol>
+<p class="video">
+  <video width="800" controls="true"><source src="licht_an_licht_aus/Variable_erstellen720.mov">licht_an_licht_aus/Variable_erstellen720.mov</video>
+</p>
+<p class="caption">
+  Video 1 – Variable erstellen (Video: T. Jenni)
+</p>
+
+
+<p>
+  Nun geht es ans Programmieren. Erstelle zuerst das Startprogramm, siehe Abb. 1. Zu Beginn leuchtet die Lampe nicht, d.h. sie befindet sich im Zustand 1. Ziehe aus dem Bereich <em class="grundlagen">Grundlagen</em> den Befehl <em class="grundlagen">Bildschirm löschen</em>        und hänge ihn <em class="grundlagen">beim Start</em> an. Aus dem Bereich <em class="variablen">Variablen</em> ziehe den Befehl <em class="variablen">setze Zustand auf 1</em> und füge in ebenfalls <em class="grundlagen">beim Start</em>        an. Auf diese Weise ist die Lampe bereit gemacht oder <em>initialisiert</em>, wie der/die Fachmann/-frau sagt.
+</p>
+
+<p>
+  Nun musst du noch auf den Tastendruck reagieren. Im Bereich <em class="eingabe">Eingabe</em> findest du den Befehl <em class="eingabe">wenn Knopf A gedrückt</em>. Wenn die Taste gedrückt wird, werden alle Befehle in diesem Zangenblock ausgeführt.
+</p>
+
+<p>
+  Zuerst musst du überprüfen, in welchem Zustand die Lampe ist. Ziehe aus dem Bereich Logik einen <em class="logik">wenn-dann-Block</em> und hänge ihn in den Zangenblock. Ebenfalls im Logikbereich findest du die den <em class="logik">ist-gleich-Vergleichsblock</em>.
+  Mit dem überprüfe, ob die Variable <em class="variablen">Zustand</em> den Wert 1 hat. Falls dies der Fall ist, wechsle in den Zustand 2. Schalte dazu alle LED's ein und setzen die Variable <em class="variablen">Zustand</em> auf den Wert 1. Falls das nicht der Fall ist, d.h. wenn Lampe im <em class="variablen">Zustand</em> 2 ist, werden alle Lichter abgestellt und die Variable <em class="variablen">Zustand</em> auf 1 gesetzt.
+</p>
+
+
+<p class="image">
+  <img src="licht_an_licht_aus/microbit-Lampe.png" alt="" width="100%" />
+</p>
+<p class="caption">
+  Abb 2. - Programm für die Lampe (Bild: T. Jenni)
+</p>
+
+
+<p>
+  Das Programm ist nun fertig. Teste es doch gleich im Webbrowser. Klicke dazu auf die Taste A. Falls es funktioniert, kannst du das Programm auf deinen micro:bit laden und dann an die Batterie anschliessen. Fertig ist die kleine Taschenlampe. Super 🙂.
+</p>
 
 
 
-  <hr style="margin-top:12ex;">
-  <p>
-    Autor:  T. Jenni<br />
-    Letzte Änderung: 14. Mai 2021
-  </p>
+<h3>
+  Aufgaben
+</h3>
 
-  <p style="text-align:center;">
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
-  </p>
+<ol class="aufgaben">
+  <li>
+    Schreibe ein Programm, welches die Lampe nur dann leuchten lässt, wenn man die Taste A gedrückt hält.
+  </li>
+  <li>
+    Erweitere das ursprüngliche Programm so, dass wenn man auf die Taste B drückt, die Lampe blinkt. Zeichne zuerst den Zustandsgrafen auf.
+  </li>
+  <li>
+    Ändere das Programm so ab, dass sich unterschiedliche Helligkeiten einstellen lassen, indem man die Taste A mehrfach hintereinander drückt. Verwende dazu den Befehl <em class="LED">Setze Helligkeit auf x</em>, den du unter <em class="LED">LED / ... mehr</em> findest.
+  </li>
+</ol>
 
-  <p>
-    <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title" style="font-style: italic;">Einsteigerkurs für den BBC micro:bit</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/tjenni/microbit" property="cc:attributionName" rel="cc:attributionURL">T. Jenni, et al.</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.
-  </p>
 
-  </div>
+
+<hr class="footer">
+<p>
+  Autor:  T. Jenni<br />
+  Letzte Änderung: 14. Mai 2021
+</p>
+
+<p class="license">
+  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+</p>
+
+<p>
+  <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title" style="font-style: italic;">Einsteigerkurs für den BBC micro:bit</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/tjenni/microbit" property="cc:attributionName" rel="cc:attributionURL">T. Jenni, et al.</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.
+</p>
+
+</div>
 
 </body>
 </html>
