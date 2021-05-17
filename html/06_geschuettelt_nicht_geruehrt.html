@@ -8,93 +8,104 @@
 
 <body>
 
-<div style="max-width:75ch;margin-left:10%;margin-right:5%;text-align:justify;line-height:150%;">
+<div class="pt-book">
 
-  <h2 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
-    Geschüttelt, nicht gerührt!
-  </h2>
+<!-- load css file -->
+<script type="text/javascript">
+var fileref = document.createElement("link");
+fileref.rel = "stylesheet";
+fileref.type = "text/css";
+fileref.href = "_css/pt-book.css";
+document.getElementsByTagName("head")[0].appendChild(fileref)
+</script>
 
-  <p>
-    Stell dir vor, du hälst eine Schnur, an welcher ein Stein angebunden ist. Wenn du Hand ruhig hälst, zeigt das Gewicht immer genau nach unten. Der Grund ist die Erdanziehungskraft, auch Gravitation genannt. Sie zieht alles in Richtung Erdmittelpunkt. Lässt
-    du die Schnur los, fällt der Stein nach unten, d.h. er wird sich immer schneller nach unten bewegen bis er auf dem Boden auftrifft. Wenn ein Stein immer schneller wird, so ist er beschleunigt.
-  </p>
+<h2>
+  Geschüttelt, nicht gerührt!
+</h2>
 
-  <p>
-    Der micro:bit hat einen Sensor, mit welchem man die Beschleunigung messen kann. Er heisst Accelerometer oder Beschleunigungssensor. Hält man den micro:bit still, misst dieser Sensor wo unten ist.
-  </p>
+<p>
+  Stell dir vor, du hälst eine Schnur, an der ein Stein angebunden ist. Wenn du deine Hand ruhig hälst, zeigt der Stein immer genau nach unten. Der Grund ist die Erdanziehungskraft, auch Gravitation genannt. Sie zieht alles in Richtung Erdmittelpunkt. Lässt
+  du die Schnur los, fällt der Stein nach unten, d.h. er wird sich immer schneller nach unten bewegen bis er auf dem Boden auftrifft. Wenn ein Stein immer schneller wird, so ist er beschleunigt.
+</p>
 
-  <p>
-    Stell dir die Erdanziehungskraft wie ein Pfeil vor, der immer nach unten zeigt, siehe Abb. 1. Wenn man diesen Pfeil von oben betrachtet, sieht man die Federn des Pfeils, welche wie ein Kreuz bilden. Schaut man von unten auf den Pfeil, sieht man nur die
-    punktförmige Pfeilspitze. Von der Seite, sieht der Pfeil pfeilförmig aus :-).
-  </p>
+<p>
+  Der micro:bit hat einen Sensor, mit welchem man die Beschleunigung messen kann. Er heisst <em>Accelerometer</em> oder Beschleunigungssensor. Hält man den micro:bit still, misst dieser Sensor wo unten ist.
+</p>
 
-
-  <p style="text-align:center;">
-    <img src="geschuettelt_nicht_geruehrt/pfeil.jpg" alt="" width="80%" />
-  </p>
-  <p style="text-align:center;"><i>
-    Abb. 1 – Die Schwerkraft als Pfeil, der immer nach unten zeigt
-  </i></p>
-
-
-  <p>
-    Tippe nun das folgende Programm von Abb. 2 ab. Du findest die Zangenblöcke im Bereich <b style="color:#d400d4;">Eingabe</b>. Dieses Programm verwendet den Beschleunigungssensor um die verschiedenen Ansichten des Pfeils anzuzeigen. Drehe den micro:bit
-    in alle Richtungen und überprüfe, ob die Erdanziehungskraft immer nach unten zeigt.
-  </p>
-
-  <p style="text-align:center;"><img src="geschuettelt_nicht_geruehrt/microbit-Neigungen.png" alt="" width="100%" /></p>
-  <p style="text-align:center;"><i>
-    Abb. 2 – Programm zur Darstellung der Erdanziehungskraft
-  </i></p>
-
-  <p>
-    Wenn man den micro:bit schüttelt, schlägt der Beschleunigungssensor aus. In diesem Fall wird ein Schachbrettmuster angezeigt.
-  </p>
+<p>
+  Stell dir die Erdanziehungskraft wie ein Pfeil vor, der immer nach unten zeigt, siehe Abb. 1. Wenn man diesen Pfeil von oben betrachtet, sieht man die Federn des Pfeils, welche wie ein Kreuz bilden. Schaut man von unten auf den Pfeil, sieht man nur die
+  punktförmige Pfeilspitze. Von der Seite, sieht der Pfeil pfeilförmig aus 🙂.
+</p>
 
 
-  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
-    Aufgaben
-  </h4>
-
-  <ol>
-    <li style="margin-bottom:1em;">
-        Programmiere das Spiel: Schere, Stein, Papier. Durch schütteln soll per Zufall eines der drei Symbole angezeit werden. Spiele das Spiel nachher mit der Nachbargruppe.
-    </li>
-
-    <li style="margin-bottom:1em;">
-        Programmiere einen Würfel. Wenn der micro:bit geschüttelt wird, soll zufällig eine Seite des Würfels angezeigt werden.
-    </li>
-
-    <li style="margin-bottom:1em;">
-        Programmiere einen Schrittzähler. Beim Schütteln soll der Schrittzähler hochzählen und die Anzahl der Schritte auf dem Bildschirm angezeigt werden.
-    </li>
-
-    <li style="margin-bottom:1em;">
-        Auf dem Bildschirm soll ein Punkt erscheinen, der sich wie eine Kugel auf einem Brett verhält. Neigt man den micro:bit auf eine Seite, rollt der Punkt nach unten.
-    </li>
-
-    <li style="margin-bottom:1em;">
-        Schliesse den Lautsprecher an. Wenn die Lage des micro:bit geändert wird, soll ein Alarmsignal ertönen.
-    </li>
-
-  </ol>
+<p class="image">
+  <img src="geschuettelt_nicht_geruehrt/pfeil.jpg" alt="" width="80%" />
+</p>
+<p class="caption">
+  Abb. 1 – Die Schwerkraft als Pfeil, der immer nach unten zeigt
+</p>
 
 
+<p>
+  Tippe nun das folgende Programm von Abb. 2 ab. Du findest die Zangenblöcke im Bereich <em class="eingabe">Eingabe</em>. Dieses Programm verwendet den Beschleunigungssensor um die verschiedenen Ansichten des Pfeils anzuzeigen. Drehe den micro:bit
+  in alle Richtungen und überprüfe, ob die Erdanziehungskraft immer nach unten zeigt.
+</p>
+
+<p class="image">
+  <img src="geschuettelt_nicht_geruehrt/microbit-Neigungen.png" alt="" width="100%" />
+</p>
+<p class="caption">
+  Abb. 2 – Programm zur Darstellung der Erdanziehungskraft
+</p>
+
+<p>
+  Wenn man den micro:bit schüttelt, schlägt der Beschleunigungssensor aus. In diesem Fall wird ein Schachbrettmuster angezeigt.
+</p>
 
 
-  <hr style="margin-top:12ex;">
-  <p>
-    Autor:  T. Jenni<br />
-    Letzte Änderung: 14. Mai 2021
-  </p>
+<h3>
+  Aufgaben
+</h4>
 
-  <p style="text-align:center;">
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
-  </p>
+<ol class="aufgaben">
+  <li>
+      Programmiere das Spiel: Schere, Stein, Papier. Durch schütteln soll per Zufall eines der drei Symbole angezeit werden. Spiele das Spiel nachher mit der Nachbargruppe.
+  </li>
 
-  <p>
-    <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title" style="font-style: italic;">Einsteigerkurs für den BBC micro:bit</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/tjenni/microbit" property="cc:attributionName" rel="cc:attributionURL">T. Jenni, et al.</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.
-  </p>
+  <li>
+      Programmiere einen Würfel. Wenn der micro:bit geschüttelt wird, soll zufällig eine Seite des Würfels angezeigt werden.
+  </li>
+
+  <li>
+      Programmiere einen Schrittzähler. Beim Schütteln soll der Schrittzähler hochzählen und die Anzahl der Schritte auf dem Bildschirm angezeigt werden.
+  </li>
+
+  <li>
+      Auf dem Bildschirm soll ein Punkt erscheinen, der sich wie eine Kugel auf einem Brett verhält. Neigt man den micro:bit auf eine Seite, rollt der Punkt nach unten.
+  </li>
+
+  <li>
+      Schliesse den Lautsprecher an. Wenn die Lage des micro:bit geändert wird, soll ein Alarmsignal ertönen.
+  </li>
+
+</ol>
+
+
+
+
+<hr class="footer">
+<p>
+  Autor:  T. Jenni<br />
+  Letzte Änderung: 17. Mai 2021
+</p>
+
+<p class="license">
+  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+</p>
+
+<p>
+  <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title" style="font-style: italic;">Einsteigerkurs für den BBC micro:bit</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/tjenni/microbit" property="cc:attributionName" rel="cc:attributionURL">T. Jenni, et al.</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.
+</p>
 
 </div>
 

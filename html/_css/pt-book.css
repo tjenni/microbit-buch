@@ -109,3 +109,18 @@ div.pt-book em.musik{
   font-style: normal;
   color:#E02C1E;
 }
+div.pt-book em.text{
+  font-weight:bold;
+  font-style: normal;
+  color:#B1872F;
+}
+div.pt-book em.fortgeschritten{
+  font-weight:bold;
+  font-style: normal;
+  color:#0C262A;
+}
+div.pt-book em.mathematik{
+  font-weight:bold;
+  font-style: normal;
+  color:#8719CB;
+}

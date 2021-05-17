@@ -8,88 +8,98 @@
 
 <body>
 
-<div style="max-width:75ch;margin-left:10%;margin-right:5%;text-align:justify;line-height:150%;">
+<div class="pt-book">
 
-  <p style="width:60%;margin-left:40%">
-    So ging Ali Baba ebenfalls durch die Dornbüsche auf den Felsen zu und sprach mit lauter Stimme: <bdo dir="ltr"><bdi dir="rtl" lang="ar">إفتح يا سمسم</bdi></bdo> (<i><span lang="ar-Latn">iftah ya simsim</span> / </i> Sesam, öffne dich!) Da erschien
-    erneut das Tor im Felsen und öffnete sich. Und Ali Baba trat in diese seltsame Höhle.<br>
-    <br>
-    <i>Ali Baba und die vierzig Räuber</i>
-  </p>
-
-  <h2 style="padding:0pt;margin-top:1em;margin-bottom:1em;color:seagreen;font-weight:bold;">Sesam, öffne dich!</h2>
-
-  <p>
-  In diesem Kapitel werden wir mit dem micro:bit ein Schloss bauen, welche nur bei der Eingabe des richtigen Passwort aufgeht. Da wir auf dem micro:bit nur die Tasten A und B zur Verfügung haben, wird das Passwort nur aus A's und B's bestehen. Ein Passwort
-  könnte zum Beispiel ABBA sein oder BABA. Wenn das Passwort eingegeben wurde, müssen die Tasten A und B zusammen gedrückt werden. Dann wird überprüft ob die Eingabe richtig war. Wenn das richtige Passwort eingegeben wurde, soll sich das Schloss
-  öffnen, ansonsten soll ein trauriges Gesicht erscheinen.
-  </p>
-
-  <p>
-  Der Programmcode ist in Abb. 2 gezeigt. Zuerst erstellst du eine Variable mit dem Namen <b style="color:#dc143c;">Passwort</b>. Diese Variable enthält den Passwort-Text, zum Beispiel "ABBA". Wenn du versuchst einen Text in den Befehl <b style="color:#dc143c;">ändere Passwort auf 0</b>        zu schreiben, funktioniert es nicht. Du brauchst zuerst einen neuen Textblock. Den findest du im Bereich <b>Fortgeschritten</b> im Unterbereich <b style="color:#B1872F;">Text</b>. Es ist der erste Befehl <b style="color:#B1872F;">" "</b>.
-  </p>
+<!-- load css file -->
+<script type="text/javascript">
+var fileref = document.createElement("link");
+fileref.rel = "stylesheet";
+fileref.type = "text/css";
+fileref.href = "_css/pt-book.css";
+document.getElementsByTagName("head")[0].appendChild(fileref)
+</script>
 
 
-  <p>
-  Neben der Variable <b style="color:#dc143c;">Passwort</b> gibt es eine Textvariable mit dem Namen <b style="color:#dc143c;">Eingabe</b>. Diese Variable enthält den eingegebenen Text, oder <b style="color:seagreen;">String</b> wie die Fachfrau/-mann
-  sagt. <b style="color:seagreen;">String</b> ist Englisch und heisst auf Deutsch Schnur, Saite oder Kette. Stelle dir ein String als eine Buchstabenkette vor.
-  </p>
+<p style="width:60%;margin-left:40%">
+  So ging Ali Baba ebenfalls durch die Dornbüsche auf den Felsen zu und sprach mit lauter Stimme: <bdo dir="ltr"><bdi dir="rtl" lang="ar">إفتح يا سمسم</bdi></bdo> (<i><span lang="ar-Latn">iftah ya simsim</span> / </i> Sesam, öffne dich!) Da erschien
+  erneut das Tor im Felsen und öffnete sich. Und Ali Baba trat in diese seltsame Höhle.<br>
+  <br>
+  <i>Ali Baba und die vierzig Räuber</i>
+</p>
 
-  <p style="text-align:center;">
-    <img src="sesam_oeffne_dich/vierzig_raeuber.jpg" alt="" width="100%" />
-  </p>
-  <p style="text-align:center;"><i>
-    Abb. 1 – Ein Text ist eine Zeichenkette
-  </i></p>
+<h2>
+    Sesam, öffne dich!
+</h2>
 
-  <p>
-  Wenn nun die Taste A gedrückt wird, wird der String Eingabe mit dem String Passwort verglichen. Benutze dazu den Befehl zum Textvergleich <b style="color:#00a4a6;">" " = " "</b>. Falls die Eingabe mit dem Passwort übereinstimmt, wird ein geöffnetes
-  Schloss dargestellt. Falls die Eingabe nicht dem Passwort entspricht, wird eine Sekunde lang ein unglückliches Gesicht gezeigt und dann wieder ein verschlossenes Schloss.
-  </p>
+<p>
+  In diesem Kapitel werden wir mit dem micro:bit ein Schloss bauen, welche nur bei der Eingabe des richtigen Passwort aufgeht. Da wir auf dem micro:bit nur die Tasten A und B zur Verfügung haben, wird das Passwort nur aus A's und B's bestehen. Ein Passwort könnte zum Beispiel ABBA sein oder BABA. Wenn das Passwort eingegeben wurde, müssen die Tasten A und B zusammen gedrückt werden. Dann wird überprüft ob die Eingabe richtig war. Wenn das richtige Passwort eingegeben wurde, soll sich das Schloss öffnen, ansonsten soll ein trauriges Gesicht erscheinen.
+</p>
 
-  <p style="text-align:center;">
-    <img src="sesam_oeffne_dich/microbit-Schloss.png" alt="" width="100%" />
-  </p>
-  <p style="text-align:center;"><i>
-    Abb. 2 – Programm zum Schloss.
-  </i></p>
+<p>
+  Der Programmcode ist in Abb. 2 gezeigt. Zuerst erstellst du eine Variable mit dem Namen <em class="variablen">Passwort</em>. Diese Variable enthält den Passwort-Text, zum Beispiel "ABBA". Wenn du versuchst einen Text in den Befehl <em class="variablen">ändere Passwort auf 0</em>        zu schreiben, funktioniert es nicht. Du brauchst zuerst einen neuen Textblock. Den findest du im Bereich <em class="fortgeschritten">Fortgeschritten</em> im Unterbereich <em class="text">Text</em>. Es ist der erste Befehl <em class="text">" "</em>.
+</p>
 
 
-
-  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
-    Aufgaben
-  </h4>
-
-  <ol>
-  <li style="margin-bottom:1em;">
-    Verändere das Programm so, dass man anstatt der Tasten A und B, den micro:bit nach links und rechts neigen muss um das Passwort einzugeben.
-  </li>
-
-  <li style="margin-bottom:1em;">
-    Verändere das Programm so, dass man anstatt der Tasten A und B, den micro:bit nach links, rechts, oben und unten neigen muss um das Passwort einzugeben.
-  </li>
-
-  <li style="margin-bottom:1em;">
-    Erstelle ein Spiel, bei welchem man sich die Abfolge von A und B merken und anschliessend korrekt wieder eingeben muss. Zuerst muss man sich nur ein Zeichen merken, dann zwei, dann drei, usw.
-  </li>
-
-  </ol>
+<p>
+  Neben der Variable <em class="variablen">Passwort</em> gibt es eine Textvariable mit dem Namen <em class="variablen">Eingabe</em>. Diese Variable enthält den eingegebenen Text, oder <em>String</em> wie die Fachfrau/-mann sagt. <em>String</em> ist Englisch und heisst auf Deutsch Schnur, Saite oder Kette. Stelle dir ein String als eine Buchstabenkette vor.
+</p>
 
 
+<p class="image">
+  <img src="sesam_oeffne_dich/vierzig_raeuber.jpg" alt="" width="100%" />
+</p>
+<p class="caption">
+  Abb. 1 – Ein Text ist eine Zeichenkette
+</p>
 
-  <hr style="margin-top:12ex;">
-  <p>
-    Autor:  T. Jenni<br />
-    Letzte Änderung: 14. Mai 2021
-  </p>
 
-  <p style="text-align:center;">
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
-  </p>
+<p>
+  Wenn nun die Taste A gedrückt wird, wird der String Eingabe mit dem String Passwort verglichen. Benutze dazu den Befehl zum Textvergleich <em class="logik">" " = " "</em>. Falls die Eingabe mit dem Passwort übereinstimmt, wird ein geöffnetes Schloss dargestellt. Falls die Eingabe nicht dem Passwort entspricht, wird eine Sekunde lang ein unglückliches Gesicht gezeigt und dann wieder ein verschlossenes Schloss.
+</p>
 
-  <p>
-    <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title" style="font-style: italic;">Einsteigerkurs für den BBC micro:bit</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/tjenni/microbit" property="cc:attributionName" rel="cc:attributionURL">T. Jenni, et al.</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.
-  </p>
+
+<p class="image">
+  <img src="sesam_oeffne_dich/microbit-Schloss.png" alt="" width="100%" />
+</p>
+<p class="caption">
+  Abb. 2 – Programm zum Schloss.
+</p>
+
+
+<h3>
+  Aufgaben
+</h3>
+
+<ol class="aufgaben">
+<li>
+  Verändere das Programm so, dass man anstatt der Tasten A und B, den micro:bit nach links und rechts neigen muss um das Passwort einzugeben.
+</li>
+
+<li>
+  Verändere das Programm so, dass man anstatt der Tasten A und B, den micro:bit nach links, rechts, oben und unten neigen muss um das Passwort einzugeben.
+</li>
+
+<li>
+  Erstelle ein Spiel, bei welchem man sich die Abfolge von A und B merken und anschliessend korrekt wieder eingeben muss. Zuerst muss man sich nur ein Zeichen merken, dann zwei, dann drei, usw.
+</li>
+
+</ol>
+
+
+
+<hr class="footer">
+<p>
+  Autor:  T. Jenni<br />
+  Letzte Änderung: 17. Mai 2021
+</p>
+
+<p class="license">
+  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+</p>
+
+<p>
+  <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title" style="font-style: italic;">Einsteigerkurs für den BBC micro:bit</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/tjenni/microbit" property="cc:attributionName" rel="cc:attributionURL">T. Jenni, et al.</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.
+</p>
 
 </div>
 
