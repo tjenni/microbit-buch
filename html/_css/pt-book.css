@@ -1,0 +1,56 @@
+div.pt-book {
+  max-width:75ch;
+  margin-left:10%;
+  margin-right:5%;
+  text-align:justify;
+  line-height:150%;
+}
+
+div.pt-book h2 {
+  padding:0pt;
+  margin-top:1em;
+  margin-bottom:1em;
+  color:seagreen;
+  font-weight:bold;
+}
+
+div.pt-book h3 {
+  padding:0pt;
+  margin-top:1em;
+  margin-bottom:1em;
+  color:seagreen;
+  font-weight:bold;
+}
+
+div.pt-book h4 {
+  padding:0pt;
+  margin-top:2em;
+  margin-bottom:1em;
+  color:seagreen;
+  font-weight:bold;
+}
+
+div.pt-book p.caption  {
+  text-align: center;
+  text-emphasis:italic;
+}
+·
+div.pt-book p.image{
+  text-align:center;
+}
+
+div.pt-book p.license{
+  text-align:center;
+}
+
+div.pt-book em {
+    color:seagreen;
+}
+
+div.pt-book ul.links {
+  margin-left:2em;
+}
+
+div.pt-book hr.footer {
+  margin-top:12ex;
+}
