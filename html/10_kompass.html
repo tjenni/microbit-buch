@@ -8,114 +8,122 @@
 
 <body>
 
-<div style="max-width:75ch;margin-left:10%;margin-right:5%;text-align:justify;line-height:150%;">
-
-  <h2 style="padding:0pt;margin-top:1em;margin-bottom:1em;color:seagreen;font-weight:bold;">Kompass</h2>
+<div class="pt-book">
 
 
+<!-- load css file -->
+<script type="text/javascript">
+var fileref = document.createElement("link");
+fileref.rel = "stylesheet";
+fileref.type = "text/css";
+fileref.href = "_css/pt-book.css";
+document.getElementsByTagName("head")[0].appendChild(fileref)
+</script>
 
-  <p>
-    Das sich eine magnetische Nadel in Richtung Norden ausrichtet, ist schon seit der Antike bekannt. Der Grund, dass ein Kompass nach Norden zeigt, liegt im Magnetfeld der Erde. Die Kompassnadel richtet sich parallel zu den Magnetfeldlinien aus. Diese zeigen
-  ungefähr in Richtung des geografischen Nordpols.
-  </p>
-
-
-  <p style="text-align: center;">
-  <img src="kompass/kompass.jpg" alt="" width="80%" />
-  </p>
-  <p style="text-align: center;"><i>
-    Abb. 1 – Kompass (Bild: pexels.com)
-  </i></p>
-
-  <p>
-    Im Gegensatz zu anderen Planeten, hat die Erde hat ein schönes Magnetfeld mit einem magnetischen Nordpol in der Antarktis (geografisch Süden) und einem magnetischen Südpol in der Arktis (geografisch Norden). Das Magnetfeld ist jedoch nicht sehr stabil.
-    Ungefähr alle 250'000 Jahre polt es sich um. Für eine grob Einschätzung der Himmelsrichtung reicht ein Kompass. Da das Erdmagnetfeld etwas verzerrt ist, zeigen Kompasse nicht überall auf der Erde in Richtung des geografischen Nordpols sondern etwas daneben. Hier in der Schweiz beträgt diese Missweisung ungefährt 2 Grad. Beachte, dass Eisenteile in der Nähe des Kompass diesen stören können.
-  </p>
+<h2>
+  Kompass
+</h2>
 
 
-  <!--
-  https://commons.wikimedia.org/wiki/File:Africa_on_the_globe_(red).svg
-  https://commons.wikimedia.org/wiki/File:VFPt_sphere-magnet-Sup.svg
-  -->
-  <p style="text-align: center;">
-    <img src="kompass/erdmagnetfeld.jpg" alt="" width="80%" /><br>
-  </p>
-  <p style="text-align: center;"><i>
-  Abb. 2 – Erdmagnetfeld (Bild: TUBS, Geek3 / Wikimedia Commons)
-  </i></p>
+<p>
+  Das sich eine magnetische Nadel in Richtung Norden ausrichtet, ist schon seit der Antike bekannt. Der Grund, dass ein Kompass nach Norden zeigt, liegt im Magnetfeld der Erde. Die Kompassnadel richtet sich parallel zu den Magnetfeldlinien aus. Diese zeigen ungefähr in Richtung des geografischen Nordpols.
+</p>
 
 
-  <p>
-  Der micro:bit verfügt über einen Sensor, der die Stärke und Richtung des Magnetfeldes messen kann. Dieser Sensor arbeitet mit dem sogenannten Hall-Effekt. Wenn du mehr darüber wissen möchtest, schau dir das Video im Unterkapitel Links dazu an. Übernimm
-  nun das Programm aus Abb. 3. Es zeigt einen Pfeil an, welcher in Richtung Norden zeigt. Der Befehl Kompassausrichtung findest du im Bereich <b style="color:#d400d4;">Eingabe</b>.
-  </p>
+<p class="image">
+<img src="kompass/kompass.jpg" alt="" width="80%" />
+</p>
+<p class="caption">
+  Abb. 1 – Kompass (Bild: pexels.com)
+</p>
 
-  <p style="text-align: center;">
-  <img src="kompass/microbit-Kompass.png" alt="" width="100%" />
-  </p>
-  <p style="text-align: center;"><i>
-    Abb. 3 – Programm für einen Kompass
-  </i></p>
-
-
-  <p>
-    Es kann sein, dass nach dem Herunterladen etwas seltsames passiert: statt, dass der Kompass die Himmelsrichtung anzeigt, erscheint auf dem Display die Mitteilung <span style="color:seagreen;">TILT TO FILL SCREEN</span>. Kippe nun den Microbit, bis alle LED eingeschaltet sind. Dieser Vorgang ist nötig, um den Kompass zu kalibrieren (korrekt einzustellen). Erst danach läuft das eigentliche Programm.
-  </p>
-
-  <p>
-  Gehe nun nach draussen und überprüfe, dass der Kompass funktioniert und immer nach Norden zeigt.
-  </p>
+<p>
+  Im Gegensatz zu anderen Planeten, hat die Erde hat ein schönes Magnetfeld mit einem magnetischen Nordpol in der Antarktis (geografisch Süden) und einem magnetischen Südpol in der Arktis (geografisch Norden). Das Magnetfeld ist jedoch nicht sehr stabil.
+  Ungefähr alle 250'000 Jahre polt es sich um. Für eine grob Einschätzung der Himmelsrichtung reicht ein Kompass. Da das Erdmagnetfeld etwas verzerrt ist, zeigen Kompasse nicht überall auf der Erde in Richtung des geografischen Nordpols sondern etwas daneben. Hier in der Schweiz beträgt diese Missweisung ungefährt 2 Grad. Beachte, dass Eisenteile in der Nähe des Kompass diesen stören können.
+</p>
 
 
-  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
-    Aufgaben
-  </h4>
+<!--
+https://commons.wikimedia.org/wiki/File:Africa_on_the_globe_(red).svg
+https://commons.wikimedia.org/wiki/File:VFPt_sphere-magnet-Sup.svg
+-->
+<p class="image">
+  <img src="kompass/erdmagnetfeld.jpg" alt="" width="80%" />
+</p>
+<p class="caption">
+Abb. 2 – Erdmagnetfeld (Bild: TUBS, Geek3 / Wikimedia Commons)
+</p>
 
-  <ol>
-  <li style="margin-bottom:1em;">
+
+<p>
+  Der micro:bit verfügt über einen Sensor, der die Stärke und Richtung des Magnetfeldes messen kann. Dieser Sensor arbeitet mit dem sogenannten Hall-Effekt. Wenn du mehr darüber wissen möchtest, schau dir das Video im Unterkapitel Links dazu an. Übernimm nun das Programm aus Abb. 3. Es zeigt einen Pfeil an, welcher in Richtung Norden zeigt. Der Befehl Kompassausrichtung findest du im Bereich <em class="eingabe">Eingabe</em>.
+</p>
+
+<p class="image">
+<img src="kompass/microbit-Kompass.png" alt="" width="100%" />
+</p>
+<p class="caption">
+  Abb. 3 – Programm für einen Kompass
+</p>
+
+
+<p>
+  Es kann sein, dass nach dem Herunterladen etwas seltsames passiert: statt, dass der Kompass die Himmelsrichtung anzeigt, erscheint auf dem Display die Mitteilung <span style="color:seagreen;">TILT TO FILL SCREEN</span>. Kippe nun den Microbit, bis alle LED eingeschaltet sind. Dieser Vorgang ist nötig, um den Kompass zu kalibrieren (korrekt einzustellen). Erst danach läuft das eigentliche Programm.
+</p>
+
+<p>
+Gehe nun nach draussen und überprüfe, dass der Kompass funktioniert und immer nach Norden zeigt.
+</p>
+
+
+<h3>
+  Aufgaben
+</h3>
+
+<ol class="aufgaben">
+  <li>
     Erweitere das Programm so, dass auch die Richtungen NW, NO, SW und SO angezeigt werden.
   </li>
 
-  <li style="margin-bottom:1em;">
-    Richte den micro:bit in Richtung Norden aus und miss das Magnetfeld in alle drei Raumrichtungen. Verwende dazu den Befehl <b style="color:#d400d4;">Magnetkraft (μT)</b> unter <b style="color:#d400d4;">... more</b>. Die Bezeichnung Magnetkraft
+  <li>
+    Richte den micro:bit in Richtung Norden aus und miss das Magnetfeld in alle drei Raumrichtungen. Verwende dazu den Befehl <em class="eingabe">Magnetkraft (μT)</em> unter <em class="eingabe">... more</em>. Die Bezeichnung Magnetkraft
     ist falsch. Was hier gemessen wird ist die sogenannte magnetische Flussdichte. Sie wird in der Einheit Tesla (T) angegeben.
   </li>
 
-  <li style="margin-bottom:1em;">
-    Sende die Messwerte von <b style="color:#d400d4;">Magnetkraft (μT) Stärke</b> an den PC und lass dir diese im Diagramm anzeigen. Lege dann den micro:bit auf den Tisch und bringe Eisen in die Nähe des micro:bits. Wie reagiert der Sensor? Kannst
-    du einen Eisendetektor erstellen?
+  <li>
+    Sende die Messwerte von <em class="eingabe">Magnetkraft (μT) Stärke</em> an den PC und lass dir diese im Diagramm anzeigen. Lege dann den micro:bit auf den Tisch und bringe Eisen in die Nähe des micro:bits. Wie reagiert der Sensor? Kannst du einen Eisendetektor erstellen?
   </li>
-  </ol>
+</ol>
 
 
 
-  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
+<h3>
   Links
-  </h4>
+</h3>
 
-  <ul style="margin-left:2em;">
+<ul class="links">
   <li>
     <!-- https://www.youtube.com/watch?v=onAIMe38g1s -->
     <a href="http://bit.ly/2J8JfR6" target="_blank">Youtube, Hall-Effekt</a>
   </li>
-  </ul>
+</ul>
 
 
-  <hr style="margin-top:12ex;">
-  <p>
-    Autor:  T. Jenni<br />
-    Letzte Änderung: 14. Mai 2021
-  </p>
+<hr class="footer">
+<p>
+  Autor:  T. Jenni<br />
+  Letzte Änderung: 14. Mai 2021
+</p>
 
-  <p style="text-align:center;">
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
-  </p>
+<p class="license">
+  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+</p>
 
-  <p>
-    <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title" style="font-style: italic;">Einsteigerkurs für den BBC micro:bit</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/tjenni/microbit" property="cc:attributionName" rel="cc:attributionURL">T. Jenni, et al.</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.
-  </p>
+<p>
+  <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title" style="font-style: italic;">Einsteigerkurs für den BBC micro:bit</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/tjenni/microbit" property="cc:attributionName" rel="cc:attributionURL">T. Jenni, et al.</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.
+</p>
 
-  </div>
+</div>
 
-  </body>
-  </html>
+</body>
+</html>

@@ -124,3 +124,13 @@ div.pt-book em.mathematik{
   font-style: normal;
   color:#8719CB;
 }
+div.pt-book em.seriell{
+  font-weight:bold;
+  font-style: normal;
+  color:#07204D;
+}
+div.pt-book em.funk{
+  font-weight:bold;
+  font-style: normal;
+  color:#D02C89;
+}
