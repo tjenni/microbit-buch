@@ -39,12 +39,25 @@ div.pt-book p.image{
   text-align:center;
 }
 
+div.pt-book p.video{
+  text-align:center;
+}
+
 div.pt-book p.license{
   text-align:center;
 }
 
+
+
+div.pt-book .aufgaben li{
+  margin-bottom:1em;
+}
+
+
+
 div.pt-book em {
-    color:seagreen;
+  font-style: normal;
+  color:seagreen;
 }
 
 div.pt-book ul.links {
@@ -53,4 +66,11 @@ div.pt-book ul.links {
 
 div.pt-book hr.footer {
   margin-top:12ex;
+}
+
+
+div.pt-book em.grundlagen{
+  font-weight:bold;
+  font-style: normal;
+  color:#1e90ff;
 }
