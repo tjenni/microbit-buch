@@ -8,141 +8,152 @@
 
 <body>
 
-<div style="max-width:75ch;margin-left:10%;margin-right:5%;text-align:justify;line-height:150%;">
+<div class="pt-book">
 
-  <h2 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
-    Happy Birthday
-  </h2>
+<!-- load css file -->
+<script type="text/javascript">
+var fileref = document.createElement("link");
+fileref.rel = "stylesheet";
+fileref.type = "text/css";
+fileref.href = "_css/pt-book.css";
+document.getElementsByTagName("head")[0].appendChild(fileref)
+</script>
 
-  <p>
-    Der micro:bit ist auch musikalisch. Erstelle in Makecode ein neues Programm. Im Bereich <b style="color:#D44230;">Musik</b> findest du die Befehle um den micro:bit zum Tönen zu bringen. Mit den Befehlen <b style="color:#D44230;">spiele Note x für y</b>        und <b style="color:#D44230;">pausiere (ms) x</b> kann man einen eigenen Song programmieren. Der Befehl <b style="color:#D44230;">Beginne Melodie x Wiederhole y</b>, spielt einen ganzen Song.
-  </p>
+<h2>
+  Happy Birthday
+</h2>
 
-  <p>
-    Der micro:bit soll so programmiert werden, dass er beim Tastendruck A ein Geburtstagslied spielt. Da das Lied alleine etwas langweilig ist, soll während dem Lied ein Kuchen mit Kerzen angezeigt werden. Das Programm ist in Abb. 1. gezeigt.
-  </p>
+<p>
+  Der micro:bit ist auch musikalisch. Erstelle in Makecode ein neues Programm. Im Bereich <em class="musik">Musik</em> findest du die Befehle um den micro:bit zum Tönen zu bringen. Mit den Befehlen <em class="musik">spiele Note x für y</em> und <em class="musik">pausiere (ms) x</em> kann man einen eigenen Song programmieren. Der Befehl <em class="musik">Beginne Melodie x Wiederhole y</em>, spielt einen ganzen Song.
+</p>
 
-  <p>
-    Wenn die Taste A gedrückt wird, wird der Befehl <b style="color:#D44230;">Beginne Melodie Geburtstag Wiederhole einmal</b> ausgeführt und das Lied wird gespielt. Du benötigst eine Variable <b style="color:#dc143c;">spielen</b>, welche den Wert
-    1 hat, wenn die Musik gespielt wird und sonst den Wert 0. Im Bereich Musik gibt es die Befehle <b style="color:#D44230;">Musik bei Melodie angefangen</b> und <b style="color:#D44230;">Musik bei Melodie zu Ende</b>, mit denen du die Variable
-    <b style="color:#dc143c;">spielen</b> entsprechend setzen kannst.
-  </p>
+<p>
+  Der micro:bit soll so programmiert werden, dass er beim Tastendruck A ein Geburtstagslied spielt. Da das Lied alleine etwas langweilig ist, soll während dem Lied ein Kuchen mit Kerzen angezeigt werden. Das Programm ist in Abb. 1. gezeigt.
+</p>
 
-  <p>
-    Im Zangenblock <b style="color:#1e90ff;">dauerhaft</b> wird die Animation des Kuchens gemacht. Falls die Variable <b style="color:#dc143c;">spielen</b> den Wert 1 hat, soll der Kuchen angezeigt werden, ansonsten wird der Bildschirm gelöscht. Für
-    die Animation des Kuchens, brauchst du eine weitere Variable mit dem Namen <b style="color:#dc143c;">Kerze</b>. Sie soll je nach Bild eine andere Zahl haben. In einem Zeitabstand von 0.2 Sekunden soll das Bild wechseln.
-  </p>
+<p>
+  Wenn die Taste A gedrückt wird, wird der Befehl <em class="musik">Beginne Melodie Geburtstag Wiederhole einmal</em> ausgeführt und das Lied wird gespielt. Du benötigst eine Variable <em class="variablen">spielen</em>, welche den Wert 1 hat, wenn die Musik gespielt wird und sonst den Wert 0. Im Bereich Musik gibt es die Befehle <em class="musik">Musik bei Melodie angefangen</em> und <em class="musik">Musik bei Melodie zu Ende</em>, mit denen du die Variable <em class="variablen">spielen</em> entsprechend setzen kannst.
+</p>
 
-  <p style="text-align:center;">
-    <img src="happy_birthday/microbit-Geburtstag.png" alt="" width="100%" />
-  </p>
-
-  <p style="text-align:center;"><i>
-    Abb. 1 – Programm für das Geburtstagslied
-  </i></p>
-
-
-  <p>
-    Das Programm kann im Webbrowser getestet werden. Wenn du Kopfhörer dabei hast, schliesse diese wie in Abb. 2 gezeigt an den micro:bit an. Verwende dazu Kabel mit den Krokodilklemmen. Keine Angst, der micro:bit arbeitet nur mit 3.3 Volt. Das ist völlig
-    ungefährlich.
-  </p>
-
-  <p style="text-align:center;">
-    <img src="happy_birthday/headphone.jpg" alt="" width="80%" />
-  </p>
-  <p style="text-align:center;"><i>
-    Abb. 2 – Kopfhörer als Lautsprecher
-  </i></p>
-
-  <p>
-    Falls du keinen Kopfhörer dabei hast, kannst du auch den <b style="color:seagreen;">Piezo-Buzzer</b> aus der Kiste verwenden. Das ist ein Zylinderförmiges schwarzes Bauteil mit einem Loch in der Mitte. Es hat zwei Beinchen, die als Kontakte dienen.
-    Du kannst den Buzzer direkt mit den Krokodilklemmen anschliessen, siehe Abb. 3, oder die Steckplatine benutzen, siehe Abb 4.
-  </p>
+<p>
+  Im Zangenblock <em class="grundlagen">dauerhaft</em> wird die Animation des Kuchens gemacht. Falls die Variable <em class="variablen">spielen</em> den Wert 1 hat, soll der Kuchen angezeigt werden, ansonsten wird der Bildschirm gelöscht. Für
+  die Animation des Kuchens, brauchst du eine weitere Variable mit dem Namen <em class="variablen">Kerze</em>. Sie soll je nach Bild eine andere Zahl haben. In einem Zeitabstand von 0.2 Sekunden soll das Bild wechseln.
+</p>
 
 
+<p class="image">
+  <img src="happy_birthday/microbit-Geburtstag.png" alt="" width="100%" />
+</p>
 
-  <p style="text-align:center;">
-    <img src="happy_birthday/buzzer_direkt.jpg" alt="" width="80%" />
-  </p>
-  <p style="text-align:center;"><i>
-    Abb. 3 – Piezo-Buzzer als Lautsprecher
-  </i></p>
+<p class="caption">
+  Abb. 1 – Programm für das Geburtstagslied
+</p>
 
-  <p style="text-align:center;">
-    <img src="happy_birthday/steckplatine.jpg" alt="" width="60%" />
-  </p>
-  <p style="text-align:center;"><i>
-    Abb. 4 – Piezo-Buzzer als Lautsprecher auf Steckplatine
-  </i></p>
+
+<p>
+  Das Programm kann im Webbrowser getestet werden. Wenn du Kopfhörer dabei hast, schliesse diese wie in Abb. 2 gezeigt an den micro:bit an. Verwende dazu Kabel mit den Krokodilklemmen. Keine Angst, der micro:bit arbeitet nur mit 3.3 Volt. Das ist völlig
+  ungefährlich.
+</p>
+
+
+<p class="image">
+  <img src="happy_birthday/headphone.jpg" alt="" width="80%" />
+</p>
+<p class="caption">
+  Abb. 2 – Kopfhörer als Lautsprecher
+</p>
+
+
+<p>
+  Falls du keinen Kopfhörer dabei hast, kannst du auch den <em>Piezo-Buzzer</em> aus der Kiste verwenden. Das ist ein Zylinderförmiges schwarzes Bauteil mit einem Loch in der Mitte. Es hat zwei Beinchen, die als Kontakte dienen.
+  Du kannst den Buzzer direkt mit den Krokodilklemmen anschliessen, siehe Abb. 3, oder die Steckplatine benutzen, siehe Abb 4.
+</p>
 
 
 
-  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
-    Piezo-Buzzer
-  </h4>
+<p class="image">
+  <img src="happy_birthday/buzzer_direkt.jpg" alt="" width="80%" />
+</p>
+<p class="caption"><i>
+  Abb. 3 – Piezo-Buzzer als Lautsprecher
+</i></p>
 
-  <p>
-    Ein Piezo-Buzzer besteht aus zwei Metallplättchen, zwischen denen sich spezielle Kristallschicht befindet, siehe Abb. 5. Wenn man diese Kristallschicht zusammendrückt, wird mechanische Energie in elektrische Energie umgewandelt und es entsteht eine elektrische
-    Spannung an den Metallplättchen. Das wird zum Beispiel bei einem elektrischen Feuerzeug benutzt um einen Funken zu erzeugen, oder bei einem Mikrofon um Schallwellen in elektrische Signale zu verwandeln.
-  </p>
-
-  <p style="text-align:center;">
-    <img src="happy_birthday/buzzer_offen.jpg" alt="" width="80%" />
-  </p>
-  <p style="text-align:center;"><i>
-    Abb. 5 – Piezo-Buzzer geöffnet
-  </i></p>
-
-  <p>
-    Auf der anderen Seite verformt sich die Kristallschicht, wenn man eine Spannung an sie anlegt. Auf diese Weise kann elektrische Energie in mechanische umgewandelt werden. Genau auf diese Weise funktioniert der Piezo-Buzzer. Wenn die Spannung ganz schnell
-    umgepolt wird, verformt sich der Kristall so schnell, dass Luftdruckschwankungen entstehen, die wir dann als Ton hören können. Falls du wissen möchtest, ist unten im Unterkapitel <b style="color:seagreen;">Links</b> ein Youtube-Video dazu
-    verlinkt.
-  </p>
+<p class="image">
+  <img src="happy_birthday/steckplatine.jpg" alt="" width="60%" />
+</p>
+<p class="caption">
+  Abb. 4 – Piezo-Buzzer als Lautsprecher auf Steckplatine
+</p>
 
 
 
-  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
-    Aufgaben
-  </h4>
+<h3>
+  Piezo-Buzzer
+</h3>
 
-  <ol>
-    <li style="margin-bottom:1em;">
-        Programmiere eine eigene Melodie.
-    </li>
-
-    <li style="margin-top:1em;">
-        Erstelle ein Musikplayer. Wenn man auf die Taste A drückt startet oder stoppt die Musik. Mit der Taste B kann man auf das nächste Lied wechseln.
-    </li>
-
-  </ol>
+<p>
+  Ein Piezo-Buzzer besteht aus zwei Metallplättchen, zwischen denen sich spezielle Kristallschicht befindet, siehe Abb. 5. Wenn man diese Kristallschicht zusammendrückt, wird mechanische Energie in elektrische Energie umgewandelt und es entsteht eine elektrische
+  Spannung an den Metallplättchen. Das wird zum Beispiel bei einem elektrischen Feuerzeug benutzt um einen Funken zu erzeugen, oder bei einem Mikrofon um Schallwellen in elektrische Signale zu verwandeln.
+</p>
 
 
-  <h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
-    Links
-  </h4>
-
-  <ul style="margin-left:2em;">
-    <li>
-        <a href="http://bit.ly/2ITE4UO" target="_blank">Youtube - How to squeeze electricity out of crystals (Englisch)</a>
-    </li>
-  </ul>
+<p class="image">
+  <img src="happy_birthday/buzzer_offen.jpg" alt="" width="80%" />
+</p>
+<p class="caption">
+  Abb. 5 – Piezo-Buzzer geöffnet
+</p>
 
 
-  <hr style="margin-top:12ex;">
-  <p>
-    Autor:  T. Jenni<br />
-    Letzte Änderung: 14. Mai 2021
-  </p>
+<p>
+  Auf der anderen Seite verformt sich die Kristallschicht, wenn man eine Spannung an sie anlegt. Auf diese Weise kann elektrische Energie in mechanische umgewandelt werden. Genau auf diese Weise funktioniert der Piezo-Buzzer. Wenn die Spannung ganz schnell
+  umgepolt wird, verformt sich der Kristall so schnell, dass Luftdruckschwankungen entstehen, die wir dann als Ton hören können. Falls du wissen möchtest, ist unten im Unterkapitel <em>Links</em> ein Youtube-Video dazu verlinkt.
+</p>
 
-  <p style="text-align:center;">
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
-  </p>
 
-  <p>
-    <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title" style="font-style: italic;">Einsteigerkurs für den BBC micro:bit</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/tjenni/microbit" property="cc:attributionName" rel="cc:attributionURL">T. Jenni, et al.</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.
-  </p>
 
-  </div>
+<h3>
+  Aufgaben
+</h3>
 
-  </body>
-  </html>
+<ol class="aufgaben">
+  <li>
+      Programmiere eine eigene Melodie.
+  </li>
+
+  <li>
+      Erstelle ein Musikplayer. Wenn man auf die Taste A drückt startet oder stoppt die Musik. Mit der Taste B kann man auf das nächste Lied wechseln.
+  </li>
+
+</ol>
+
+
+<h3>
+  Links
+</h3>
+
+<ul class="links">
+  <li>
+      <a href="http://bit.ly/2ITE4UO" target="_blank">Youtube - How to squeeze electricity out of crystals (Englisch)</a>
+  </li>
+</ul>
+
+
+<hr class="footer">
+<p>
+  Autor:  T. Jenni<br />
+  Letzte Änderung: 17. Mai 2021
+</p>
+
+<p class="license">
+  <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+</p>
+
+<p>
+  <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title" style="font-style: italic;">Einsteigerkurs für den BBC micro:bit</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/tjenni/microbit" property="cc:attributionName" rel="cc:attributionURL">T. Jenni, et al.</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.
+</p>
+
+</div>
+
+</body>
+</html>
