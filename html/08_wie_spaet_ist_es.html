@@ -25,7 +25,7 @@ document.getElementsByTagName("head")[0].appendChild(fileref)
 
 <p>
   Beim Bahnhof St. Gallen steht eine merkwürdige Uhr, welche die Zeit im Zweiersystem (Binärsystem) anzeigt, siehe Video 1. Im Zweiersystem gibt es nur zwei Zahlen, die null und die eins. Für den Computer, der mit elektrischen Signalen arbeitet, ist dieses
-  System besonders praktisch. So kann die Zahl null durch eine Spannung von null Volt und die Zahl eins durch eine Spannung drei Volt codiert werden. In diesem Kapitel lernst du das Binärsystem kennen und zwischen dem Dezimal- und dem Binärsystem umrechnen.
+  System besonders praktisch. So kann die Zahl <em class="mono">0</em> durch eine Spannung von 0 Volt und die Zahl <em class="mono">1</em> durch eine Spannung 3 Volt codiert werden. In diesem Kapitel lernst du das Binärsystem kennen und zwischen dem Dezimal- und dem Binärsystem umrechnen.
 </p>
 
 
@@ -47,7 +47,7 @@ Lizenz: CC by 2.0, Kecko / flickr.com
 </h3>
 
 <p>
-  Wenn du im Binärsystem von null aus in Einerschritten hochzählst, erhälst du Tab. 1.
+  Wir überlegen uns zuerst, wie man in einem Zahlensystem zählt, welches nur über die zwei Zahlen <em class="mono">0</em> und <em class="mono">1</em> verfügt. Das Resultat ist in Tab. 1 aufgeführt.
 </p>
 
 
@@ -133,16 +133,15 @@ Lizenz: CC by 2.0, Kecko / flickr.com
 
 
 <p>
-  Im Dezimalsystem hat (von rechts nach links) die erste Stelle die Wertigkeit 1, die zweite Stelle die Wertigkeit 10 und die dritte Stelle die Wertigkeit 100. Die Zahl 132 lässt sich wie folgt schreiben.
+  Im Dezimalsystem hat die erste Stelle (von rechts nach links) die Wertigkeit 1, die zweite Stelle die Wertigkeit 10 und die dritte Stelle die Wertigkeit 100. Die Zahl 132 lässt sich wie folgt schreiben.
 </p>
 
-<p style="text-align:center;">
+<p style="text-align:center;font-family:monospace;font-size:12pt;">
   132  = 1 &middot; 100 + 3 &middot; 10 + 2 &middot; 1
 </p>
 
 <p>
-  Im Binärsystem sind die Wertigkeiten anders. Die erste Ziffer (von rechts nach links) hat die Wertigkeit 1, die zweite die Wertigkeit 2, die dritte 4 und die vierte Ziffer die Wertigkeit 8. In Tab. 2 sind die Wertigkeiten der ersten acht Stellen aufgelistet.
-  Wenn du die Wertigkeiten mit Zweierpotenzen angibts, wird es klarer, wie diese zustandekommen.
+  Im Binärsystem sind die Wertigkeiten der Stellen anders. Die erste Ziffer (von rechts nach links) hat die Wertigkeit 1, die zweite die Wertigkeit 2, die dritte 4 und die vierte Ziffer die Wertigkeit 8, wie du aus Tab. 1 ablesen kannst. In Tab. 2 sind die Wertigkeiten der ersten acht Binärstellen aufgelistet. Wenn du die Wertigkeiten mit Zweierpotenzen angibts, wird es klarer, wie diese zustandekommen.
 </p>
 
 
@@ -187,8 +186,9 @@ Lizenz: CC by 2.0, Kecko / flickr.com
   Tab. 2 – Wertigkeiten der ersten acht Binärstellen von rechts 1. Stelle nach links 8. Stelle.
 </i></p>
 
+Wir folgendes festhalten
 
-<p style="text-align:center;border-left:4px solid black;">
+<p class="conclusion">
   <br> Die Wertigkeit der <i>n</i>-ten Stelle (von rechts nach links) einer Binärzahl beträgt 2<sup><i>n</i>-1</sup>.<br>
   <br>
 </p>
@@ -240,14 +240,64 @@ Lizenz: CC by 2.0, Kecko / flickr.com
 </h3>
 
 <p>
-  Möchtest du umgekehrt eine Zahl vom Dezimalsystem ins Binärsystem umrechnen probierst du Schrittweise aus, ob die Summen der Wertigkeiten der Binärstellen kleiner oder gleich der gesuchten Zahl sind, siehe Tab. 4.
+  Möchtest du umgekehrt eine Zahl vom Dezimal- ins Binärsystem umrechnen gehst du am besten wie im folgenden Beispiel gezeigt vor.
 </p>
 
 <p>
-  Es soll die Zahl 53 ins Binärsystem umgerechnet werden.
-  Die Wertigkeit der 7. Binärstelle ist 64. Das ist grösser als 53 und daher ist diese Binärstelle 0. Die 6. Binärstelle hat die Wertigkeit 32. Das ist kleiner als 53 und daher ist diese Stelle eine 1. Die 5. Binärstelle hat die Wertigkeit 16. Wir prüfen nach: 32 + 16 = 48 < 53. Somit ist die 5. Binärstelle ebenfalls eine 1. Die Rechnung für die 4. Binärstelle lautet 32 + 16 + 8 = 56 > 53. Somit muss die 4. Binärstelle eine 0 sein. Die dritte Binärstelle ergibt: 32 + 16 + 4 = 52. Das ist ok. Es fehlt nur noch eine 1. Somit lautet das Resultat 110101.
+  Es soll die Zahl <em>53</em> ins Binärsystem umgerechnet werden.
+  Die Idee ist, dass man ausprobiert, ob die Zahlen <em class="mono">1</em>, <em class="mono">10</em>, <em class="mono">100</em>, <em class="mono">1000</em>, usw. als Bestandteil der gesuchten Zahl in Frage kommen. Es ist klug mit einer grossen Zahl zu starten und dann zu den kleineren zu gehen.
 </p>
 
+<ul>
+  <li>
+    Die Binärzahl  <em class="mono">100'0000</em> hat den Dezimalwert  <em>64</em>. D.h. sie kommt nicht in Frage, da sie grösser als <em>53</em> ist. Die 7. Binärstelle ist also eine <em class="mono">0</em>, siehe Tab. 4.
+  </li>
+
+  <li>
+    Die Binärzahl <em class="mono">10'0000</em> hat den Dezimalwert <em>32</em>. Das ist kleiner als <em>53</em> und kommt in Frage. Wir schreiben für die 6. Binärstelle eine <em class="mono">1</em>.
+  </li>
+
+  <li>
+    <p>
+      Die Binärzahl <em class="mono">1'0000</em> hat den Dezimalwert <em>16</em>. Ob sie in Frage kommt überprüfen wir durch Nachrechnen.
+    </p>
+    <p style="text-align:center;">
+      32 + 16 = 48
+    </p>
+    <p>
+      Das geht, denn <em>48</em> ist kleiner als <em>53</em>. Wir schreiben für die 5. Binärstelle daher eine <em class="mono">1</em>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Die Binärzahl <em class="mono">1000</em> hat den Dezimalwert <em>8</em>. Wir überprüfen:
+    </p>
+    <p style="text-align:center;">
+      32 + 16 + 8 = 56
+    </p>
+    <p>
+      Das ist zu gross. Daher ist die 4. Binärstelle eine <em class="mono">0</em>.
+    </p>
+  </li>
+
+  <li>
+    <p>
+     Die Binärzahl <em class="mono">100</em> hat den Dezimalwert <em>4</em>. Die Rechnung lautet
+    </p>
+    <p style="text-align:center;">
+      32 + 16 + 4 = 52
+    </p>
+    <p>
+      Das ist kleiner als <em>53</em> und somit ist die 3. Binärstelle eine <em class="mono">1</em>.
+    </p>
+  </li>
+  <li>
+    Es fehlt nur noch eine <em class="mono">1</em>.  Die 2. Binärstelle mit der Wertigkeit <em>2</em> ist demzufolge <em class="mono">0</em> und die erste Binärstelle eine <em class="mono">1</em> .
+  </li>
+</ul>
+
+Zusammengefasst lautet das Resultat also <em class="mono">11'0101</em>. Am besten erstellst du dir immer eine Tabelle wie Tab. 4. Das erleichtert die Umrechnung.
 
 <table align="center" cellpadding="10" cellspacing="0" style="font-family:monospace;font-size:12pt;">
 <td style="border-right:1px solid black;text-align:right;">Stelle</td>
@@ -260,7 +310,7 @@ Lizenz: CC by 2.0, Kecko / flickr.com
   <td style="text-align:center;">1.</td>
 </tr>
 <tr>
-    <td style="border-right:1px solid black;text-align:right;">Wertigkeiten</td>
+    <td style="border-right:1px solid black;text-align:right;">Wertigkeit</td>
     <td style="text-align:center;">64</td>
     <td style="text-align:center;">32</td>
     <td style="text-align:center;">16</td>
@@ -281,7 +331,7 @@ Lizenz: CC by 2.0, Kecko / flickr.com
 </tr>
 <tr>
   <td colspan="6" style="text-align:center;">
-      (53)<sub>10</sub> =  <span style="padding-bottom:4pt;border-bottom:double;">( 110101 )<sub>2</sub></span>
+      (53)<sub>10</sub> =  <span style="padding-bottom:4pt;border-bottom:double;">( 11'0101 )<sub>2</sub></span>
   </td>
 </tr>
 </table>
@@ -296,7 +346,7 @@ Lizenz: CC by 2.0, Kecko / flickr.com
 </h3>
 
 <p>
-  Eine einzelne Stelle von einer Binärzahl nennt man <em>Bit</em>. Die Zahl 13 benötigt in der Binärdarstellung 4 Bits. Hat man 8 Bits zur Verfügung, so nennt man das ein <em>Byte</em>. Computer haben heutzutage Speichermengen von milliarden von Bytes. Daher ist es sinnvoll, Bezeichnungen für grosse Speichermengen zu definieren.
+  Eine einzelne Stelle einer Binärzahl nennt man <em>Bit</em>. Die Zahl 13 benötigt in der Binärdarstellung 4 Bits. Hat man 8 Bits zur Verfügung, so nennt man das ein <em>Byte</em>. Computer haben heutzutage Speichermengen von milliarden von Bytes. Daher ist es sinnvoll, Bezeichnungen für grosse Speichermengen zu definieren.
 </p>
 
 <hr />
@@ -329,8 +379,7 @@ Tab 5. – Abkürzungen für grosse Informationsmengen.
 
 
 <p>
-  Der Prozessor im micro:bit (ARM Cotex-M0) hat eine 32-Bit-Architektur, d.h. er kann vier Bytes auf einmal verarbeiten. Somit kann von sich aus mit Zahlen von 0 bis 4'294'967'295 umgehen. Leider hat Prozessor keine Recheneinheit für Dezimalzahlen (floating
-  point unit <em>FPU</em>), daher muss man das Rechnen mit Dezimalzahlen durch Binäroperationen nachbilden, was viel Rechenzeit benötigt.
+  Der Prozessor im micro:bit (ARM Cotex-M0) hat eine 32-Bit-Architektur, d.h. er kann immer vier Bytes auf einmal verarbeiten. Für Programme und Daten hat der micro:bit insgesamt 256 kB Flash-Speicher zur Verfügung. Das entspricht ca. dem Inhalt von 64 vollgeschriebenen A4-Seiten. Eine A4 Seite (80 Zeichen pro Zeile mal 50 Zeilen) benötigt eine Speichermenge von ca. 4 kB.
 </p>
 
 
@@ -350,6 +399,10 @@ Tab 5. – Abkürzungen für grosse Informationsmengen.
 <p class="caption">
   Abb. 1 – Programm für eine Binäruhr, welche die Sekunden anzeigt
 </p>
+
+
+
+
 
 
 <p>
@@ -404,68 +457,30 @@ Tab 5. – Abkürzungen für grosse Informationsmengen.
 
 
 
+
+
 <p>
-  Weshalb dieses Schema zur Umrechnug funktioniert erkennst du, wenn du die Ganzzahldivisonen anders aufschreibst.
+  Um zu verstehen, wie dieses Umrechnungsverfahren funktioniert muss du zuerst verstehen, dass eine Ganzzahldivision durch <em>2</em> im Binärsystem einer Verschiebung der Ziffern nach rechts entspricht.
 </p>
 
 <table align="center" cellpadding="5" cellspacing="0" style="font-family:monospace;font-size:12pt;">
 <tr>
-    <td style="text-align:center;">13 = <b style="color:#2E8B57;">6 · 2 + 1</b></td>
+    <td style="text-align:center;">(12)<sub>10</sub> = (1100)<sub>2</sub></td>
 </tr>
 <tr>
-    <td style="text-align:center;">6 = <b style="color:#33658A;">3 · 2 + 0</b></td>
+    <td style="text-align:center;">(6)<sub>10</sub> = (110)<sub>2</sub></td>
 </tr>
 <tr>
-    <td style="text-align:center;">3 = <b style="color:#E9D758;">1 · 2 + 1</b></td>
-</tr>
-<tr>
-    <td style="text-align:center;">1 = <b style="color:#FF8552;">0 · 2 + 1</b></td>
+    <td style="text-align:center;">(3)<sub>10</sub> = (11)<sub>2</sub></td>
 </tr>
 </table>
 
-<p></p>
-
-
 <p>
-  Mit diesem Wissen, kannst du nun die Zahl 13 wie folgt umschreiben
-</p>
-
-<p style="text-align:center">
 
 </p>
-<table align="center" cellpadding="5" cellspacing="0" style="font-family:monospace;font-size:12pt;">
-  <tbody>
-      <tr>
-          <td>(13)<sub>10</sub> </td>
-          <td>= <b style="color:#2E8B57;">6 · 2 + 1</b></td>
-      </tr>
-      <tr>
-          <td></td>
-          <td>= <b style="color:#2E8B57;"><b style="color:#33658A;">(3 · 2 + 0)</b> · 2 + 1</b></td>
-      </tr>
-      <tr>
-          <td></td>
-          <td>= <b style="color:#2E8B57;"><b style="color:#33658A;">(<b style="color:#E9D758;">(1 · 2 + 1)</b> · 2 + 0)</b> · 2 + 1</b></td>
-      </tr>
-      <tr>
-          <td></td>
-          <td>= <b style="color:#2E8B57;"><b style="color:#33658A;">(<b style="color:#E9D758;">(<b style="color:#FF8552;">(0 · 2 + 1)</b> · 2 + 1)</b> · 2 + 0)</b> · 2 + 1</b></td>
-      </tr>
-      <tr>
-          <td></td>
-          <td>= 8 · <b style="color:#FF8552;">1</b> + 4 · <b style="color:#E9D758;">1</b> + 2 · <b style="color:#33658A;">0</b> + 1 · <b style="color:#2E8B57;">1</b></td>
-      </tr>
-      <tr>
-          <td></td>
-          <td>= (<b style="color:#FF8552;">1</b> <b style="color:#E9D758;">1</b> <b style="color:#33658A;">0</b>  <b style="color:#2E8B57;">1</b>)<sub>2</sub>
-        </td>
-      </tr>
-  </tbody>
-</table>
 
-<p>
-  Durch die Farben der Ziffern erkennst du, dass die 1. Binärstelle durch die erste Division und die 2. Binärstelle durch die zweite Division, usw. entstanden sind.
-</p>
+
+
 
 
 <h3>

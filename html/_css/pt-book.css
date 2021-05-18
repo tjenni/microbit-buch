@@ -78,6 +78,18 @@ div.pt-book hr.footer {
   margin-top:12ex;
 }
 
+div.pt-book p.conclusion {
+    text-align:center;
+    background-color: #FFFFC7;
+
+}
+
+
+div.pt-book .mono{
+  font-family:monospace;
+  font-size:12pt;
+}
+
 
 div.pt-book em.grundlagen{
   font-weight:bold;
