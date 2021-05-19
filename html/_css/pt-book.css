@@ -58,6 +58,9 @@ div.pt-book p.license{
 }
 
 
+div.pt-book ul li {
+  margin-bottom:2ex;
+}
 
 div.pt-book .aufgaben li{
   margin-bottom:1em;
@@ -87,8 +90,18 @@ div.pt-book p.conclusion {
 
 div.pt-book .mono{
   font-family:monospace;
-  font-size:12pt;
+  font-size: 120%;
 }
+
+
+div.pt-book table.right td {
+  text-align:right;
+}
+div.pt-book table.center td {
+  text-align:center;
+}
+
+
 
 
 div.pt-book em.grundlagen{

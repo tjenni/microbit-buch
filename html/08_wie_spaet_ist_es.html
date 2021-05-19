@@ -24,8 +24,10 @@ document.getElementsByTagName("head")[0].appendChild(fileref)
 </h2>
 
 <p>
-  Beim Bahnhof St. Gallen steht eine merkwürdige Uhr, welche die Zeit im Zweiersystem (Binärsystem) anzeigt, siehe Video 1. Im Zweiersystem gibt es nur zwei Zahlen, die null und die eins. Für den Computer, der mit elektrischen Signalen arbeitet, ist dieses
-  System besonders praktisch. So kann die Zahl <em class="mono">0</em> durch eine Spannung von 0 Volt und die Zahl <em class="mono">1</em> durch eine Spannung 3 Volt codiert werden. In diesem Kapitel lernst du das Binärsystem kennen und zwischen dem Dezimal- und dem Binärsystem umrechnen.
+  Beim Bahnhof St. Gallen steht eine merkwürdige Uhr. Sie zeigt die Uhrzeit im Binärsystem (Zweiersystem) an, siehe Video 1. Die Binäruhr wurde von dem St. Galler Künstler Norbert Möslang konzipiert.
+</p>
+<p>
+  Im Dezimalsystem kennen wir die zehn Ziffern 0, 1, ..., 9. Im Binärsystem gibt es nur zwei verschiedene Ziffern, die 0 und die 1. Für Computer die mit elektrischen Signalen arbeiten, ist dieses System besonders praktisch. Die Zahl <em class="mono">0</em> entspricht einer elektrischen Spannung von 0 Volt und die Zahl <em class="mono">1</em> einer höheren Spannung (beim micro:bit sind es 3.6 Volt). In diesem Kapitel lernst du das Binärsystem genauer kennen.
 </p>
 
 
@@ -43,85 +45,85 @@ Lizenz: CC by 2.0, Kecko / flickr.com
 
 
 <h3>
-  Zählen im Binärsystem
+  Im Binärsystem zählen
 </h3>
 
 <p>
-  Wir überlegen uns zuerst, wie man in einem Zahlensystem zählt, welches nur über die zwei Zahlen <em class="mono">0</em> und <em class="mono">1</em> verfügt. Das Resultat ist in Tab. 1 aufgeführt.
+  Im Binärsystem gibt es nur die Ziffern <em class="mono">0</em> und <em class="mono">1</em>. Wie man in diesem Zahlensystem zählen kann ist in der Tab. 1 gezeigt.
 </p>
 
 
-<table align="center" cellpadding="10" cellspacing="0" style="font-family:monospace;font-size:12pt;">
+<table align="center" class="right mono" cellpadding="10" cellspacing="0">
 <tr>
-  <td style="border-bottom:1px solid black;">
+  <td>
     Dezimal
   </td>
-  <td style="border-bottom:1px solid black;">
+  <td>
     Binär
   </td>
   <td>&nbsp;&nbsp;</td>
-  <td style="border-bottom:1px solid black;">
+  <td>
     Dezimal
   </td>
-  <td style="border-bottom:1px solid black;">
+  <td>
     Binär
   </td>
 </tr>
 <tr>
-  <td style="text-align:right;">0</td>
-  <td style="text-align:right;">0</td>
+  <td>0</td>
+  <td>0</td>
   <td></td>
-  <td style="text-align:right;">8</td>
-  <td style="text-align:right;">1000</td>
+  <td>8</td>
+  <td>1000</td>
 </tr>
 <tr>
-  <td style="text-align:right;">1</td>
-  <td style="text-align:right;">1</td>
+  <td>1</td>
+  <td>1</td>
   <td></td>
-  <td style="text-align:right;">9</td>
-  <td style="text-align:right;">1001</td>
+  <td>9</td>
+  <td>1001</td>
 </tr>
 <tr>
-  <td style="text-align:right;">2</td>
-  <td style="text-align:right;">10</td>
+  <td>2</td>
+  <td>10</td>
   <td></td>
-  <td style="text-align:right;">10</td>
-  <td style="text-align:right;">1010</td>
+  <td>10</td>
+  <td>1010</td>
 </tr>
 <tr>
-  <td style="text-align:right;">3</td>
-  <td style="text-align:right;">11</td>
+  <td>3</td>
+  <td>11</td>
   <td></td>
-  <td style="text-align:right;">11</td>
-  <td style="text-align:right;">1011</td>
+  <td>11</td>
+  <td>1011</td>
 </tr>
 <tr>
-  <td style="text-align:right;">4</td>
-  <td style="text-align:right;">100</td>
+  <td>4</td>
+  <td>100</td>
   <td></td>
-  <td style="text-align:right;">12</td>
-  <td style="text-align:right;">1100</td>
+  <td>12</td>
+  <td>1100</td>
 </tr>
 <tr>
-  <td style="text-align:right;">5</td>
-  <td style="text-align:right;">101</td>
+  <td>5</td>
+  <td>101</td>
   <td></td>
-  <td style="text-align:right;">13</td>
-  <td style="text-align:right;">1101</td>
+  <td>13</td>
+  <td>1101</td>
 </tr>
 <tr>
-  <td style="text-align:right;">6</td>
-  <td style="text-align:right;">110</td>
+  <td>6</td>
+  <td>110</td>
   <td></td>
-  <td style="text-align:right;">14</td>
-  <td style="text-align:right;">1110</td>
+  <td>14</td>
+  <td>1110</td>
 </tr>
 <tr>
-  <td style="text-align:right;">7</td>
-  <td style="text-align:right;">111</td>
+  <td>7</td>
+  <td>111</td>
   <td></td>
-  <td style="text-align:right;">15</td>
-  <td style="text-align:right;">1111</td>
+  <td>15</td>
+  <td>1111</td>
 </tr>
 
 </table>
@@ -131,99 +133,100 @@ Lizenz: CC by 2.0, Kecko / flickr.com
 </p>
 
 
+<h3>
+  Wertigkeiten der Binärstellen
+</h3>
 
 <p>
-  Im Dezimalsystem hat die erste Stelle (von rechts nach links) die Wertigkeit 1, die zweite Stelle die Wertigkeit 10 und die dritte Stelle die Wertigkeit 100. Die Zahl 132 lässt sich wie folgt schreiben.
+  Im Dezimalsystem hat die 1. Stelle (von rechts nach links) die Wertigkeit 1, die 2. Stelle die Wertigkeit 10 und die 3. die Wertigkeit 100, usw. Zum Beispiel lässt sich die Zahl 132 wie folgt schreiben.
 </p>
 
-<p style="text-align:center;font-family:monospace;font-size:12pt;">
+<p class="mono" style="text-align:center;">
   132  = 1 &middot; 100 + 3 &middot; 10 + 2 &middot; 1
 </p>
 
 <p>
-  Im Binärsystem sind die Wertigkeiten der Stellen anders. Die erste Ziffer (von rechts nach links) hat die Wertigkeit 1, die zweite die Wertigkeit 2, die dritte 4 und die vierte Ziffer die Wertigkeit 8, wie du aus Tab. 1 ablesen kannst. In Tab. 2 sind die Wertigkeiten der ersten acht Binärstellen aufgelistet. Wenn du die Wertigkeiten mit Zweierpotenzen angibts, wird es klarer, wie diese zustandekommen.
+  Im Binärsystem sind die Wertigkeiten der Stellen anders. Wie du aus Tab. 1 ablesen kannst, hat die 1. Binärziffer (von rechts nach links) die Wertigkeit 1, die 2. Ziffer hat die Wertigkeit 2, die 3. die Wertigkeit 4 und die 4. Ziffer die Wertigkeit 8.
+</p>
+
+<p>
+  In Tab. 2 sind die Wertigkeiten der ersten acht Binärstellen aufgeführt. Wenn du die Wertigkeiten mit Zweierpotenzen angibts, wird es klarer, wie diese zustandekommen.
 </p>
 
 
-<table align="center" cellpadding="10" cellspacing="0" style="font-family:monospace;font-size:12pt;">
+<table class="center mono" align="center" cellpadding="10" cellspacing="0">
 
-  <tr style="border-bottom:1px solid black;">
-  <td style="border-right:1px solid black;">Stelle</td>
-    <td style="text-align:center;">8.</td>
-    <td style="text-align:center;">7.</td>
-    <td style="text-align:center;">6.</td>
-    <td style="text-align:center;">5.</td>
-    <td style="text-align:center;">4.</td>
-    <td style="text-align:center;">3.</td>
-    <td style="text-align:center;">2.</td>
-    <td style="text-align:center;">1.</td>
-  </tr>
-  <tr style="border-bottom:1px solid black;">
-  <td style="border-right:1px solid black;">Wertigkeiten</td>
-    <td style="text-align:center;">128</td>
-    <td style="text-align:center;">64</td>
-    <td style="text-align:center;">32</td>
-    <td style="text-align:center;">16</td>
-    <td style="text-align:center;">8</td>
-    <td style="text-align:center;">4</td>
-    <td style="text-align:center;">2</td>
-    <td style="text-align:center;">1</td>
+  <tr>
+  <td>Stelle</td>
+    <td>8.</td>
+    <td>7.</td>
+    <td>6.</td>
+    <td>5.</td>
+    <td>4.</td>
+    <td>3.</td>
+    <td>2.</td>
+    <td>1.</td>
   </tr>
   <tr>
-  <td style="border-right:1px solid black;">Potenzschreibweise</td>
-    <td style="text-align:center;">2<sup>7</sup></td>
-    <td style="text-align:center;">2<sup>6</sup></td>
-    <td style="text-align:center;">2<sup>5</sup></td>
-    <td style="text-align:center;">2<sup>4</sup></td>
-    <td style="text-align:center;">2<sup>3</sup></td>
-    <td style="text-align:center;">2<sup>2</sup></td>
-    <td style="text-align:center;">2<sup>1</sup></td>
-    <td style="text-align:center;">2<sup>0</sup></td>
+  <td>Wertigkeit</td>
+    <td>128</td>
+    <td>64</td>
+    <td>32</td>
+    <td>16</td>
+    <td>8</td>
+    <td>4</td>
+    <td>2</td>
+    <td>1</td>
+  </tr>
+  <tr>
+  <td>Potenz</td>
+    <td>2<sup>7</sup></td>
+    <td>2<sup>6</sup></td>
+    <td>2<sup>5</sup></td>
+    <td>2<sup>4</sup></td>
+    <td>2<sup>3</sup></td>
+    <td>2<sup>2</sup></td>
+    <td>2<sup>1</sup></td>
+    <td>2<sup>0</sup></td>
   </tr>
 </table>
 
 <p style="text-align: center;margin-top:0.5em;"><i>
-  Tab. 2 – Wertigkeiten der ersten acht Binärstellen von rechts 1. Stelle nach links 8. Stelle.
+  Tab. 2 – Wertigkeiten der ersten acht Binärstellen.
 </i></p>
 
-Wir folgendes festhalten
-
-<p class="conclusion">
-  <br> Die Wertigkeit der <i>n</i>-ten Stelle (von rechts nach links) einer Binärzahl beträgt 2<sup><i>n</i>-1</sup>.<br>
-  <br>
-</p>
 
 
-<h4 style="padding:0pt;margin-top:2em;margin-bottom:1em;color:seagreen;font-weight:bold;">
-  Umrechnen vom Binär- ins Dezimalsystem
-</h4>
+<h3>
+  Vom Binär- ins Dezimalsystem
+</h3>
 
 
 <p>
-  Möchtest du vom Binär- ins Dezimalsystem umrechnen, musst du dir die Wertigkeiten der einzelnen Ziffern klar machen. Zum Beispiel entspricht Binärzahl <em>1101</em> im Dezimalsystem der Zahl <em>13</em>,
+  Möchtest du vom Binär- ins Dezimalsystem umrechnen, musst du dir die Wertigkeiten der einzelnen Ziffern klar machen.  Die einzelnen Binärziffern werden zuerst den entsprechenden Wertigkeiten multipliziert und anschliessend diese Produkte addiert werden. Zum Beispiel entspricht Binärzahl <em class="mono">1101</em> im Dezimalsystem der Zahl <em>13</em>,
   siebe Tab. 3.
 </p>
 
 
 
-<table align="center" cellpadding="10" style="font-family:monospace;font-size:12pt;">
+<table class="center mono" align="center" cellpadding="10">
 <tr style="border-bottom:1px solid black;">
-    <td style="border-right:1px solid black;text-align:right;">Binärzahl</td>
-    <td style="text-align:center;"><b>1</b></td>
-    <td style="text-align:center;"><b>1</b></td>
-    <td style="text-align:center;"><b>0</b></td>
-    <td style="text-align:center;"><b>1</b></td>
+    <td style="text-align:right;">Binärzahl</td>
+    <td><em>1</em></td>
+    <td><em>1</em></td>
+    <td><em>0</em></td>
+    <td><em>1</em></td>
 </tr>
 <tr>
-    <td style="border-right:1px solid black;text-align:right;">Wertigkeiten</td>
-    <td style="text-align:center;">8</td>
-    <td style="text-align:center;">4</td>
-    <td style="text-align:center;">2</td>
-    <td style="text-align:center;">1</td>
+    <td style="text-align:right;">Wertigkeiten</td>
+    <td>8</td>
+    <td>4</td>
+    <td>2</td>
+    <td>1</td>
 </tr>
 <tr>
     <td colspan="5" style="text-align:center;padding-top:1em;">
-      (1101)<sub>2</sub> = ( 8·<b>1</b> + 4·<b>1</b> + 2·<b>0</b> + 1·<b>1</b> )<sub>10</sub> = <span style="padding-bottom:0.5em;border-bottom:double;">(13)<sub>10</sub></span>
+      (1101)<sub>2</sub> = ( 8·<em class="mono">1</em> + 4·<em class="mono">1</em> + 2·<em class="mono">0</em> + 1·<em class="mono">1</em> )<sub>10</sub> = <span style="padding-bottom:0.5em;border-bottom:double;">(13)<sub>10</sub></span>
     </td>
 </tr>
 </table>
@@ -236,11 +239,11 @@ Wir folgendes festhalten
 
 
 <h3>
-  Umrechnen vom Dezimal- ins Binärsystem
+  Vom Dezimal- ins Binärsystem
 </h3>
 
 <p>
-  Möchtest du umgekehrt eine Zahl vom Dezimal- ins Binärsystem umrechnen gehst du am besten wie im folgenden Beispiel gezeigt vor.
+  Wie man eine Zahl vom Dezimal- ins Binärsystem umrechnet, wird im folgenden Beispiel gezeigt.
 </p>
 
 <p>
@@ -250,18 +253,19 @@ Wir folgendes festhalten
 
 <ul>
   <li>
-    Die Binärzahl  <em class="mono">100'0000</em> hat den Dezimalwert  <em>64</em>. D.h. sie kommt nicht in Frage, da sie grösser als <em>53</em> ist. Die 7. Binärstelle ist also eine <em class="mono">0</em>, siehe Tab. 4.
+    Starten wir mit der Binärzahl  <em class="mono">100'0000</em>. Sie hat den Dezimalwert  <em>64</em>. Da sie grösser ist als <em>53</em>, kommt sie nicht in Frage. Die 7. und alle weiteren Binärstellen sind somit <em class="mono">0</em>, siehe Tab. 4.
   </li>
 
   <li>
-    Die Binärzahl <em class="mono">10'0000</em> hat den Dezimalwert <em>32</em>. Das ist kleiner als <em>53</em> und kommt in Frage. Wir schreiben für die 6. Binärstelle eine <em class="mono">1</em>.
+    Probieren wir die nächst kleinere Binärzahl, welche nur eine 1 enthält.
+    Das ist die <em class="mono">10'0000</em>. Ihr Dezimalwert ist <em>32</em> und das ist kleiner als <em>53</em>. Somit können wir sie akzeptieren. Die 6. Binärstelle ist also eine <em class="mono">1</em>.
   </li>
 
   <li>
     <p>
-      Die Binärzahl <em class="mono">1'0000</em> hat den Dezimalwert <em>16</em>. Ob sie in Frage kommt überprüfen wir durch Nachrechnen.
+      Weiter gehts zur nächsten Binärzahl. Die <em class="mono">1'0000</em> hat den Dezimalwert <em>16</em>. Nun müssen wir überprüfen ob sie in Frage kommt.
     </p>
-    <p style="text-align:center;">
+    <p class="mono" style="text-align:center;">
       32 + 16 = 48
     </p>
     <p>
@@ -273,7 +277,7 @@ Wir folgendes festhalten
     <p>
       Die Binärzahl <em class="mono">1000</em> hat den Dezimalwert <em>8</em>. Wir überprüfen:
     </p>
-    <p style="text-align:center;">
+    <p class="mono" style="text-align:center;">
       32 + 16 + 8 = 56
     </p>
     <p>
@@ -283,9 +287,9 @@ Wir folgendes festhalten
 
   <li>
     <p>
-     Die Binärzahl <em class="mono">100</em> hat den Dezimalwert <em>4</em>. Die Rechnung lautet
+     Die Binärzahl <em class="mono">100</em> hat den Dezimalwert <em>4</em>. Wir überprüfen
     </p>
-    <p style="text-align:center;">
+    <p class="mono" style="text-align:center;">
       32 + 16 + 4 = 52
     </p>
     <p>
@@ -293,52 +297,61 @@ Wir folgendes festhalten
     </p>
   </li>
   <li>
-    Es fehlt nur noch eine <em class="mono">1</em>.  Die 2. Binärstelle mit der Wertigkeit <em>2</em> ist demzufolge <em class="mono">0</em> und die erste Binärstelle eine <em class="mono">1</em> .
+    Es fehlt nur noch eine <em class="mono">1</em>.  Die 2. Binärstelle mit der Wertigkeit <em>2</em> ist demzufolge <em class="mono">0</em> und die erste Binärstelle eine <em class="mono">1</em>.
   </li>
 </ul>
 
-Zusammengefasst lautet das Resultat also <em class="mono">11'0101</em>. Am besten erstellst du dir immer eine Tabelle wie Tab. 4. Das erleichtert die Umrechnung.
+<p>
+  Somit ist alles komplett und das Resultat lautet <em class="mono">11'0101</em>. Am besten erstellst du dir immer eine Tabelle wie Tab. 4. Das erleichtert die Umrechnung.
+</p>
 
-<table align="center" cellpadding="10" cellspacing="0" style="font-family:monospace;font-size:12pt;">
+
+
+<table class="center mono" align="center" cellpadding="10" cellspacing="0">
 <td style="border-right:1px solid black;text-align:right;">Stelle</td>
-  <td style="text-align:center;">7.</td>
-  <td style="text-align:center;">6.</td>
-  <td style="text-align:center;">5.</td>
-  <td style="text-align:center;">4.</td>
-  <td style="text-align:center;">3.</td>
-  <td style="text-align:center;">2.</td>
-  <td style="text-align:center;">1.</td>
+  <td>7.</td>
+  <td>6.</td>
+  <td>5.</td>
+  <td>4.</td>
+  <td>3.</td>
+  <td>2.</td>
+  <td>1.</td>
 </tr>
 <tr>
     <td style="border-right:1px solid black;text-align:right;">Wertigkeit</td>
-    <td style="text-align:center;">64</td>
-    <td style="text-align:center;">32</td>
-    <td style="text-align:center;">16</td>
-    <td style="text-align:center;">8</td>
-    <td style="text-align:center;">4</td>
-    <td style="text-align:center;">2</td>
-    <td style="text-align:center;">1</td>
+    <td>64</td>
+    <td>32</td>
+    <td>16</td>
+    <td>8</td>
+    <td>4</td>
+    <td>2</td>
+    <td>1</td>
 </tr>
 <tr>
     <td style="border-right:1px solid black;text-align:right;">53 = </td>
-    <td style="text-align:center;">0</td>
-    <td style="text-align:center;">1</td>
-    <td style="text-align:center;">1</td>
-    <td style="text-align:center;">0</td>
-    <td style="text-align:center;">1</td>
-    <td style="text-align:center;">0</td>
-    <td style="text-align:center;">1</td>
-</tr>
-<tr>
-  <td colspan="6" style="text-align:center;">
-      (53)<sub>10</sub> =  <span style="padding-bottom:4pt;border-bottom:double;">( 11'0101 )<sub>2</sub></span>
-  </td>
+    <td>0</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
+    <td>0</td>
+    <td>1</td>
 </tr>
 </table>
 
 <p style="text-align: center;margin-top:0.5em;"><i>
   Tab. 4 – Umrechnung der Dezimalzahl 53 ins Binärsystem.
 </i></p>
+
+Am Schluss sollte man das Resultat überprüfen.
+<p class="mono" style="text-align:center;">
+  <span style="padding-bottom:4pt;border-bottom:double;">(11'0101)<sub>2</sub></span> =  32·1 + 16·1 + 8·0 + 4·1 + 2·0 + 1·1
+  = (53)<sub>10</sub>
+</p>
+
+<p>
+  Es stimmt. 😁
+</p>
 
 
 <h3>
@@ -349,9 +362,7 @@ Zusammengefasst lautet das Resultat also <em class="mono">11'0101</em>. Am beste
   Eine einzelne Stelle einer Binärzahl nennt man <em>Bit</em>. Die Zahl 13 benötigt in der Binärdarstellung 4 Bits. Hat man 8 Bits zur Verfügung, so nennt man das ein <em>Byte</em>. Computer haben heutzutage Speichermengen von milliarden von Bytes. Daher ist es sinnvoll, Bezeichnungen für grosse Speichermengen zu definieren.
 </p>
 
-<hr />
-
-<table align="center">
+<table class="mono" align="center">
   <tbody>
       <tr>
           <td>1 KB (Kilobyte)</td>
@@ -388,7 +399,7 @@ Tab 5. – Abkürzungen für grosse Informationsmengen.
 </h3>
 
 <p>
-  Das folgende Programm ist Binäruhr, welche die Sekunden anzeigt, siehe Abb. 1. In dem Zangenblock dauerhaft, wird jede Sekunde die Zeit um eins erhöht und die Funktion <em>update</em> aufgerufen. Alle Befehle, welche den
+  Das folgende Programm ist Binäruhr, welche die Sekunden anzeigt, siehe Prog. 1. In dem Zangenblock dauerhaft, wird jede Sekunde die Zeit um eins erhöht und die Funktion <em>update</em> aufgerufen. Alle Befehle, welche den
   Bildschirm verändern, werden in eine Funktion <em>update</em> ausgelagert. Um die Zeit in eine Binärzahl umzuwandeln, wird diese in die Variable Wert kopiert. Dann werden fünf Ganzzahldivisionen durchgeführt und jeweils deren
   Rest bestimmt. Mit dem Befehl <em class="led">Zeichne x y</em> wird die LED an der Position x und y eingeschaltet. Der Befehl <em class="mathematik">abrunden x</em> rundet die Zahl ab.
 </p>
@@ -397,88 +408,95 @@ Tab 5. – Abkürzungen für grosse Informationsmengen.
   <img src="wie_spaet_ist_es/microbit-Binaeruhr.png" alt="" width="100%" />
 </p>
 <p class="caption">
-  Abb. 1 – Programm für eine Binäruhr, welche die Sekunden anzeigt
+  Prog. 1 – Programm für eine Binäruhr, welche die Sekunden anzeigt
 </p>
 
 
 
-
-
+<h3>
+  Alternative Umrechnungsmethode
+</h3>
 
 <p>
-  Das Programm verwendet eine andere Möglichkeit um eine Zahl vom Dezimal- ins Binärsystem umzuwandeln. Es werden eine Reihe von Ganzzahldivisionen durch 2 ausgeführt. Der Rest entspricht dann jeweils den Stellen der Binärzahl.
+  Das Programm verwendet eine andere Möglichkeit um eine Zahl vom Dezimal- ins Binärsystem umzuwandeln. Es werden eine Reihe von Ganzzahldivisionen durch 2 ausgeführt. Der Rest entspricht dann jeweils den Stellen der Binärzahl, siehe Tab.
 </p>
 
 <p>
-  Möchte man die Zahl 13 ins Binärsystem umwandeln, teilt man sie durch 2. Das ergibt 6 Rest 1. Der Rest 1 besagt, dass es sich bei 13 um eine ungerade Zahl handelt. Daher wird die 1. Stelle der Binärzahl eine 1 sein.
+  Möchte man die Zahl 13 ins Binärsystem umwandeln, teilt man sie durch 2. Das ergibt 6 Rest 1. Rest 1 besagt, dass es sich bei 13 um eine ungerade Zahl handelt. Daher wird die 1. Stelle der Binärzahl eine 1 sein. Nun verfährt man weiter und teilt die 6 durch 2. Das ergibt 3 Rest 0. Somit ist die zweite Stelle der Binärzahl eine 0, siehe Tab. 6. Auf diese Weise kann man die Dezimalzahl schrittweise die entsprechende Binärzahl umwandeln.
 </p>
 
 
-<table align="center" cellpadding="5" cellspacing="0" style="font-family:monospace;font-size:12pt;">
+<table class="center mono" align="center" cellpadding="5" cellspacing="0">
 <tr>
     <td style="text-align:right;padding-right:2em;">1. Stelle</td>
     <td style="text-align:right;">13 : 2</td>
     <td>=</td>
-    <td style="text-align:center;">6</td>
+    <td>6</td>
     <td>Rest</td>
-    <td style="text-align:center;"><b>1</b></td>
+    <td><em>1</em></td>
 </tr>
 <tr>
   <td style="text-align:right;padding-right:2em;">2. Stelle</td>
   <td style="text-align:right;">6 : 2</td>
     <td>=</td>
-    <td style="text-align:center;">3</td>
+    <td>3</td>
     <td>Rest</td>
-    <td style="text-align:center;"><b>0</b></td>
+    <td><em>0</em></td>
 </tr>
 <tr>
   <td style="text-align:right;padding-right:2em;">3. Stelle</td>
   <td style="text-align:right;">3 : 2</td>
     <td>=</td>
-    <td style="text-align:center;">1</td>
+    <td>1</td>
     <td>Rest</td>
-    <td style="text-align:center;"><b>1</b></td>
+    <td><em>1</em></td>
 </tr>
 <tr>
   <td style="text-align:right;padding-right:2em;">4. Stelle</td>
   <td style="text-align:right;">1 : 2</td>
     <td>=</td>
-    <td style="text-align:center;">0</td>
+    <td>0</td>
     <td>Rest</td>
-    <td style="text-align:center;"><b>1</b></td>
+    <td><em>1</em></td>
 </tr>
 <tr>
-  <td colspan="6" style="text-align:center;">
-      (13)<sub>10</sub> =  <span style="padding-bottom:0.5em;border-bottom:double;">(1101)<sub>2</sub></span>
+  <td colspan="6">
+      (13)<sub>10</sub> =  <span style="padding-bottom:0.5em;border-bottom:double;">(<em>1101</em>)<sub>2</sub></span>
   </td>
 </tr>
 </table>
-<p></p>
 
-
-
-
-
-<p>
-  Um zu verstehen, wie dieses Umrechnungsverfahren funktioniert muss du zuerst verstehen, dass eine Ganzzahldivision durch <em>2</em> im Binärsystem einer Verschiebung der Ziffern nach rechts entspricht.
+<p class="caption">
+  Tab. 6 – Alternatives Vorgehen zur Umrechnung von einer Dezimalzahl ins binäre System.
 </p>
 
-<table align="center" cellpadding="5" cellspacing="0" style="font-family:monospace;font-size:12pt;">
+<p>
+  Um zu verstehen, wie dieses Umrechnungsverfahren funktioniert muss du zuerst akzeptieren, dass eine Ganzzahldivision durch <em>2</em> im Binärsystem einer Verschiebung aller Ziffern um eine Stelle nach rechts entspricht, siehe Tab. 7.
+</p>
+
+<table class="center mono" align="center" cellpadding="5" cellspacing="0">
 <tr>
-    <td style="text-align:center;">(12)<sub>10</sub> = (1100)<sub>2</sub></td>
+    <td>(12)<sub>10</sub> = (1100)<sub>2</sub></td>
 </tr>
 <tr>
-    <td style="text-align:center;">(6)<sub>10</sub> = (110)<sub>2</sub></td>
+    <td>(6)<sub>10</sub> = (110)<sub>2</sub></td>
 </tr>
 <tr>
-    <td style="text-align:center;">(3)<sub>10</sub> = (11)<sub>2</sub></td>
+    <td>(3)<sub>10</sub> = (11)<sub>2</sub></td>
 </tr>
 </table>
 
-<p>
-
+<p class="caption">
+  Tab. 7 – Eine Division durch zwei entspricht im Binärsystem einer Verschiebung um eine Stelle nach rechts.
 </p>
 
+<p>
+  Der Rest von der Division durch 2 gibt Auskunft darüber, ob die ursprüngliche Zahl gerade oder ungerade war. Ungerade Zahlen haben im Binärsystem als erste Stelle eine 1 und gerade Zahlen eine 0, wie du aus Tab. 1 entnehmen kannst.
+</p>
+
+<p>
+  Der Umrechnungsalgorithmus funktioniert also so, dass man mit Hilfe der Division durch 2 prüft ob die Dezimalzahl gerade oder ungerade ist.  Auf diese Weise erhält man die 1. Binärstelle. Teilt man dann den Quotienten wieder durch 2, erhält durch den Rest die 2. Binärstelle, da der Quotient der, um eine Stelle nach rechts verschobenen Binärzahl entspricht.  Wiederholt man dieses Vorgehen erhält man schrittweise alle Binärstellen.
+</p>
 
 
 
