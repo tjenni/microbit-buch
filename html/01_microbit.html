@@ -25,12 +25,11 @@ document.getElementsByTagName("head")[0].appendChild(fileref)
 
 <p>
     Unser Leben wird heute zu einem beträchtlichen Teil von Automaten gesteuert. Sie regeln die Ampel an der Kreuzung, waschen für uns die Wäsche oder versenden Nachrichten an unsere Kollegen und Kolleginnen. Manche dieser Automaten können sich selber bewegen,
-    zum Beispiel Bleche aufheben, präzise positionieren und zusammenschweissen, oder sie fliegen herum, filmen oder führen Krieg. Solche Bewegungsautomaten nennt man Roboter. Dre Begriff stammt vom Tschechischen Wort
-    <em>robota</em> ab, was so viel wie "Frondienst" oder "Zwangsarbeit" bedeutet.<br />
+    zum Beispiel Bleche aufheben, präzise positionieren und zusammenschweissen, oder sie fliegen herum, filmen oder führen Krieg. Solche Bewegungsautomaten nennt man Roboter. Der Begriff stammt vom tschechischen Wort
+    <em>robota</em> ab, was so viel wie &laquo;Frondienst&raquo; oder &laquo;Zwangsarbeit&raquo; bedeutet.<br />
 
     Daneben gibt es Computerprogramme, die ganz ähnlich wie Roboter bestimmte Aufgaben erfüllen, wie z.B. Emails versenden, die sich aber nicht selber bewegen können.
-    Sie werden <em>Bots</em> genannt, eine Kurzform für Roboter. Tatsächlich haben sich die Aufgabenfelder, in denen Roboter und Bots eingesetzt werden, in den letzten Jahren rasant entwickelt, und so wird sich auch die Bedeutung dieser Begriffe sicher mit
-    der Zeit erweitern.
+    Sie werden <em>Bots</em> genannt, eine Kurzform für Roboter. Tatsächlich haben sich die Aufgabenfelder, in denen Roboter und Bots eingesetzt werden, in den letzten Jahren rasant entwickelt, und so wird sich auch die Bedeutung dieser Begriffe sicher mit der Zeit erweitern.
 </p>
 
 
@@ -47,19 +46,16 @@ document.getElementsByTagName("head")[0].appendChild(fileref)
 
 <p>
     Trotz ihrer immensen Bedeutung wissen nur wenige Menschen, wie diese digitalen Automaten funktionieren. Das Ziel von diesem Kursteil ist es, hinter die Kulissen von Ampeln, Waschmaschinen, Handys und Co. zu blicken, um etwas über deren Funktionsweise
-    zu lernen. Dazu verwenden wir einen kleinen Computer, der micro:bit heisst. Er wurde 2015 von der BBC (British Broadcasting Corporation) entwickelt. Vom Aufbau her gleicht er einem Mobiltelefon. Im Folgenden werden die einzelnen Teile des micro:bit
-    genauer erklärt.
+    zu lernen. Dazu verwenden wir einen kleinen Computer, der <em>micro:bit</em> heisst. Er wurde 2015 von der BBC (British Broadcasting Corporation) entwickelt. Vom Aufbau her gleicht er einem Mobiltelefon. Im Folgenden werden die einzelnen Teile des micro:bit genauer erklärt.
 </p>
 
 
 
-<h4>
+<h3>
     Vorderseite
-</h4>
+</h3>
 <p>
-    Auf der Vorderseite hat der micro:bit einen kleinen Bildschirm mit 5x5 roten Leuchtdioden (<em>Light Emitting Diode</em>, kurz <em>LED</em>), siehe Abb. 1. Die LED's sind einfarbig und leuchten entweder
-    rot oder gar nicht. Moderne Handys haben Bildschirme mit mehr als einer Million LED's und können in verschiedenen Farben leuchten. Bei den meisten Handys kann der Bildschirm Berührungen (touch) erkennen. Der micro:bit hat nur zwei Tasten A und
-    B, die gedrückt werden können, die 25 LED's sind nicht empfindlich auf Berührungen.
+    Auf der Vorderseite hat der micro:bit einen kleinen Bildschirm mit 5x5 roten Leuchtdioden (<em>Light Emitting Diode</em>, kurz <em>LED</em>), siehe Abb. 1. Die LED's sind leuchten rot. Moderne Handys haben Bildschirme mit mehr als einer Million LED's und können in verschiedenen Farben leuchten. Bei den meisten Handys kann der Bildschirm Berührungen (touch) erkennen. Der micro:bit hat nur zwei Tasten A und B, die gedrückt werden können, die 25 LED's sind nicht empfindlich auf Berührungen.
 </p>
 
 
@@ -74,21 +70,19 @@ document.getElementsByTagName("head")[0].appendChild(fileref)
 <p>
     Unten befinden sich 5 goldene Anschlüsse mit Loch (Pins) an welche man Sensoren und auch Motoren anschliessen kann. Die Pins 0, 1 und 2 können vom micro:bit direkt angesteuert werden. Der Pin <em>3V</em> ist liegt auf einer
     Spannung von 3.3 V und kann als Stromversorgung für weitere Sensoren und Motoren genutzt werden. Der Pin <em>GND</em> nennt man <em>Ground</em> (Boden) er wird als Rückleiter verwendet. Ein Stromkreis
-    braucht immer einen Hin- und einen Rückleiter. Alle angeschlossenen Bauelemente müssen ein gemeinsames <em>Ground</em> (Boden) haben, sonst gehts nicht.
+    braucht immer einen Hin- und einen Rückleiter. Alle angeschlossenen Bauelemente müssen ein gemeinsames <em>Ground</em> (Boden) haben, sonst funktioniert es nicht.
 </p>
 
 
 
-<h4>
+<h3>
     Rückseite
-</h4>
+</h3>
 <p>
-    Auf der Rückseite, Abb. 2, befindet sich das Gehirn (Prozessor) des micro:bit. Von aussen sieht man nur ein schwarzes flaches Kästchen. Im Innern ist dieser Prozessor jedoch sehr komplex und enthält viele tausende Schaltelemente, die kompliziert zusammengeschaltet
-    sind. Der Prozessor arbeitet Programme ab, die auf den micro:bit geladen wurden.
+    Auf der Rückseite, Abb. 2, befindet sich das Gehirn (Prozessor) des micro:bit. Von aussen sieht man nur ein kleines schwarzes Kästchen. Im Innern ist dieser Prozessor jedoch sehr komplex und enthält viele tausende Schaltelemente, die kompliziert zusammengeschaltet sind. Der Prozessor arbeitet Programme ab, die auf den micro:bit geladen wurden.
 </p>
 <p>
-    Weiter hat es auf der Rückseite einen RESET-Taster um den micro:bit neu zu starten, einen USB-Anschluss um Programme auf den micro:bit zu laden und einen Anschluss für die Batterie. Hat man das Programm auf den micro:bit geladen, kann man ihn vom Computer
-    trennen und anschliessend mit zwei Batterien betreiben, siehe Abb. 3.
+    Weiter hat es auf der Rückseite einen RESET-Taster um den micro:bit neu zu starten, einen USB-Anschluss um Programme auf den micro:bit zu laden und einen Anschluss für die Batterie. Hat man das Programm auf den micro:bit geladen, kann man ihn vom Computer trennen und anschliessend mit zwei Batterien betreiben, siehe Abb. 3.
 </p>
 
 
@@ -101,28 +95,33 @@ document.getElementsByTagName("head")[0].appendChild(fileref)
 
 
 <p>
-    Genau so wie die meisten Handys, kann der micro:bit feststellen, ob er bewegt wird und wo unten ist. Er benutzt dazu einen Beschleunigungssensor (Accelerometer). Wird der micro:bit auf einen Tisch gelegt, kann der Beschleunigungssensor messen mit welcher
-    Seite er auf dem Tisch liegt.
+    Genau so wie die meisten Handys, kann der micro:bit feststellen, ob er bewegt wird und wo unten ist. Er benutzt dazu einen Beschleunigungssensor (Accelerometer). Wird der micro:bit auf einen Tisch gelegt, kann der Beschleunigungssensor messen mit welcher Seite er auf dem Tisch liegt.
 </p>
 <p>
-    Wie aus dem Geografieunterricht bekannt ist, hat die Erde ein Magnetfeld. Der micro:bit kann mit dem Magnetfeldsensor (Kompass) messen in welche Richtung das Erdmagnetfeld zeigt und so ermitteln wo Norden ist. Das ist praktisch, wenn man den micro:bit
-    zur Navigation verwenden möchte.
+    Wie aus dem Geografieunterricht bekannt ist, hat die Erde ein Magnetfeld. Der micro:bit kann mit dem Magnetfeldsensor (Kompass) messen in welche Richtung das Erdmagnetfeld zeigt und so ermitteln wo Norden ist. Das ist praktisch, wenn man den micro:bit zur Navigation verwenden möchte.
 </p>
 <p>
-    Oben links befindet sich eine Bluetooth Antenne (BLE Antenna). Mit dieser Antenne kann der micro:bit Daten an andere Geräte (micro:bit, Handy, Computer) senden. BLE steht für <em>Bluetooth Low Energy</em>. <em>Bluetooth</em> ist ein spezieller Funkstandard für Geräte wie externe Lautsprecher, Kopfhörere, usw. und <em>Low Energy</em> bedeutet, dass die Funkübertragung nicht viel Batterie (Energie) benötigt.
+    Oben links befindet sich eine Bluetooth Antenne (BLE Antenna). Mit dieser Antenne kann der micro:bit Daten an andere Geräte (micro:bit, Handy, Computer) senden. BLE steht für <em>Bluetooth Low Energy</em>. <em>Bluetooth</em> ist ein spezieller Funkstandard für Geräte wie externe Lautsprecher, Kopfhörere, usw. und <em>Low Energy</em> bedeutet, dass die Funkübertragung nicht viel Energie benötigt.
 </p>
 
 
 <p class="image">
     <img src="microbit/microbit_an_batterie.jpg" alt="" width="80%" />
 </p>
-<p class="caption"><i>
+<p class="caption">
     Abb. 4 – Stromversorgung des micro:bit Computers mit Hilfe von Batterien. (Bild: T. Jenni)
-</i></p>
+</p>
 <p>
-    Auf der nächsten Seite wird erklärt, wie du den micro:bit programmieren kannst.
+    Auf der nächsten Seite wird erklärt, wie du Programme für den micro:bit schreiben und ausführen kannst. <b>Let's hack!</b>
 </p>
 
+
+<p class="image">
+    <img src="microbit/cat_meme.gif" alt="" width="50%" />
+</p>
+<p class="caption">
+    Abb. 5 – Hacker Katze (Bild: imgur.com)
+</p>
 
 
 <h4>
